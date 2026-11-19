@@ -74,9 +74,16 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
 .mode:focus-visible { outline: 2px solid var(--rubric); }
 
 /* The fore-edge: one painted tab per chapter, and one for the contents */
-.edge { position: fixed; z-index: 45; right: 0; top: 64px; bottom: 12px; width: var(--edge); display: flex; flex-direction: column; gap: 2px; }
-.edge a { flex: 0 1 72px; min-height: 28px; background: var(--c, var(--ink-2)); border-radius: 3px 0 0 3px; transform-origin: right center; transition: transform 0.14s; box-shadow: inset -5px 0 6px -5px rgba(0, 0, 0, 0.4); }
-.edge a:hover, .edge a[aria-current="page"] { transform: scaleX(1.6); }
+/* the rail between and below the tabs is not a target: a press there reaches the page */
+.edge { position: fixed; z-index: 45; right: 0; top: 64px; bottom: 12px; width: var(--edge); display: flex; flex-direction: column; gap: 2px; pointer-events: none; }
+/* each tab is painted at the fore-edge; the link around it is its hit area, which a touch screen widens */
+.edge a { --tab: var(--c, var(--ink-2)); position: relative; flex: 0 1 72px; min-height: 28px; pointer-events: auto; }
+/* the focus ring sits inside the tab, so the screen edge never clips it */
+.edge a:focus-visible { outline-offset: -3px; }
+.edge a::before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: var(--edge); background: var(--tab); border-radius: 3px 0 0 3px; transform-origin: right center; transition: transform 0.14s; box-shadow: inset -5px 0 6px -5px rgba(0, 0, 0, 0.4); }
+.edge a:hover::before, .edge a[aria-current="page"]::before, .edge a.is-on::before { transform: scaleX(1.6); }
+.edge-flag { position: fixed; z-index: 46; right: calc(var(--edge) + 10px); transform: translateY(-50%); padding: 6px 10px; background: var(--ink); color: var(--paper); font-size: 0.82rem; line-height: 1.2; white-space: nowrap; pointer-events: none; }
+.edge-flag[hidden] { display: none; }
 
 /* The title page */
 .title-page { max-width: 44rem; margin: 0 auto; padding: clamp(40px, 9vh, 96px) var(--gutter) 24px; text-align: center; }
@@ -177,7 +184,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0
   .plate, .plate-live { margin-left: 0; margin-right: 0; }
   .plate figcaption, .plate-live figcaption { margin-left: 0; margin-right: 0; }
 }
-@media (prefers-reduced-motion: reduce) { .ox-dot, .ox-ci, .plate > button.lift, .edge a { transition: none; } .lifted { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .ox-dot, .ox-ci, .plate > button.lift, .edge a::before { transition: none; } .lifted { animation: none; } }
 
 /* The foot */
 .foot { margin: 64px var(--gutter) 0; padding: 22px 0 32px; border-top: 3px double var(--rule-2); }

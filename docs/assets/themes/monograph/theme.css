@@ -33,7 +33,12 @@
   --type: "Monograph Type", ui-monospace, SFMono-Regular, Menlo, monospace;
   --measure: 37rem;
   --print-mount: #fcfcf9;
-  --wide: min(72rem, 92vw);
+  /* the thumb index's hit strip (wider on a touch screen, below), how far the page keeps clear of it, and how far a
+     plate, table, or the wide track may reach toward it */
+  --edge-hit: 24px;
+  --edge-pad: var(--edge);
+  --breakout: max(0px, calc(var(--edge-pad) + max(0px, (100vw - var(--sb, 0px) - var(--edge-pad) - var(--measure) - 2 * var(--gutter)) / 2) + var(--gutter) - var(--edge-hit) - 4px));
+  --wide: min(72rem, 92vw, calc(100vw - var(--sb, 0px) + var(--edge-pad) - 2 * var(--edge-hit) - 16px));
 }
 /* A chapter's own accent ink: set on the body, where the course file's colors are. */
 body.is-chapter { --accent-ink: var(--accent); }
@@ -122,19 +127,19 @@ code { font-family: var(--type); font-size: 0.86em; }
 .lifted .lift-cap { font-family: var(--serif); }
 
 /* Live plates sit on graph paper (chalk grid at night): what moves here is computed or read live. */
-.plate-live { margin-left: calc(-1 * min(9vw, 6rem)); margin-right: calc(-1 * min(9vw, 6rem)); }
+.plate-live { margin-left: calc(-1 * min(9vw, 6rem, var(--breakout))); margin-right: calc(-1 * min(9vw, 6rem, var(--breakout))); }
 .plate-live .plate-live-stage { position: relative; background-color: var(--paper-2);
   background-image: linear-gradient(var(--grid-2) 1px, transparent 1px), linear-gradient(90deg, var(--grid-2) 1px, transparent 1px),
     linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
   background-size: 60px 60px, 60px 60px, 12px 12px, 12px 12px; border: 1px solid var(--rule-2); border-top: 3px solid var(--accent-ink); }
 .plate-live h3 { font: 700 1.2rem/1.15 var(--fat); margin: 0 0 0.35rem; }
 .plate-live .exploration { display: inline-block; margin: 0 0 0.8rem; padding: 3px 9px; font: 400 0.74rem/1.2 var(--type); letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); border: 1px dashed var(--rule-2); }
-.plate-live figcaption { margin: 0.7rem min(9vw, 6rem) 0; }
+.plate-live figcaption { margin: 0.7rem min(9vw, 6rem, var(--breakout)) 0; }
 .demo-root { min-height: 120px; }
 .demo-root:empty::before { content: "Loading the live plate…"; display: block; padding: 40px 0; text-align: center; font-style: italic; color: var(--ink-2); }
 
 /* Tables: booktabs, figures in tabular lining numerals, caption above. */
-.table { margin: 2rem calc(-1 * min(6vw, 4rem)); }
+.table { margin: 2rem calc(-1 * min(6vw, 4rem, var(--breakout))); }
 .table figcaption { font-size: 0.92rem; line-height: 1.45; color: var(--ink-2); margin: 0 0 0.6rem; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
 .table-scroll:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
@@ -152,8 +157,12 @@ table.data td:first-child, table.data th:first-child { padding-left: 0.2rem; }
 .foot { border-top: 6px solid var(--ink); box-shadow: 0 -10px 0 -8px var(--ink); }
 .foot-title { font: 700 1.2rem/1 var(--fat); }
 
+/* A printed plate reaches past the text column only as far as the thumb index allows; a phone's plates keep to the
+   column. */
+.plate { margin-left: calc(-1 * min(8vw, 5rem, var(--breakout))); margin-right: calc(-1 * min(8vw, 5rem, var(--breakout))); }
+.plate figcaption { margin-left: min(8vw, 5rem, var(--breakout)); margin-right: min(8vw, 5rem, var(--breakout)); }
 @media (max-width: 640px) {
-  .plate-live, .table { margin-left: 0; margin-right: 0; }
+  .plate, .plate-live, .table, .plate figcaption { margin-left: 0; margin-right: 0; }
   .plate-live figcaption { margin-left: 0; margin-right: 0; }
   .chapter h2 { grid-template-columns: 2.1rem 1fr; font-size: 1.24rem; }
 }
@@ -210,6 +219,45 @@ body.is-title .shelf { max-width: 46rem; margin: 2.6rem auto 0; padding: 0 var(-
   .hero-numbers div { gap: 2px; }
 }
 @media (max-width: 520px) { .turn { grid-template-columns: 1fr; } .turn .next { grid-column: 1; text-align: left; } }
+
+/* The thumb index. Each chapter's tab is in its chapter's ink, the night ink at night; the contents tab is in the
+   second ink. A mouse gets a 24 px strip at the fore-edge. */
+:root[data-theme="dark"] .edge a { --tab: var(--c-night, var(--c)); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .edge a { --tab: var(--c-night, var(--c)); } }
+.edge { width: var(--edge-hit); }
+/* On a touch screen the strip is 56 px wide and the page's column keeps clear of it. Each tab is cut into the page
+   30 px in from the edge, like a thumb-index notch, so a thumb starts its press outside the system's back-swipe
+   zone (about 24 to 30 px on Android); a thin bleed of the same ink marks the fore-edge. A thumb pressed on the
+   strip scrubs the tabs (book.js); the strip doesn't scroll the page. Every tab is at least 48 px tall. */
+@media (any-pointer: coarse) {
+  :root { --edge-hit: 56px; --edge-pad: max(var(--edge), calc(var(--edge-hit) - var(--gutter))); }
+  body { padding-right: var(--edge-pad); }
+  .head { margin-right: calc(var(--edge) - var(--edge-pad)); }
+  .edge { width: var(--edge-hit); gap: 4px; touch-action: none; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+  .edge a { min-height: 48px; touch-action: none; -webkit-tap-highlight-color: transparent; }
+  /* the notch grows inward, never into the back-swipe zone */
+  .edge a::before { right: 30px; border-radius: 3px; box-shadow: none; transform-origin: 100% 50%; }
+  .edge a::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 3px; background: var(--tab); opacity: 0.7; }
+  .edge a[aria-current="page"]::before, .edge a.is-on::before { transform: scaleX(1.5); }
+  .edge a[aria-current="page"]::after, .edge a.is-on::after { opacity: 1; }
+}
+/* A screen too short for five 48 px tabs below the running head (a phone held sideways): the tabs share the height,
+   still 48 px or more on a screen 312 px tall; the running head's Contents link and each chapter's last lines reach
+   every chapter too. */
+@media (any-pointer: coarse) and (max-height: 420px) {
+  .edge { top: 58px; bottom: 4px; gap: 2px; }
+  .edge a { min-height: 0; }
+}
+/* The flag: a slip of the page's own paper, ruled, with the chapter's ink down the side that faces its tab; the
+   numeral in bold Computer Modern and the short name in italic. It meets the strip, so a mouse can cross onto it. */
+.edge-flag { right: var(--edge-hit); display: flex; align-items: baseline; gap: 0.5em; padding: 7px 12px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule-2); border-right: 3px solid var(--flag-ink, var(--ink-2)); font: italic 400 0.95rem/1.15 "Monograph Serif", var(--serif); box-shadow: 0 8px 20px -10px rgba(var(--shade), 0.5); pointer-events: auto; }
+.edge-flag .flag-no { font: 700 1.02rem/1 var(--fat); color: var(--flag-ink, inherit); }
+/* scrubbing with a thumb: a larger flag above and beside the thumb, clear of it */
+.edge-flag.is-scrub { right: 76px; pointer-events: none; padding: 10px 14px 11px; font-size: 1.12rem; box-shadow: 0 12px 26px -10px rgba(var(--shade), 0.6); transition: color 0.12s; }
+.edge-flag.is-scrub .flag-no { font-size: 1.36rem; }
+/* slid away from the edge: the slip stays opaque and its words go gray, so the page never shows through */
+.edge-flag.is-off { color: var(--ink-2); font-style: italic; }
+@media (prefers-reduced-motion: reduce) { .edge-flag.is-scrub { transition: none; } }
 
 /* Desktop: larger type with lines of about 70 characters, and a wider track for plates, tables, and the opening,
    so a live plate's controls spread out instead of stacking. */
