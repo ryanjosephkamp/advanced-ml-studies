@@ -1,0 +1,24 @@
+{
+  "dataset": "bci_civ_2a",
+  "feature_type": "variance",
+  "similarity_measure": "pearson",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.23353752157214314,
+    "f1_per_class": {
+      "left_hand": 0.24608501118568232,
+      "right_hand": 0.26433915211970077,
+      "both_feet": 0.21761658031088082,
+      "tongue": 0.20625
+    },
+    "accuracy": 0.23552123552123552,
+    "balanced_accuracy": 0.23560666137985725,
+    "f1_macro": 0.233572685904066
+  },
+  "parameters": {
+    "n_segments": 2590,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

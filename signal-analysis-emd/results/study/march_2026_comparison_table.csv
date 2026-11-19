@@ -1,0 +1,55 @@
+dataset,dataset_key,feature,similarity,task,f1_score,accuracy,metric_value,metric_name,silhouette
+EEG Motor Movement/Imagery Dataset,eeg_mmi,variance,pearson,classification,0.5006580224683974,0.5006775067750677,0.5006580224683974,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,variance,pearson,clustering,,,0.3380392015189536,Silhouette,0.3380392015189536
+EEG Motor Movement/Imagery Dataset,eeg_mmi,variance,euclidean,classification,0.5059639705399334,0.5060975609756098,0.5059639705399334,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,variance,euclidean,clustering,,,0.40468775308809074,Silhouette,0.40468775308809074
+EEG Motor Movement/Imagery Dataset,eeg_mmi,variance,itakura_saito,classification,0.49307598699182215,0.4932249322493225,0.49307598699182215,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,variance,itakura_saito,clustering,,,-0.08317441437820378,Silhouette,-0.08317441437820378
+EEG Motor Movement/Imagery Dataset,eeg_mmi,entropy,pearson,classification,0.5210104054655587,0.5210027100271003,0.5210104054655587,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,entropy,pearson,clustering,,,0.9076511492115037,Silhouette,0.9076511492115037
+EEG Motor Movement/Imagery Dataset,eeg_mmi,entropy,euclidean,classification,0.5182844995056226,0.518970189701897,0.5182844995056226,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,entropy,euclidean,clustering,,,0.7670514982643992,Silhouette,0.7670514982643992
+EEG Motor Movement/Imagery Dataset,eeg_mmi,entropy,itakura_saito,classification,0.513608337488371,0.5142276422764228,0.513608337488371,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,entropy,itakura_saito,clustering,,,0.2743566589155761,Silhouette,0.2743566589155761
+EEG Motor Movement/Imagery Dataset,eeg_mmi,inst_freq,pearson,classification,0.49255388475494927,0.4932249322493225,0.49255388475494927,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,inst_freq,pearson,clustering,,,0.08280488587378283,Silhouette,0.08280488587378283
+EEG Motor Movement/Imagery Dataset,eeg_mmi,inst_freq,euclidean,classification,0.4916393251842668,0.491869918699187,0.4916393251842668,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,inst_freq,euclidean,clustering,,,0.5490794601853243,Silhouette,0.5490794601853243
+EEG Motor Movement/Imagery Dataset,eeg_mmi,inst_freq,itakura_saito,classification,0.493882692737669,0.49390243902439024,0.493882692737669,F1,
+EEG Motor Movement/Imagery Dataset,eeg_mmi,inst_freq,itakura_saito,clustering,,,0.1486930836410935,Silhouette,0.1486930836410935
+BCI Competition IV Dataset 2a,bci_civ_2a,variance,pearson,classification,0.22216744326732005,0.2249357326478149,0.22216744326732005,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,variance,pearson,clustering,,,0.41125638670480985,Silhouette,0.41125638670480985
+BCI Competition IV Dataset 2a,bci_civ_2a,variance,euclidean,classification,0.23717692527087114,0.2416452442159383,0.23717692527087114,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,variance,euclidean,clustering,,,0.2309527112093304,Silhouette,0.2309527112093304
+BCI Competition IV Dataset 2a,bci_civ_2a,variance,itakura_saito,classification,0.23258471038697992,0.2403598971722365,0.23258471038697992,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,variance,itakura_saito,clustering,,,-0.25127841850409527,Silhouette,-0.25127841850409527
+BCI Competition IV Dataset 2a,bci_civ_2a,entropy,pearson,classification,0.26173620730538893,0.2647814910025707,0.26173620730538893,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,entropy,pearson,clustering,,,0.4161047628416323,Silhouette,0.4161047628416323
+BCI Competition IV Dataset 2a,bci_civ_2a,entropy,euclidean,classification,0.2623368596684763,0.2660668380462725,0.2623368596684763,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,entropy,euclidean,clustering,,,0.32064549155240896,Silhouette,0.32064549155240896
+BCI Competition IV Dataset 2a,bci_civ_2a,entropy,itakura_saito,classification,0.2552827940614013,0.2583547557840617,0.2552827940614013,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,entropy,itakura_saito,clustering,,,0.38329931575110165,Silhouette,0.38329931575110165
+BCI Competition IV Dataset 2a,bci_civ_2a,inst_freq,pearson,classification,0.26216582209757433,0.26735218508997427,0.26216582209757433,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,inst_freq,pearson,clustering,,,0.027730337319080967,Silhouette,0.027730337319080967
+BCI Competition IV Dataset 2a,bci_civ_2a,inst_freq,euclidean,classification,0.2607442023391035,0.2647814910025707,0.2607442023391035,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,inst_freq,euclidean,clustering,,,0.27740927703052165,Silhouette,0.27740927703052165
+BCI Competition IV Dataset 2a,bci_civ_2a,inst_freq,itakura_saito,classification,0.23609913635694332,0.2390745501285347,0.23609913635694332,F1,
+BCI Competition IV Dataset 2a,bci_civ_2a,inst_freq,itakura_saito,clustering,,,-0.1253077726629022,Silhouette,-0.1253077726629022
+EEG Mental Arithmetic Dataset,eeg_ma,variance,pearson,classification,0.6596790796476618,0.6912442396313364,0.6596790796476618,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,variance,pearson,clustering,,,0.05322465566990396,Silhouette,0.05322465566990396
+EEG Mental Arithmetic Dataset,eeg_ma,variance,euclidean,classification,0.6503711517783828,0.685099846390169,0.6503711517783828,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,variance,euclidean,clustering,,,0.9997407225197499,Silhouette,0.9997407225197499
+EEG Mental Arithmetic Dataset,eeg_ma,variance,itakura_saito,classification,0.6732241909054663,0.7035330261136713,0.6732241909054663,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,variance,itakura_saito,clustering,,,0.2419570408853487,Silhouette,0.2419570408853487
+EEG Mental Arithmetic Dataset,eeg_ma,entropy,pearson,classification,0.6487823513962717,0.6827956989247311,0.6487823513962717,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,entropy,pearson,clustering,,,0.8556234084028665,Silhouette,0.8556234084028665
+EEG Mental Arithmetic Dataset,eeg_ma,entropy,euclidean,classification,0.6573887060442241,0.6943164362519201,0.6573887060442241,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,entropy,euclidean,clustering,,,0.7802273906658985,Silhouette,0.7802273906658985
+EEG Mental Arithmetic Dataset,eeg_ma,entropy,itakura_saito,classification,0.662553700425467,0.6989247311827957,0.662553700425467,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,entropy,itakura_saito,clustering,,,0.46419793132160414,Silhouette,0.46419793132160414
+EEG Mental Arithmetic Dataset,eeg_ma,inst_freq,pearson,classification,0.6423652963872034,0.6781874039938556,0.6423652963872034,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,inst_freq,pearson,clustering,,,0.37322808001152946,Silhouette,0.37322808001152946
+EEG Mental Arithmetic Dataset,eeg_ma,inst_freq,euclidean,classification,0.7055786674711507,0.7403993855606759,0.7055786674711507,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,inst_freq,euclidean,clustering,,,0.9161621940836351,Silhouette,0.9161621940836351
+EEG Mental Arithmetic Dataset,eeg_ma,inst_freq,itakura_saito,classification,0.673971386094646,0.7142857142857143,0.673971386094646,F1,
+EEG Mental Arithmetic Dataset,eeg_ma,inst_freq,itakura_saito,clustering,,,-0.4446483548695247,Silhouette,-0.4446483548695247

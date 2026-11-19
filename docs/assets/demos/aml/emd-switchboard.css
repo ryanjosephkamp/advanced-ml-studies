@@ -1,0 +1,195 @@
+/* The emd-switchboard plate: an old telephone switchboard drawn as a flat print. A faceplate engraved with
+   the 10-20 head carries the jacks, cords rise from the shelf to plug them, lever keys switch the bands,
+   and a meter with a lamp reads the committed result. Every rule is scoped to this plate; the inks are
+   the page's own (the accent marks what the reader's finger moves: plugs, cords, and keys that are on). */
+[data-demo="emd-switchboard"] .plate-live-stage { padding: clamp(14px, 3vw, 24px); }
+[data-demo="emd-switchboard"] .sb { container-type: inline-size; display: grid; gap: 16px; font-variant-numeric: lining-nums tabular-nums; color: var(--ink); }
+[data-demo="emd-switchboard"] .sb p { margin: 0; }
+[data-demo="emd-switchboard"] .sb-fail { font-style: italic; color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-nw { white-space: nowrap; }
+[data-demo="emd-switchboard"] .sb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[data-demo="emd-switchboard"] button { -webkit-tap-highlight-color: transparent; }
+
+/* The tour line and its button */
+[data-demo="emd-switchboard"] .sb-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--rule-2); padding-bottom: 8px; }
+[data-demo="emd-switchboard"] .sb-tour { font: italic 400 0.92rem/1.3 var(--serif); color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-play { all: unset; box-sizing: border-box; cursor: pointer; flex: none; min-height: 40px; min-width: 6.2em; padding: 0 14px; display: inline-grid; place-items: center; border: 1px solid var(--rule-2); background: color-mix(in srgb, var(--paper) 75%, transparent); font: 400 0.8rem/1 var(--type); letter-spacing: 0.06em; text-transform: uppercase; }
+[data-demo="emd-switchboard"] .sb-play[aria-pressed="true"] { border-color: var(--accent-ink); color: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-play:hover { background: color-mix(in srgb, var(--ink) 7%, var(--paper)); }
+[data-demo="emd-switchboard"] .sb-play:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+
+/* Layout: the meter on top on a phone, so the lamp shows while the switches move; side by side wider. */
+[data-demo="emd-switchboard"] .sb-body { display: grid; gap: 14px; grid-template-areas: "meter" "board" "read"; }
+[data-demo="emd-switchboard"] .sb-meterbox { grid-area: meter; display: grid; gap: 8px; }
+[data-demo="emd-switchboard"] .sb-board { grid-area: board; min-width: 0; display: grid; gap: 8px; }
+[data-demo="emd-switchboard"] .sb-read { grid-area: read; min-width: 0; }
+@container (min-width: 620px) {
+  [data-demo="emd-switchboard"] .sb-body { grid-template-columns: minmax(0, 1.04fr) minmax(0, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "board meter" "board read"; column-gap: clamp(16px, 3cqi, 28px); row-gap: 12px; align-items: start; }
+}
+
+/* SVG prints: the shared parts */
+[data-demo="emd-switchboard"] svg { display: block; width: 100%; height: auto; overflow: visible; }
+[data-demo="emd-switchboard"] .sb-plate { fill: color-mix(in srgb, var(--paper) 58%, transparent); stroke: var(--ink); stroke-width: 1.3; }
+[data-demo="emd-switchboard"] .sb-screw circle { fill: var(--paper-2); stroke: var(--ink-2); stroke-width: 0.9; }
+[data-demo="emd-switchboard"] .sb-screw path { stroke: var(--ink-2); stroke-width: 1; }
+[data-demo="emd-switchboard"] .sb-legend { font: 400 13px var(--type); letter-spacing: 0.14em; fill: var(--ink); }
+[data-demo="emd-switchboard"] .sb-legend-2 { font: italic 400 12.5px var(--serif); fill: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-end { text-anchor: end; }
+
+/* The faceplate: the head, its guide lines, capped sites, jacks, and the cord shelf */
+[data-demo="emd-switchboard"] .sb-panel { position: relative; }
+[data-demo="emd-switchboard"] .sb-head { fill: none; stroke: var(--ink); stroke-width: 1.4; stroke-linejoin: round; stroke-linecap: round; }
+[data-demo="emd-switchboard"] .sb-guide { fill: none; stroke: var(--ink-2); stroke-width: 0.8; stroke-dasharray: 3 3.5; opacity: 0.6; }
+[data-demo="emd-switchboard"] .sb-guide-2 { opacity: 0.35; }
+[data-demo="emd-switchboard"] .sb-cap circle { fill: color-mix(in srgb, var(--ink) 14%, var(--paper)); stroke: var(--ink-2); stroke-width: 0.9; }
+[data-demo="emd-switchboard"] .sb-cap path { stroke: var(--ink-2); stroke-width: 1.1; }
+[data-demo="emd-switchboard"] .sb-cap-label { font: 400 10.5px var(--type); fill: var(--ink-2); opacity: 0.85; }
+[data-demo="emd-switchboard"] .sb-jack, [data-demo="emd-switchboard"] .sb-plug { cursor: pointer; }
+[data-demo="emd-switchboard"] .sb-hit { fill: transparent; stroke: none; }
+[data-demo="emd-switchboard"] .sb-ring { fill: var(--paper); stroke: var(--ink); stroke-width: 1.7; }
+[data-demo="emd-switchboard"] .sb-ring-2 { fill: none; stroke: var(--ink); stroke-width: 0.8; opacity: 0.7; }
+[data-demo="emd-switchboard"] .sb-hole { fill: var(--ink); }
+[data-demo="emd-switchboard"] .sb-jack:hover .sb-ring { stroke: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-jack-label { font: 400 15px var(--type); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 4.5px; stroke-linejoin: round; pointer-events: none; }
+[data-demo="emd-switchboard"] .sb-shelf { fill: color-mix(in srgb, var(--paper-2) 70%, transparent); stroke: var(--ink); stroke-width: 1.2; }
+[data-demo="emd-switchboard"] .sb-shelf-lip { stroke: var(--rule-2); stroke-width: 1; }
+[data-demo="emd-switchboard"] .sb-shelf-hole { fill: var(--ink); opacity: 0.78; }
+[data-demo="emd-switchboard"] .sb-cord-halo { fill: none; stroke: var(--paper); stroke-width: 7.5; stroke-linecap: round; }
+[data-demo="emd-switchboard"] .sb-cord-line { fill: none; stroke: var(--ink-2); stroke-width: 3.2; stroke-linecap: round; }
+[data-demo="emd-switchboard"] .sb-cord.is-on .sb-cord-line { stroke: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-plug-body { fill: var(--paper); stroke: var(--ink-2); stroke-width: 1.3; }
+[data-demo="emd-switchboard"] .sb-plug-ring { fill: none; stroke: var(--ink-2); stroke-width: 1.1; }
+[data-demo="emd-switchboard"] .sb-plug.is-on .sb-plug-body { fill: var(--accent-ink); stroke: var(--ink); }
+[data-demo="emd-switchboard"] .sb-plug.is-on .sb-plug-ring { stroke: var(--paper); opacity: 0.85; }
+
+/* The cord row: one switch per channel over the shelf, under its resting plug */
+[data-demo="emd-switchboard"] .sb-cordrow { position: absolute; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+[data-demo="emd-switchboard"] .sb-cordkey { all: unset; box-sizing: border-box; cursor: pointer; min-height: 40px; display: grid; align-content: end; justify-items: center; padding-bottom: 0; border-radius: 4px; }
+[data-demo="emd-switchboard"] .sb-cordkey span { font: 400 clamp(0.74rem, 2.9cqi, 0.9rem)/1 var(--type); letter-spacing: 0.02em; color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-cordkey[aria-checked="true"] span { color: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-cordkey:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+[data-demo="emd-switchboard"] .sb-cordkey:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: -3px; }
+
+/* The band keys: a lever in a slot, thrown up when the band is on */
+[data-demo="emd-switchboard"] .sb-keys { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border: 1px solid var(--ink); border-radius: 4px; background: color-mix(in srgb, var(--paper-2) 70%, transparent); }
+[data-demo="emd-switchboard"] .sb-key { all: unset; box-sizing: border-box; cursor: pointer; min-height: 76px; padding: 8px 2px 7px; display: grid; justify-items: center; align-content: start; gap: 2px; border-left: 1px solid var(--rule-2); text-align: center; }
+[data-demo="emd-switchboard"] .sb-key:first-child { border-left: 0; }
+[data-demo="emd-switchboard"] .sb-key b { font: 400 clamp(0.78rem, 3cqi, 0.92rem)/1.15 var(--serif); font-style: italic; margin-top: 3px; }
+[data-demo="emd-switchboard"] .sb-key small { font: 400 clamp(0.6rem, 2.4cqi, 0.7rem)/1.1 var(--type); color: var(--ink-2); white-space: nowrap; }
+[data-demo="emd-switchboard"] .sb-lever { position: relative; width: 14px; height: 30px; border: 1px solid var(--ink); border-radius: 7px; background: color-mix(in srgb, var(--ink) 9%, var(--paper)); }
+[data-demo="emd-switchboard"] .sb-lever i { position: absolute; left: 50%; top: 50%; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; border: 1.5px solid var(--ink); background: var(--paper); transform: translateY(8px); transition: transform 0.16s ease, background-color 0.16s ease; }
+[data-demo="emd-switchboard"] .sb-key[aria-checked="true"] .sb-lever i { transform: translateY(-8px); background: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-key[aria-checked="false"] b { color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-key:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+[data-demo="emd-switchboard"] .sb-key:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: -3px; }
+[data-demo="emd-switchboard"] .sb-hint { font: italic 400 0.88rem/1.4 var(--serif); color: var(--ink-2); }
+
+/* The meter */
+[data-demo="emd-switchboard"] .sb-arc { fill: none; stroke: var(--ink); stroke-width: 1.3; }
+[data-demo="emd-switchboard"] .sb-tick { stroke: var(--ink); stroke-width: 0.8; }
+[data-demo="emd-switchboard"] .sb-tick-major { stroke: var(--ink); stroke-width: 1.5; }
+[data-demo="emd-switchboard"] .sb-tick-label { font: 400 12.5px var(--type); fill: var(--ink); text-anchor: middle; }
+[data-demo="emd-switchboard"] .sb-chance { stroke: var(--ink-2); stroke-width: 1.1; stroke-dasharray: 2.5 2.5; }
+[data-demo="emd-switchboard"] .sb-chance-label { font: italic 400 12px var(--serif); fill: var(--ink-2); text-anchor: start; }
+[data-demo="emd-switchboard"] .sb-stop { fill: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-ci-band { fill: color-mix(in srgb, var(--ink) 20%, transparent); stroke: var(--ink); stroke-width: 0.9; }
+[data-demo="emd-switchboard"] .sb-ref path { fill: var(--paper); stroke: var(--ink); stroke-width: 1; }
+[data-demo="emd-switchboard"] .sb-ref-label { font: italic 400 11.5px var(--serif); fill: var(--ink-2); text-anchor: middle; }
+[data-demo="emd-switchboard"] .sb-dial { font: 400 12.5px var(--type); letter-spacing: 0.16em; fill: var(--ink); text-anchor: middle; }
+[data-demo="emd-switchboard"] .sb-dial-2 { font: italic 400 12.5px var(--serif); fill: var(--ink-2); text-anchor: middle; }
+[data-demo="emd-switchboard"] .sb-needle-halo { stroke: var(--paper); stroke-width: 5.5; stroke-linecap: round; }
+[data-demo="emd-switchboard"] .sb-needle-line { stroke: var(--ink); stroke-width: 2.1; stroke-linecap: round; }
+[data-demo="emd-switchboard"] .sb-needle-tail { fill: var(--ink); }
+[data-demo="emd-switchboard"] .sb-pivot { fill: var(--ink); }
+[data-demo="emd-switchboard"] .sb-pivot-2 { fill: var(--paper); }
+[data-demo="emd-switchboard"] .sb-lamp-bezel { fill: var(--paper); stroke: var(--ink); stroke-width: 1.4; }
+[data-demo="emd-switchboard"] .sb-lamp-glass { fill: color-mix(in srgb, var(--ink) 16%, var(--paper)); stroke: var(--ink); stroke-width: 0.8; transition: fill 0.25s ease; }
+[data-demo="emd-switchboard"] .sb-rays path { stroke: var(--accent-ink); stroke-width: 1.8; stroke-linecap: round; opacity: 0; transition: opacity 0.25s ease; }
+[data-demo="emd-switchboard"] .sb-lamp-word { fill: var(--ink-2); opacity: 0.55; transition: opacity 0.25s ease; }
+[data-demo="emd-switchboard"] .sb-norm-word { font-size: 11.5px; fill: var(--ink-2); }
+[data-demo="emd-switchboard"] .is-lit .sb-lamp-glass { fill: var(--accent-ink); }
+[data-demo="emd-switchboard"] .is-lit .sb-rays path { opacity: 1; }
+[data-demo="emd-switchboard"] .is-lit .sb-lamp-word { fill: var(--accent-ink); opacity: 1; }
+[data-demo="emd-switchboard"] .sb-notrun { opacity: 0; transition: opacity 0.2s ease; }
+[data-demo="emd-switchboard"] .is-dark .sb-notrun { opacity: 1; }
+[data-demo="emd-switchboard"] .sb-notrun rect { fill: var(--paper); stroke: var(--ink); stroke-width: 1.2; }
+[data-demo="emd-switchboard"] .sb-notrun .sb-notrun-in { fill: none; stroke: var(--ink-2); stroke-width: 0.7; }
+[data-demo="emd-switchboard"] .sb-notrun circle { fill: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-notrun text { font: 400 15px var(--type); letter-spacing: 0.32em; fill: var(--ink); text-anchor: middle; }
+
+/* Which values the meter reads */
+[data-demo="emd-switchboard"] .sb-norm { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule-2); background: color-mix(in srgb, var(--paper) 70%, transparent); }
+[data-demo="emd-switchboard"] .sb-norm button { all: unset; box-sizing: border-box; cursor: pointer; min-height: 44px; padding: 6px 10px; display: grid; place-content: center; text-align: center; font: 400 0.9rem/1.15 var(--serif); }
+[data-demo="emd-switchboard"] .sb-norm button span { display: block; font-size: 0.78rem; font-style: italic; color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-norm button + button { border-left: 1px solid var(--rule-2); }
+[data-demo="emd-switchboard"] .sb-norm button[aria-checked="true"] { background: var(--ink); color: var(--paper); box-shadow: inset 0 -3px 0 var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-norm button[aria-checked="true"] span { color: color-mix(in srgb, var(--paper) 78%, transparent); }
+[data-demo="emd-switchboard"] .sb-norm button:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: -4px; }
+
+/* The readout */
+[data-demo="emd-switchboard"] .sb-read { display: grid; gap: 4px; align-content: start; border-top: 2px solid var(--ink); padding-top: 8px; }
+[data-demo="emd-switchboard"] .sb-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+[data-demo="emd-switchboard"] .sb-title b { font: 700 1.08rem/1.25 var(--serif); }
+[data-demo="emd-switchboard"] .sb-prov { font: italic 400 0.84rem/1.3 var(--serif); color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-combo { font: 400 0.8rem/1.3 var(--type); color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-big { font: 400 1rem/1.2 var(--type); margin-top: 4px !important; }
+[data-demo="emd-switchboard"] .sb-val { font-size: 2rem; letter-spacing: -0.01em; color: var(--ink); }
+[data-demo="emd-switchboard"] .sb-ci { color: var(--ink-2); white-space: nowrap; }
+[data-demo="emd-switchboard"] .sb-what { font: italic 400 0.86rem/1.35 var(--serif); color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-other, [data-demo="emd-switchboard"] .sb-change { font: 400 0.84rem/1.4 var(--type); }
+[data-demo="emd-switchboard"] .sb-change { color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-say { font: 400 1rem/1.5 var(--serif); margin-top: 6px !important; }
+[data-demo="emd-switchboard"] .sb-read[data-status="run"] .sb-title b { color: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-read:not([data-status="run"]) .sb-big,
+[data-demo="emd-switchboard"] .sb-read:not([data-status="run"]) .sb-what,
+[data-demo="emd-switchboard"] .sb-read:not([data-status="run"]) .sb-other,
+[data-demo="emd-switchboard"] .sb-read:not([data-status="run"]) .sb-change,
+[data-demo="emd-switchboard"] .sb-read:not([data-status="run"]) .sb-prov { display: none; }
+[data-demo="emd-switchboard"] .sb-read:not([data-status="run"]) .sb-title b { font-family: var(--type); font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.95rem; color: var(--ink-2); }
+
+/* The directory: the seven committed combinations, each a button that sets the switches */
+[data-demo="emd-switchboard"] .sb-dir { border-top: 1px solid var(--rule-2); padding-top: 10px; }
+[data-demo="emd-switchboard"] .sb-dir h4 { margin: 0 0 6px; font: italic 400 1rem/1.3 var(--serif); }
+[data-demo="emd-switchboard"] .sb-dir-head { display: grid; grid-template-columns: 16px minmax(0, 1fr) 80px 7.4rem 7.4rem; align-items: end; column-gap: 10px; font: 400 0.68rem/1.2 var(--type); letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); padding: 0 8px 5px 6px; border-bottom: 1px solid var(--ink); }
+[data-demo="emd-switchboard"] .sb-dir-head span:first-child { grid-column: 1 / 4; }
+[data-demo="emd-switchboard"] .sb-dir-head span, [data-demo="emd-switchboard"] .sb-dir-v { text-align: right; white-space: nowrap; }
+[data-demo="emd-switchboard"] .sb-dir ol { list-style: none; margin: 0; padding: 0; }
+[data-demo="emd-switchboard"] .sb-dir li + li { border-top: 1px solid var(--rule); }
+[data-demo="emd-switchboard"] .sb-dir li button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; min-height: 48px; padding: 6px 8px 6px 6px; display: grid; grid-template-columns: 16px minmax(0, 1fr) 80px 7.4rem 7.4rem; align-items: center; column-gap: 10px; box-shadow: inset 3px 0 0 transparent; }
+[data-demo="emd-switchboard"] .sb-dir li button:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+[data-demo="emd-switchboard"] .sb-dir li button:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: -2px; }
+[data-demo="emd-switchboard"] .sb-dir li button[aria-current="true"] { box-shadow: inset 3px 0 0 var(--accent-ink); background: color-mix(in srgb, var(--accent-ink) 7%, transparent); }
+[data-demo="emd-switchboard"] .sb-dot { width: 11px; height: 11px; border-radius: 50%; border: 1.2px solid var(--ink); background: color-mix(in srgb, var(--ink) 14%, var(--paper)); justify-self: center; }
+[data-demo="emd-switchboard"] [aria-current="true"] .sb-dot { background: var(--accent-ink); }
+[data-demo="emd-switchboard"] .sb-dir-name { font: 400 0.95rem/1.25 var(--serif); }
+[data-demo="emd-switchboard"] .sb-dir-name em { display: block; font-size: 0.78rem; color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-dir-v { font: 400 0.95rem/1.2 var(--type); color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-dir[data-norm="subject"] .sb-dir-v[data-n="subject"],
+[data-demo="emd-switchboard"] .sb-dir[data-norm="none"] .sb-dir-v[data-n="none"] { color: var(--ink); }
+[data-demo="emd-switchboard"] .sb-glyph { width: 80px; height: 30px; }
+[data-demo="emd-switchboard"] .sb-glyph .head { fill: none; stroke: var(--ink-2); stroke-width: 0.9; }
+[data-demo="emd-switchboard"] .sb-glyph .base { stroke: var(--ink-2); stroke-width: 0.9; }
+[data-demo="emd-switchboard"] .sb-glyph circle.on, [data-demo="emd-switchboard"] .sb-glyph rect.on { fill: var(--ink); }
+[data-demo="emd-switchboard"] .sb-glyph circle.off, [data-demo="emd-switchboard"] .sb-glyph rect.off { fill: none; stroke: var(--ink-2); stroke-width: 0.8; }
+[data-demo="emd-switchboard"] [aria-current="true"] .sb-glyph .on { fill: var(--accent-ink); }
+
+[data-demo="emd-switchboard"] .sb-notes { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 0.86rem; line-height: 1.45; color: var(--ink-2); }
+[data-demo="emd-switchboard"] .sb-notes b { font-weight: 700; color: var(--ink); }
+[data-demo="emd-switchboard"] .sb-checked { font: italic 400 0.8rem/1.4 var(--serif); color: var(--ink-2); }
+
+@container (max-width: 470px) {
+  [data-demo="emd-switchboard"] .sb-cap-label { display: none; }
+  [data-demo="emd-switchboard"] .sb-dir-head { grid-template-columns: 16px minmax(0, 1fr) 4.9rem 5.7rem; font-size: 0.58rem; letter-spacing: 0.02em; padding-right: 6px; }
+  [data-demo="emd-switchboard"] .sb-dir-head span:first-child { grid-column: 1 / 3; }
+  [data-demo="emd-switchboard"] .sb-dir li button { grid-template-columns: 16px minmax(0, 1fr) 4.9rem 5.7rem; grid-template-areas: "dot name name name" "dot glyph a b"; row-gap: 2px; padding-right: 6px; }
+  [data-demo="emd-switchboard"] .sb-dot { grid-area: dot; }
+  [data-demo="emd-switchboard"] .sb-dir-name { grid-area: name; font-size: 0.9rem; }
+  [data-demo="emd-switchboard"] .sb-glyph { grid-area: glyph; }
+  [data-demo="emd-switchboard"] .sb-dir-v[data-n="subject"] { grid-area: a; }
+  [data-demo="emd-switchboard"] .sb-dir-v[data-n="none"] { grid-area: b; }
+  [data-demo="emd-switchboard"] .sb-val { font-size: 1.75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-demo="emd-switchboard"] .sb-lever i, [data-demo="emd-switchboard"] .sb-lamp-glass, [data-demo="emd-switchboard"] .sb-rays path,
+  [data-demo="emd-switchboard"] .sb-lamp-word, [data-demo="emd-switchboard"] .sb-notrun { transition: none; }
+}

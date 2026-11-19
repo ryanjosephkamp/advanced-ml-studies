@@ -1,0 +1,24 @@
+{
+  "dataset": "bci_civ_2a",
+  "feature_type": "entropy",
+  "similarity_measure": "itakura_saito",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.21978749233684225,
+    "f1_per_class": {
+      "left_hand": 0.2959830866807611,
+      "right_hand": 0.224,
+      "both_feet": 0.1994750656167979,
+      "tongue": 0.16
+    },
+    "accuracy": 0.22651222651222652,
+    "balanced_accuracy": 0.22663230240549825,
+    "f1_macro": 0.21986453807438974
+  },
+  "parameters": {
+    "n_segments": 2590,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

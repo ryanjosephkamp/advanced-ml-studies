@@ -1,0 +1,344 @@
+{
+ "date": "November 19, 2026",
+ "passed": 48,
+ "failed": 0,
+ "line": "Checked November 19, 2026: all 48 checks passed, against the committed draws (study/results/raw_replication.csv.gz), the February run’s results, the study’s own matrix code, and the paper’s printed numbers.",
+ "checks": [
+  {
+   "name": "the tickets are the study's seeds 0 to 99, one each (study/results/raw_replication.csv.gz)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the data sets are the study's five, in its order, with the file's test-set sizes",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "each data set's feature count d equals its data file's columns",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every ticket's accuracies equal the file, value for value (4,000 values)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every matrix's count of zero columns and zero rows equals the file, the same on all four kernel rows (1,000 matrices)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the kernels are the file's four, in the order the plate reads them",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the report's draw is ticket 42: the only one whose 40 accuracies equal the February run's committed results (results/original_run_20260213_172002)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "study/replicate.py names the same seed as the report's draw, and the same split seed and k as the plate",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "each median on the board equals study/results/replication_summary.csv",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "and equals the median of the 100 best accuracies in the file (the summary keeps six significant digits)",
+   "worst": "5.00e-7",
+   "tol": "1.00e-6",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the paper's numbers in the data equal paper/numbers.tex",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the data names the files it was read from",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every stored share is a whole number of correct test rows, to the file's six decimals (4,000 shares)",
+   "worst": "4.97e-7",
+   "tol": "5.00e-7",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the kernels named under each value are exactly those reaching the best in the file (1,000 cells)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every ticket's lead on each data set and its verdict equal the independent reading (500 leads, 100 verdicts)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the verdict counts over all 100 draws: 52 the report's headline, 43 the opposite, 5 neither",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "52 of the 100 draws put Eq. 4 strictly ahead on three or more data sets, as the paper prints (rep3:ge3 = 52)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the report's draw gives the report's headline: Eq. 4 ahead on 3 of 5",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "ticket 42's values equal the paper's: Table II's 40 cells (table_original.tex), Table III's report column (table_replication.tex), and the five differences o:<ds>:delta (50 fields)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "ticket 42's Iris Eq. 4 is 68.9% under every kernel, as the paper prints (o:iris:eq4:linear)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "on Seeds, the report's Eq. 4 value 92.1% is above 92, ties 3, and is below 4 of the other 99, as the paper prints",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the report's ticket stands among the other 99 where replication_summary.csv records, on every data set and matrix (10 rows)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the test-set sizes and one row's worth of points equal numbers.tex (Iris and Glass)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every ticket's standing among the other 99 equals an independent count (1,000 standings)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Iris's Eq. 4 matrix had a whole column of zeros in 30 of the 100 draws (25 with one, 5 with both), counted from the file",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "no Eq. 3 matrix in the file has a zero row or a zero column",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "on the board, tickets with the same accuracy stack in ticket order, each stack as tall as its count, and the axis covers every value",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "pulls take each of the 100 tickets with equal chance (chi-square over 1,000,000 pulls; 148.2 is the 0.1% critical value for 99 degrees of freedom)",
+   "worst": "105",
+   "tol": "148",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "a pull sequence repeats exactly from its seed (10,000 pulls)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "shares round half up to one decimal as paper/make_numbers.py does (81,003 shares)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every Eq. 4 minus Eq. 3 difference on a ticket rounds as the paper's sgn1 does on the file's values (500 differences)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the zero counts in the file are what the study's own matrix code gives (scripts/random_projection.py, seeds 0 to 99, 1,000 matrices)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Eq. 3's entries are never zero (every Eq. 3 matrix the study's code draws for these seeds)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every ticket's sentence on which matrix leads names exactly the data sets the file gives each (100 tickets)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every verdict sentence carries the ticket's counts and the right conclusion",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every stamp states the verdict and its count",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every zero sentence gives each data set's zero rows out of its d, and exactly the data sets with zero columns (one or both)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the kernels under each value, the ticket number, and the heading read the ticket",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every branch of the ticket's sentences occurs among the 100 tickets (17 branches)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every standing sentence reads the value and counts the other 99 (1,000 sentences)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every running count and its sentences carry the pulls' counts and shares beside all 100 and the theory (400 simulated runs, every branch: yes)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the running count holds each of the reader's pulls and none of the 11,720 the drum makes on its own (200 simulated runs)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "at a seed, the reader's pulls come in the same order whatever the drum does on its own (20,489 pulls among 3,604 of the drum's own pulls and returns, 200 seeds)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the address's seed is its decimal digits, read exactly and taken modulo 2^32, and anything else is no seed (18 addresses: ?seed=9007199254740993 is seed 1, ?seed=4294967296 and ?seed=0 are seed 0, and ?seed=7abc, -0, 42.5, and 6e3 are none); the plate's ?seed= link reads back as the same seed and pulls (403 links), read and written in the view by these functions",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "\"Clear the pulls\" during a pull holds, on the built view: after Draw once or Draw 20 and a clear before the ticket lands, both labels say \"no pulls of yours\" and the count is 0 once the flight ends, and the next pull is counted alone (at ?seed=4294967296, which links ?seed=0)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the empty bar of your pulls and the Iris count beside it are the model's labels, which say \"no pulls of yours\" after a reset or the drum's own pulls (no \"yet\")",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the chapter page carries the plate, its data file, and its script",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the model checked here is the one in the site's source",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  }
+ ]
+}

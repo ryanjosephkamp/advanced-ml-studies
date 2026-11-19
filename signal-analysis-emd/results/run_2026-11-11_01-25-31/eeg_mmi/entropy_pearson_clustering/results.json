@@ -1,0 +1,17 @@
+{
+  "dataset": "eeg_mmi",
+  "feature_type": "entropy",
+  "similarity_measure": "pearson",
+  "learning_task": "clustering",
+  "metrics": {
+    "silhouette_score": 0.14285924521152416,
+    "ari": -0.00017477088031187974,
+    "nmi": 5.30468482791196e-05
+  },
+  "parameters": {
+    "n_segments": 4767,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

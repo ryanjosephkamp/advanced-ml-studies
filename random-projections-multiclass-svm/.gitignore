@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Copies the pipeline's loader writes next to the Iris and Breast Cancer files
+data/iris/iris_cached*.csv
+data/breast_cancer/breast_cancer_cached*.csv
+
+# Generated outputs (reproduced by running the pipeline)
+results/hw3_run__*/
+printouts/
+dataset_stats/
+
+# Reports the pipeline regenerates on every run (one draw each; not kept)
+reports/
+
+# Per-draw working files of the study (the committed copies are study/results/raw_*.csv.gz)
+study/results/raw/

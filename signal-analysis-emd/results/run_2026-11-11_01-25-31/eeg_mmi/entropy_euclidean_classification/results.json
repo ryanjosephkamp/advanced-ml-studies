@@ -1,0 +1,22 @@
+{
+  "dataset": "eeg_mmi",
+  "feature_type": "entropy",
+  "similarity_measure": "euclidean",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.5100107179813526,
+    "f1_per_class": {
+      "left_hand": 0.5201916495550992,
+      "right_hand": 0.49964311206281226
+    },
+    "accuracy": 0.5101327742837177,
+    "balanced_accuracy": 0.5099844109568703,
+    "f1_macro": 0.5099173808089558
+  },
+  "parameters": {
+    "n_segments": 4767,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

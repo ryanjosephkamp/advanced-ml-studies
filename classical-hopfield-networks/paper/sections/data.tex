@@ -1,0 +1,22 @@
+\section{The assignment and its data}
+\label{sec:data}
+
+\subsection{The characters}
+
+The data are \N{d:n_patterns} binary $12 \times 12$ character patterns, so the network has \N{d:n_neurons} neurons. Of the \N{d:pix_total} pixels in the training set, \N{d:pix_train} are on (\N{d:dens_train}\%); an on pixel is background, and the letterforms are the off pixels. The patterns are dense: per-pattern density runs from \N{d:dens_min}\% to \N{d:dens_max}\%, and \N{d:all_on} of the \N{d:n_neurons} pixels are on in all \N{d:n_patterns} characters. In $\pm 1$ coding, the overlap of two patterns is $\frac{1}{N}\xi^\mu \cdot \xi^\nu$. It averages \N{d:overlap_mean} over pairs (standard deviation \N{d:overlap_sd}, range \N{d:overlap_min} to \N{d:overlap_max}). Independent bits at the characters' density would give $(2 \times 0.7928 - 1)^2 = \N{d:overlap_indep}$, so density accounts for much of the overlap. The Pearson correlation between patterns, which removes each pattern's mean, averages \N{d:pearson_mean}; it measures shared structure beyond density. The mean Hamming distance between two patterns is \N{d:ham_mean} bits (range \N{d:ham_min} to \N{d:ham_max}), and the closest pair, patterns \N{d:closest_a} and \N{d:closest_b} (counting from 0), differs in only \N{d:ham_min} bits.
+
+The test file flips exactly \N{d:test_flips} bits in every pattern (\N{d:test_flip_pct}\%). The 20\% file, generated with seed 42 at a 20\% target, flips \N{d:valid_flip_min} to \N{d:valid_flip_max} bits (mean \N{d:valid_flip_mean}, \N{d:valid_flip_pct}\%). In both files, and for every query, the nearest stored pattern is the query's own target (\N{d:test_nearest_own} of 18 and \N{d:valid_nearest_own} of 18).
+
+\subsection{The assignment's update}
+
+The weights are $W_{ij} = \sum_{\mu=1}^{P} \xi_i^\mu \xi_j^\mu$ for $i \neq j$, with $W_{ii} = 0$ and $\xi^\mu \in \{-1, +1\}^N$. The assignment keeps the state $q$ in $\{0, 1\}$ and updates one unit at a time, in random order, with
+\begin{equation}
+q_i \leftarrow \begin{cases} 1 & \text{if } \sum_j W_{ji}\, q_j \ge 0,\\ 0 & \text{otherwise,}\end{cases} \label{eq:update01}
+\end{equation}
+until a full sweep changes nothing or 100 sweeps have run. Its energy is $E = -\tfrac{1}{2}\, q^\top W q$ on the 0/1 state, which this update cannot raise.
+
+In $\pm 1$ terms, with $s = 2q - 1$, the field in~\eqref{eq:update01} equals half the standard field plus half the column sum $c_i = \sum_j W_{ji}$. The update is therefore the standard one with a per-unit bias:
+\begin{equation}
+s_i \leftarrow \operatorname{sign}\Bigl(\sum_j W_{ij}\, s_j + c_i\Bigr), \label{eq:bias}
+\end{equation}
+with $\operatorname{sign}(0) = +1$, matching the tie rule in~\eqref{eq:update01}. The standard update uses no bias. The bias acts like extra crosstalk, and Section~\ref{sec:results} measures what it costs.

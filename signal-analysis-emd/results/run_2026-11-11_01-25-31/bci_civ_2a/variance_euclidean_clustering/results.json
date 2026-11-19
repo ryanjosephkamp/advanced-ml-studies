@@ -1,0 +1,17 @@
+{
+  "dataset": "bci_civ_2a",
+  "feature_type": "variance",
+  "similarity_measure": "euclidean",
+  "learning_task": "clustering",
+  "metrics": {
+    "silhouette_score": 0.3049013246435866,
+    "ari": 0.0007475849849921738,
+    "nmi": 0.002096852689933548
+  },
+  "parameters": {
+    "n_segments": 2590,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

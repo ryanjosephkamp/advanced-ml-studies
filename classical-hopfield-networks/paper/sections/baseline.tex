@@ -1,0 +1,17 @@
+\section{The baseline, corrected}
+\label{sec:baseline}
+
+The baseline stores all \N{d:n_patterns} characters with Hebbian weights (weights run from \N{b:weight_min} to \N{b:weight_max}) and queries the network with three sets of 18 patterns, where query $k$ is a copy of stored pattern $k$: the training patterns themselves, the test file, and the 20\% file. Table~\ref{tab:baseline} gives the result. No query recalls its own pattern, and no final state equals any stored pattern. All \N{b:n_queries} queries converge, in at most \N{b:sweeps_max} sweeps, into a single state with \N{b:final_pixels} pixels on, \N{b:nearest_ham} bits from stored patterns \N{b:nearest_all} (each has \N{d:pattern_pixels:11} pixels on). These numbers replace the original submission's, which came from the overflow described in the introduction.
+
+\begin{table}[t]
+\caption{Baseline result, \N{d:n_patterns} stored patterns, Hebbian weights, the assignment's update. Sweeps include the final, unchanged one.}
+\label{tab:baseline}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\input{table_baseline.tex}
+\end{table}
+
+The energy at the final state is \N{b:energy} for every query. It is computed on the 0/1 state as the assignment defines it, and it rose in \N{b:energy_rises} of the \N{b:energy_sweeps} recorded sweeps. A falling energy shows that the update is a descent on this energy, not that the implementation recalls anything.
+
+The standard $\pm 1$ update does no better. Over 200 update orders, it recalls none of the characters on either query file, and none of the 18 characters is a fixed point of it. The failure is therefore not an artifact of the 0/1 update. Nor does it need the weights to be wrong: they are correct, and the state the network reaches is a spurious attractor shared by all queries. The study did not analyze that state further. Whether the \N{d:all_on} pixels that are on in every character, or the density in general, make it attract was not tested.

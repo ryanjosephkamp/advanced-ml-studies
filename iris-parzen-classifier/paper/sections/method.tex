@@ -1,0 +1,41 @@
+\section{Method}
+
+\subsection{The classifier}
+
+Let the training set have positive examples $x_i$ with $i \in P$ ($n_+$ of them) and negative examples with $i \in M$ ($n_-$ of them), and let $K$ be the kernel. Each positive example gets weight $\alpha_i = 1/n_+$, each negative example gets weight $\alpha_i = -1/n_-$, and the classifier is
+\begin{equation}
+h(x) = \operatorname{sign}\Bigl(\sum_i \alpha_i K(x_i, x) - b\Bigr), \label{eq:rule}
+\end{equation}
+with ties labeled $+1$ and the bias
+\begin{equation}
+b = \frac{1}{2}\Bigl(\frac{1}{n_+^2}\sum_{i,j \in P} K(x_i, x_j) - \frac{1}{n_-^2}\sum_{i,j \in M} K(x_i, x_j)\Bigr). \label{eq:bias}
+\end{equation}
+
+Let $\mu_+$ and $\mu_-$ be the means of the positive and negative training points in the kernel's feature space. The quantity inside the sign in \eqref{eq:rule} equals $\tfrac{1}{2}(\lVert\phi(x)-\mu_-\rVert^2 - \lVert\phi(x)-\mu_+\rVert^2)$, so the rule assigns $x$ to the class whose mean is nearer. This is the simple kernel classifier described by Sch\"olkopf and Smola \cite[Sec.~1.2]{scholkopf2002}.
+
+Three cases follow. With the dot product, the rule is the nearest-centroid rule on the raw measurements. With a polynomial kernel, the decision boundary is a fixed polynomial of degree 2 or 3 determined by moments of the two classes. With the Gaussian kernel, each class sum is proportional to a Gaussian Parzen density estimate, so the rule compares the two classes' density estimates, each weighted equally, and thresholds their difference at a value set by $b$. That is the plug-in Bayes rule for equal class priors only when $b = 0$. The classifier outputs labels, not probabilities.
+
+\subsection{Kernels}
+
+The four kernels are
+\begin{align}
+K_{\mathrm{dot}}(x, y) &= x \cdot y, \nonumber\\
+K_{2}(x, y) &= (x \cdot y + 1)^2, \nonumber\\
+K_{3}(x, y) &= (x \cdot y + 1)^3, \nonumber\\
+K_{\mathrm{G}}(x, y) &= \exp\bigl(-\lVert x - y\rVert^2 / 2\sigma^2\bigr), \label{eq:kernels}
+\end{align}
+with $\sigma = 1/\sqrt{2} \approx 0.71$ for the Gaussian. The width was set by the assignment and was the same for every run. It was not tuned, so no choice was made on test data. Problem 1 uses the dot product only.
+
+\subsection{Data and problems}
+
+The data are the 150 Iris flowers distributed with scikit-learn \cite{pedregosa2011}: 50 each of setosa, versicolor, and virginica, with four measurements in centimeters (sepal length, sepal width, petal length, and petal width), used unscaled. Four binary problems are built from them. Problem 1 is setosa against the other two species. Problem 2 is virginica against the other two, and Problem 3 is versicolor against the other two. Problem 4 is versicolor against virginica, with setosa removed (\N{p4_samples} flowers). Setosa is linearly separable from the other two species, and versicolor and virginica are not linearly separable from each other, so Problem 1 is the only linearly separable problem. Problems 1 to 3 pit one species against the other two, so their classes have a 1:2 ratio.
+
+\subsection{Evaluation}
+
+The training share takes five values: 90\%, 80\%, 70\%, 60\%, and 50\%. For each share, \N{n_splits_ratio} random splits are drawn with scikit-learn's \texttt{train\_test\_split}, using seeds 0 to \N{seed_last} and no stratification, as in the original study. Every kernel and problem uses the same splits. The 13 problem--kernel pairs, five shares, and \N{n_splits_ratio} splits make \N{n_fits} fits. The results report the mean test accuracy over the splits, a 95\% confidence interval (CI) for that mean, and the 2.5th to 97.5th percentiles of single splits. The interval is the mean plus or minus $1.96\,\mathrm{SD}/\sqrt{n}$, where $n$ is \N{n_splits_ratio}. At one share, SD is the standard deviation over the splits. When the shares are pooled, the five splits drawn with one seed are not independent (they share a shuffle, and their test sets are nested), so SD is the standard deviation of the \N{n_splits_ratio} per-seed means, each the mean of one seed's five test accuracies. All splits resample the same 150 flowers, so the interval describes the choice of splits only, not new flowers.
+
+The baseline is the majority-class rate: the larger class's share of each test set, averaged over splits. It is at least what always predicting one fixed label would score on each split.
+
+The original study used seed 42 at each share, which is one of the \N{n_splits_ratio} seeds. Its five splits came from one shuffle, so each test set sits inside the next larger one. Its \N{n_runs} runs (13 pairs at five shares) are kept as a comparison: the ``Original'' column of Table~\ref{tab:kernels} and the open markers in the figures. The evaluation code checks that its classifier gives the original code's predictions and accuracies on all \N{n_runs} original runs.
+
+As an added comparison, the same splits are evaluated with each feature standardized to mean 0 and standard deviation 1, using the mean and standard deviation of the problem's own training rows.

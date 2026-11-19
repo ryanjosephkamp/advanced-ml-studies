@@ -1,0 +1,53 @@
+{
+ "date": "2026-11-19",
+ "passed": 29610,
+ "failed": 0,
+ "line": "Checked November 19, 2026: 29,610 checks hold this plate's values and sentences in its 2,048 switch states to the study's result files (and to the paper, where it prints them), its channel and band definitions and the held-out folds of the subsets run's 14 cross-validation runs to the study's code, and its 19 sockets to the 10-20 places on an idealized head, and 0 failed.",
+ "groups": [
+  {
+   "name": "every row of results/study/eegmat_subsets.csv is in the plate's data, value for value, as study/extra_checks.py defines them",
+   "passed": 266,
+   "failed": 0
+  },
+  {
+   "name": "all channels and bands shows results/study/summary.csv's row, as the paper does, with the subsets run's mean",
+   "passed": 21,
+   "failed": 0
+  },
+  {
+   "name": "the channels and bands are the study's, and the 19 sockets sit at their 10-20 places",
+   "passed": 300,
+   "failed": 0
+  },
+  {
+   "name": "each cord hangs from its own jack to its own shelf hole, crossing no other cord, jack, or label",
+   "passed": 180,
+   "failed": 0
+  },
+  {
+   "name": "the numbers the paper prints (paper/numbers.tex and table_eegmat.tex) and the chapter's equal the plate's, rounded as the paper does",
+   "passed": 161,
+   "failed": 0
+  },
+  {
+   "name": "exactly the 7 committed combinations light the lamp, in either normalization, and none of the other 1017",
+   "passed": 10227,
+   "failed": 0
+  },
+  {
+   "name": "every readout and sentence the plate can show matches its numbers (all 2,048 switch states)",
+   "passed": 18307,
+   "failed": 0
+  },
+  {
+   "name": "the meter reads every committed value on its scale, its needle settles, and the tour visits the seven in order",
+   "passed": 143,
+   "failed": 0
+  },
+  {
+   "name": "the accent ink reads on the plate's stage in the day and night printings",
+   "passed": 5,
+   "failed": 0
+  }
+ ]
+}

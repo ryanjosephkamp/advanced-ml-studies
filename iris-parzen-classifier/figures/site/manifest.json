@@ -1,0 +1,68 @@
+{
+ "about": "The course book's copies of this study's figures. Each is drawn by the study's own function from the saved data listed, in the book's inks; the checks are described in tools/site_figures.py.",
+ "passed": true,
+ "figures": [
+  {
+   "name": "repeated_split_by_kernel",
+   "source": "repeated_splits.py: plot_by_kernel",
+   "data": {
+    "repeated_splits/repeated_split_results.csv": "4cfe98fcef1c593550b6dde2a8884fa98ce9bb359c97273ac33055aa8e83f88e"
+   },
+   "committed": "repeated_splits/repeated_split_by_kernel.png",
+   "committed_sha256": "a6b306c64851565e002d76f72695a42c8b092137fa414c296a6fe381de772656",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 3740000
+   },
+   "plotted_items": 71,
+   "plotted_fingerprint": "77356f56d62c05c6",
+   "files": {
+    "light": {
+     "file": "repeated_split_by_kernel.light.svg",
+     "bytes": 98600,
+     "sha256": "3b45a4283e52be76826cb035bc1ddb9371dab0ecf71014251724a4f2b8df60bc",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "repeated_split_by_kernel.dark.svg",
+     "bytes": 98600,
+     "sha256": "a5279f371558932777192656f5ade28e6286dddb4487d1cdd885629e29e42a89",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "repeated_split_by_ratio",
+   "source": "repeated_splits.py: plot_by_ratio (per-split accuracies recomputed with evaluate_split, checked against the saved summary)",
+   "data": {
+    "repeated_splits/repeated_split_results.csv": "4cfe98fcef1c593550b6dde2a8884fa98ce9bb359c97273ac33055aa8e83f88e"
+   },
+   "committed": "repeated_splits/repeated_split_by_ratio.png",
+   "committed_sha256": "e4bc232dce6b37bbf22f4e97407e90be13c137191891ec4b9cab8603a1928765",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2700000
+   },
+   "plotted_items": 31,
+   "plotted_fingerprint": "b9f7299a2941d1be",
+   "files": {
+    "light": {
+     "file": "repeated_split_by_ratio.light.svg",
+     "bytes": 79762,
+     "sha256": "1d7305c2c3212fd077e61f48fe3bc6ce73815abb627dd5b9e92f2712bad328f9",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "repeated_split_by_ratio.dark.svg",
+     "bytes": 79762,
+     "sha256": "dd12de05117e24f51fc949dcc7eb4edb767ed49a5b193841b846a982612fc155",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+ "feature_stage_seconds": {
+  "eeg_mmi": 61.9,
+  "bci_civ_2a": 43.0,
+  "bci_civ_2a_late": 42.9,
+  "eeg_ma": 87.4
+ },
+ "variants": {
+  "eeg_mmi": {
+   "n_windows": 4767,
+   "n_subjects": 106,
+   "class_counts": {
+    "0": 2406,
+    "1": 2361
+   },
+   "channels": [
+    "C3..",
+    "Cz..",
+    "C4.."
+   ],
+   "sfreq": 160.0,
+   "dropped_flat_windows": 1,
+   "dropped_files_sampling_rate": [
+    "S088R04.edf",
+    "S088R08.edf",
+    "S088R12.edf",
+    "S092R04.edf",
+    "S092R08.edf",
+    "S092R12.edf",
+    "S100R04.edf",
+    "S100R08.edf",
+    "S100R12.edf"
+   ],
+   "artifact_flagged_windows": 0,
+   "imf_count_p_avg": {
+    "4": 308,
+    "5": 3405,
+    "6": 1048,
+    "7": 6
+   },
+   "imf_count_p_ch": {
+    "4": 655,
+    "5": 9768,
+    "6": 3860,
+    "7": 18
+   },
+   "f0_rows_p_avg": {
+    "5": 308,
+    "6": 3405,
+    "7": 1048,
+    "8": 6
+   },
+   "windows_without_4_imfs_p_avg": 0,
+   "windows_without_4_imfs_p_ch": 0,
+   "emd_seconds_p_avg_p_ch": [
+    17.3,
+    41.1
+   ],
+   "feature_build_seconds": 61.7,
+   "evaluation_seconds": {
+    "split_s": 52.8,
+    "within_s": 4.9,
+    "heldout_s": 24.3,
+    "clustering_s": 18.5
+   }
+  },
+  "bci_civ_2a": {
+   "n_windows": 2590,
+   "n_subjects": 9,
+   "class_counts": {
+    "0": 648,
+    "1": 648,
+    "2": 646,
+    "3": 648
+   },
+   "channels": [
+    "EEG-C3",
+    "EEG-Cz",
+    "EEG-C4"
+   ],
+   "sfreq": 250.0,
+   "dropped_flat_windows": 2,
+   "dropped_files_sampling_rate": [],
+   "artifact_flagged_windows": 262,
+   "imf_count_p_avg": {
+    "5": 306,
+    "6": 2053,
+    "7": 231
+   },
+   "imf_count_p_ch": {
+    "5": 905,
+    "6": 6098,
+    "7": 767
+   },
+   "f0_rows_p_avg": {
+    "6": 306,
+    "7": 2053,
+    "8": 231
+   },
+   "windows_without_4_imfs_p_avg": 0,
+   "windows_without_4_imfs_p_ch": 0,
+   "emd_seconds_p_avg_p_ch": [
+    12.0,
+    27.8
+   ],
+   "feature_build_seconds": 42.9,
+   "evaluation_seconds": {
+    "split_s": 21.0,
+    "within_s": 1.6,
+    "heldout_s": 9.6,
+    "clustering_s": 7.1
+   }
+  },
+  "bci_civ_2a_late": {
+   "n_windows": 2591,
+   "n_subjects": 9,
+   "class_counts": {
+    "0": 648,
+    "1": 648,
+    "2": 647,
+    "3": 648
+   },
+   "channels": [
+    "EEG-C3",
+    "EEG-Cz",
+    "EEG-C4"
+   ],
+   "sfreq": 250.0,
+   "dropped_flat_windows": 1,
+   "dropped_files_sampling_rate": [],
+   "artifact_flagged_windows": 263,
+   "imf_count_p_avg": {
+    "4": 1,
+    "5": 311,
+    "6": 2054,
+    "7": 225
+   },
+   "imf_count_p_ch": {
+    "4": 1,
+    "5": 989,
+    "6": 6060,
+    "7": 721,
+    "8": 2
+   },
+   "f0_rows_p_avg": {
+    "5": 1,
+    "6": 311,
+    "7": 2054,
+    "8": 225
+   },
+   "windows_without_4_imfs_p_avg": 0,
+   "windows_without_4_imfs_p_ch": 0,
+   "emd_seconds_p_avg_p_ch": [
+    11.5,
+    28.3
+   ],
+   "feature_build_seconds": 42.8,
+   "evaluation_seconds": {
+    "split_s": 19.8,
+    "within_s": 1.0,
+    "heldout_s": 6.9,
+    "clustering_s": 4.8
+   }
+  },
+  "eeg_ma": {
+   "n_windows": 4266,
+   "n_subjects": 36,
+   "class_counts": {
+    "0": 3186,
+    "1": 1080
+   },
+   "channels": [
+    "EEG Fp1",
+    "EEG Fp2",
+    "EEG F3",
+    "EEG F4",
+    "EEG Fz"
+   ],
+   "sfreq": 500.0,
+   "dropped_flat_windows": 72,
+   "dropped_files_sampling_rate": [],
+   "artifact_flagged_windows": 0,
+   "imf_count_p_avg": {
+    "3": 6,
+    "4": 1156,
+    "5": 2940,
+    "6": 161,
+    "7": 3
+   },
+   "imf_count_p_ch": {
+    "3": 20,
+    "4": 5146,
+    "5": 15240,
+    "6": 912,
+    "7": 12
+   },
+   "f0_rows_p_avg": {
+    "4": 6,
+    "5": 1156,
+    "6": 2940,
+    "7": 161,
+    "8": 3
+   },
+   "windows_without_4_imfs_p_avg": 6,
+   "windows_without_4_imfs_p_ch": 20,
+   "emd_seconds_p_avg_p_ch": [
+    16.3,
+    69.5
+   ],
+   "feature_build_seconds": 87.3,
+   "evaluation_seconds": {
+    "split_s": 46.2,
+    "within_s": 2.1,
+    "heldout_s": 23.8,
+    "clustering_s": 15.6
+   }
+  }
+ },
+ "evaluate_stage_seconds": 263.3,
+ "settings": {
+  "seed": 2026,
+  "workers": 2,
+  "max_subjects": null,
+  "split_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   42
+  ],
+  "n_perm_null": 200,
+  "n_perm_subject": 200,
+  "n_boot": 2000,
+  "k_neighbors": 5,
+  "bands_hz": [
+   [
+    1.0,
+    4.0
+   ],
+   [
+    4.0,
+    8.0
+   ],
+   [
+    8.0,
+    13.0
+   ],
+   [
+    13.0,
+    30.0
+   ],
+   [
+    30.0,
+    45.0
+   ]
+  ],
+  "n_imfs_f2": 4,
+  "f0_slots": 8,
+  "flat_run_seconds": 0.1
+ },
+ "evaluate_environment": {
+  "python": "3.11.5",
+  "packages": {
+   "numpy": "1.26.4",
+   "scipy": "1.16.3",
+   "scikit-learn": "1.7.2",
+   "mne": "1.11.0",
+   "EMD-signal": null,
+   "matplotlib": "3.10.7",
+   "pandas": "2.3.3"
+  }
+ },
+ "feature_cache": {
+  "eeg_mmi": {
+   "file": "study/eeg_mmi_features.npz"
+  },
+  "bci_civ_2a": {
+   "file": "study/bci_civ_2a_features.npz"
+  },
+  "bci_civ_2a_late": {
+   "file": "study/bci_civ_2a_late_features.npz"
+  },
+  "eeg_ma": {
+   "file": "study/eeg_ma_features.npz"
+  }
+ },
+ "figures_stage_seconds": 1.5,
+ "full_run": {
+  "all_stages_seconds": 494.1,
+  "environment": {
+   "python": "3.11.5",
+   "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2",
+    "mne": "1.11.0",
+    "EMD-signal": "1.9.0",
+    "matplotlib": "3.10.7",
+    "pandas": "2.3.3"
+   }
+  }
+ }
+}

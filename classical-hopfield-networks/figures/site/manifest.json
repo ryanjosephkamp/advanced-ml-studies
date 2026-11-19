@@ -1,0 +1,163 @@
+{
+ "about": "The course book's copies of this study's figures. Each is drawn by the study's own function from the saved data listed, in the book's inks; the checks are described in tools/site_figures.py.",
+ "passed": true,
+ "figures": [
+  {
+   "name": "fig1_recall_vs_load",
+   "source": "study/analyze.py: fig1 at 10% noise (curves and capacities recomputed with load_synthetic and summarize_synthetic, checked against summary_synthetic_curves.csv and summary_capacity.csv)",
+   "data": {
+    "study/results/synthetic_recall.csv.gz": "70f6f0ee1d524a15f382ec9eb5cefbbe0c70f15f3442a4dc9e028aeb1bdfd99d"
+   },
+   "committed": "study/figures/fig1_recall_vs_load.png",
+   "committed_sha256": "86078d199363c523aa59fec5c44d1e70075e676d4dbc2d706106f26644615ed0",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 4650000
+   },
+   "plotted_items": 249,
+   "plotted_fingerprint": "77d8d19490817d38",
+   "files": {
+    "light": {
+     "file": "fig1_recall_vs_load.light.svg",
+     "bytes": 268335,
+     "sha256": "a6d32e42b81537f7a54a83eff277ce455489145e853e20d8e5079cc0b43ed9ea",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig1_recall_vs_load.dark.svg",
+     "bytes": 268335,
+     "sha256": "185defe27301650a207d69e381df5ca907a3af4390b3b127b389718ef2f4cb4c",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig2_capacity_vs_overlap",
+   "source": "study/analyze.py: fig2 (curves and capacities recomputed with load_synthetic and summarize_synthetic, checked against summary_synthetic_curves.csv and summary_capacity.csv)",
+   "data": {
+    "study/results/synthetic_recall.csv.gz": "70f6f0ee1d524a15f382ec9eb5cefbbe0c70f15f3442a4dc9e028aeb1bdfd99d"
+   },
+   "committed": "study/figures/fig2_capacity_vs_overlap.png",
+   "committed_sha256": "35c87a0b86bca9dd14005e2ac10eb996dcc644837bf44f525affbd0690127211",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 3450000
+   },
+   "plotted_items": 63,
+   "plotted_fingerprint": "f97d428cc8ee6445",
+   "files": {
+    "light": {
+     "file": "fig2_capacity_vs_overlap.light.svg",
+     "bytes": 120526,
+     "sha256": "775a19f3a3b19bf8ff7a0c0fefa12f5ea613589de9552cfecbc8b61369897324",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig2_capacity_vs_overlap.dark.svg",
+     "bytes": 120526,
+     "sha256": "dab7789d3c74582bc0d9fb34234c13a211a6ac75060898e6fe31e9ecdbc7fccb",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig3_density_vs_structure",
+   "source": "study/analyze.py: fig3 (curves and capacities recomputed with load_synthetic and summarize_synthetic, checked against summary_synthetic_curves.csv and summary_capacity.csv)",
+   "data": {
+    "study/results/synthetic_recall.csv.gz": "70f6f0ee1d524a15f382ec9eb5cefbbe0c70f15f3442a4dc9e028aeb1bdfd99d",
+    "study/results/synthetic_patterns.csv": "d4aa1cbca80fc1ac882a4c43beea9f20fc613eb2be742d11d01e80970c9bbdd7"
+   },
+   "committed": "study/figures/fig3_density_vs_structure.png",
+   "committed_sha256": "8eed8369c47f704b623dd8cb1a44f23919746731248b5525347c23a1f8a9b889",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 3450000
+   },
+   "plotted_items": 97,
+   "plotted_fingerprint": "e4da7e520ce1c99b",
+   "files": {
+    "light": {
+     "file": "fig3_density_vs_structure.light.svg",
+     "bytes": 130760,
+     "sha256": "efb7e3a74f9b3e7203e2f8635431892063d1b44bffb9c1663d6fba53636b4d03",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig3_density_vs_structure.dark.svg",
+     "bytes": 130760,
+     "sha256": "408b7e131a6044db170ced08c1ee84cc22b069db8355123dc5fac9ec3141074c",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig4_characters_vs_synthetic",
+   "source": "study/analyze.py: fig4 (curves and capacities recomputed with load_synthetic and summarize_synthetic, checked against summary_synthetic_curves.csv and summary_capacity.csv; character results recomputed with summarize_characters, checked against summary_character_subsets.csv and summary_characters_full.csv)",
+   "data": {
+    "study/results/synthetic_recall.csv.gz": "70f6f0ee1d524a15f382ec9eb5cefbbe0c70f15f3442a4dc9e028aeb1bdfd99d",
+    "study/results/characters_subsets.csv": "48dc7ec5cd4fecd68faeafc105f4951dd6da84ef10a234447eb87d17783bbf39"
+   },
+   "committed": "study/figures/fig4_characters_vs_synthetic.png",
+   "committed_sha256": "8ae7aabef0f30f922f55781861a1374e07be83cb8378ddc16e4554b2c773e8b4",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 3450000
+   },
+   "plotted_items": 81,
+   "plotted_fingerprint": "b8a21b7030785663",
+   "files": {
+    "light": {
+     "file": "fig4_characters_vs_synthetic.light.svg",
+     "bytes": 128061,
+     "sha256": "c0853ee8fcc465ced0475e855de06abbe23d2672bc4742ef091a41adf655121b",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig4_characters_vs_synthetic.dark.svg",
+     "bytes": 128061,
+     "sha256": "36e43c2b003b93e743a371fcd6928073909dbf3bc048925f0959b62df4a9cc9c",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig5_pseudoinverse_order_spread",
+   "source": "study/analyze.py: fig5 (character results recomputed with summarize_characters, checked against summary_character_subsets.csv and summary_characters_full.csv)",
+   "data": {
+    "study/results/characters_full.csv": "6e54f0aeb90d48bf6ca107a8926b00c43430c48b22e61bc1abb70f98a9948787"
+   },
+   "committed": "study/figures/fig5_pseudoinverse_order_spread.png",
+   "committed_sha256": "54508c586fee0bf2228696eed415b7ed7132261e713bab504fb4ba87738c635e",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2550000
+   },
+   "plotted_items": 60,
+   "plotted_fingerprint": "12b2e602e3594d0a",
+   "files": {
+    "light": {
+     "file": "fig5_pseudoinverse_order_spread.light.svg",
+     "bytes": 81834,
+     "sha256": "35f57bc7dfb4d9a89c03df8f8b1d9304352328ec5d4169ccc0053847b8a1b3a1",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig5_pseudoinverse_order_spread.dark.svg",
+     "bytes": 81796,
+     "sha256": "cf4f6405cbe9ee7a039f6eb6e3d9a195065e5a4b492b865319dd505a9df311cd",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  }
+ ]
+}

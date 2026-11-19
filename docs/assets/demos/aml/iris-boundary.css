@@ -1,0 +1,127 @@
+/* "Where the rule draws the line" (chapter I). Every rule is scoped to this plate. The class inks
+   follow the chapter's first plate: setosa a deep teal, versicolor the chapter's own violet,
+   virginica a burnt orange, and two species pooled in the plain ink; in the night printing, their
+   chalk versions. Checked for contrast against the stage and for separation under the common
+   color-vision deficiencies (tools/aml/iris-boundary.check.mjs). */
+[data-demo="iris-boundary"] {
+  --ib-setosa: #17766b;
+  --ib-versicolor: var(--accent, #5b3fa0);
+  --ib-virginica: #b8541c;
+  --ib-rest: var(--ink, #131a2b);
+}
+:root[data-theme="dark"] [data-demo="iris-boundary"] {
+  --ib-setosa: #4fb39c;
+  --ib-versicolor: var(--accent-night, #c9b8ff);
+  --ib-virginica: #ffb27d;
+  --ib-rest: var(--ink, #e8ebe2);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-demo="iris-boundary"] {
+    --ib-setosa: #4fb39c;
+    --ib-versicolor: var(--accent-night, #c9b8ff);
+    --ib-virginica: #ffb27d;
+    --ib-rest: var(--ink, #e8ebe2);
+  }
+}
+
+[data-demo="iris-boundary"] .demo-root { min-height: 0; }
+[data-demo="iris-boundary"] .ib-k {
+  display: block; margin: 0 0 5px; font: 400 0.7rem/1.2 var(--type); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2);
+}
+
+/* Controls: the problem and the kernel as radio groups, the Gaussian's width as a slider */
+[data-demo="iris-boundary"] .ib-controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 12px 20px; margin: 0 0 14px; align-items: start; }
+[data-demo="iris-boundary"] .ib-width { grid-column: 1 / -1; }
+[data-demo="iris-boundary"] .ib-problems,
+[data-demo="iris-boundary"] .ib-kernels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+[data-demo="iris-boundary"] .ib-problems button,
+[data-demo="iris-boundary"] .ib-kernels button,
+[data-demo="iris-boundary"] .ib-tool {
+  all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 7px 11px;
+  border: 1px solid var(--rule-2); background: var(--paper); color: var(--ink); font: 400 0.93rem/1.2 var(--serif);
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+[data-demo="iris-boundary"] .ib-pn { font: 700 0.95rem/1 var(--fat); min-width: 0.9em; color: var(--accent-ink); }
+[data-demo="iris-boundary"] .ib-glyph { width: 22px; height: 16px; flex: none; overflow: visible; }
+[data-demo="iris-boundary"] .ib-glyph-line { fill: none; stroke: var(--accent-ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+[data-demo="iris-boundary"] .ib-problems button[aria-checked="true"],
+[data-demo="iris-boundary"] .ib-kernels button[aria-checked="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+[data-demo="iris-boundary"] button[aria-checked="true"] .ib-pn { color: var(--paper); }
+[data-demo="iris-boundary"] button[aria-checked="true"] .ib-glyph-line { stroke: var(--paper); }
+[data-demo="iris-boundary"] .ib-problems button:hover:not([aria-checked="true"]),
+[data-demo="iris-boundary"] .ib-kernels button:hover:not([aria-checked="true"]),
+[data-demo="iris-boundary"] .ib-tool:hover:not(:disabled) { border-color: var(--ink); }
+[data-demo="iris-boundary"] button:focus-visible,
+[data-demo="iris-boundary"] input:focus-visible,
+[data-demo="iris-boundary"] .ib-cv:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+
+[data-demo="iris-boundary"] .ib-wline { display: flex; align-items: center; gap: 12px; }
+[data-demo="iris-boundary"] .ib-track { position: relative; flex: 1 1 auto; min-width: 0; padding-bottom: 14px; }
+[data-demo="iris-boundary"] .ib-range { -webkit-appearance: none; appearance: none; display: block; width: 100%; height: 40px; margin: 0; background: transparent; cursor: pointer; }
+[data-demo="iris-boundary"] .ib-range::-webkit-slider-runnable-track { height: 2px; background: var(--ink-2); }
+[data-demo="iris-boundary"] .ib-range::-moz-range-track { height: 2px; background: var(--ink-2); }
+[data-demo="iris-boundary"] .ib-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 22px; height: 22px; margin-top: -10px; border-radius: 50%;
+  background: var(--paper); border: 2px solid var(--accent-ink); box-shadow: 0 0 0 3px var(--paper-2);
+}
+[data-demo="iris-boundary"] .ib-range::-moz-range-thumb { box-sizing: border-box; width: 22px; height: 22px; border-radius: 50%; background: var(--paper); border: 2px solid var(--accent-ink); }
+[data-demo="iris-boundary"] .ib-mark { position: absolute; top: 27px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; pointer-events: none; }
+[data-demo="iris-boundary"] .ib-mark-tick { width: 2px; height: 7px; background: var(--ink); }
+[data-demo="iris-boundary"] .ib-mark-lab { font: italic 400 0.74rem/1 var(--serif); color: var(--ink); margin-top: 1px; }
+[data-demo="iris-boundary"] .ib-wout { display: block; margin-top: 2px; font: 400 0.84rem/1.3 var(--type); font-variant-numeric: tabular-nums lining-nums; color: var(--ink); }
+[data-demo="iris-boundary"] .ib-width.is-beyond .ib-wout { color: var(--accent-ink); }
+[data-demo="iris-boundary"] .ib-width.is-off .ib-range,
+[data-demo="iris-boundary"] .ib-width.is-off .ib-mark,
+[data-demo="iris-boundary"] .ib-width.is-off .ib-wout { opacity: 0.45; }
+[data-demo="iris-boundary"] .ib-studyw { flex: none; font-size: 0.86rem; padding: 6px 11px; }
+
+/* The plane: transparent, so the plate's graph paper shows through the stipple */
+[data-demo="iris-boundary"] .ib-plane { position: relative; margin: 0 -2px; }
+[data-demo="iris-boundary"] .ib-cv { display: block; width: 100%; height: 330px; cursor: crosshair; touch-action: pan-y pinch-zoom; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+[data-demo="iris-boundary"] .ib-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 6px 0 14px; }
+[data-demo="iris-boundary"] .ib-tool { font-size: 0.88rem; padding: 7px 12px; }
+[data-demo="iris-boundary"] .ib-tool[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+[data-demo="iris-boundary"] .ib-tool:disabled { opacity: 0.45; cursor: default; }
+[data-demo="iris-boundary"] .ib-hint { flex: 1 1 14rem; margin: 0 0 0 6px; font: italic 400 0.84rem/1.35 var(--serif); color: var(--ink-2); }
+
+/* Readouts: the score at the probe, and the rule as fit */
+[data-demo="iris-boundary"] .ib-read { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 12px; }
+[data-demo="iris-boundary"] .ib-card { margin: 0; padding: 11px 14px 12px; background: var(--paper); border: 1px solid var(--rule-2); }
+/* the probe's card is headed like a table in the book: a hairline over it and its label in the accent */
+[data-demo="iris-boundary"] .ib-probe { border-top-color: var(--accent-ink); box-shadow: inset 0 2px 0 var(--paper), inset 0 3px 0 var(--accent-ink); }
+[data-demo="iris-boundary"] .ib-probe > .ib-k { color: var(--accent-ink); }
+[data-demo="iris-boundary"] .ib-big { margin: 0; }
+[data-demo="iris-boundary"] .ib-num { font: 400 2.05rem/1 var(--type); font-variant-numeric: tabular-nums lining-nums; color: var(--ink); letter-spacing: -0.02em; }
+[data-demo="iris-boundary"] .ib-pick { margin: 4px 0 0; min-height: 1.3em; font: 400 0.92rem/1.3 var(--serif); color: var(--ink); display: flex; align-items: center; gap: 7px; }
+[data-demo="iris-boundary"] .ib-swatch { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+[data-demo="iris-boundary"] .ib-gauge { display: block; width: 100%; max-width: 360px; height: auto; margin: 6px 0 4px; overflow: visible; }
+[data-demo="iris-boundary"] .ib-g-lab { font: 400 9.5px var(--type); }
+[data-demo="iris-boundary"] .ib-card-body { margin: 2px 0 0; font: 400 0.95rem/1.45 var(--serif); color: var(--ink); min-height: 4.4em; font-variant-numeric: tabular-nums lining-nums; }
+[data-demo="iris-boundary"] .ib-probe.is-empty .ib-num { color: var(--ink-2); }
+[data-demo="iris-boundary"] .ib-probe.is-empty .ib-card-body { color: var(--ink-2); font-style: italic; }
+[data-demo="iris-boundary"] .ib-fml { margin: 2px 0 8px; font: 400 0.9rem/1.35 var(--type); color: var(--ink); }
+[data-demo="iris-boundary"] .ib-rule-b { margin: 0; font: 400 1.5rem/1.1 var(--type); font-variant-numeric: tabular-nums lining-nums; color: var(--ink); }
+[data-demo="iris-boundary"] .ib-rule-n { margin: 8px 0 0; font: 400 0.86rem/1.4 var(--serif); color: var(--ink-2); }
+
+[data-demo="iris-boundary"] .ib-caption { margin: 14px 0 0; font: 400 1rem/1.5 var(--serif); min-height: 6em; font-variant-numeric: lining-nums; }
+[data-demo="iris-boundary"] .ib-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 10px 0 0; font: 400 0.84rem/1.3 var(--serif); color: var(--ink-2); }
+[data-demo="iris-boundary"] .ib-key { display: inline-flex; align-items: center; gap: 6px; }
+[data-demo="iris-boundary"] .ib-ico { width: 16px; height: 16px; flex: none; overflow: visible; }
+[data-demo="iris-boundary"] .ib-ico-wide { width: 26px; height: 10px; }
+[data-demo="iris-boundary"] .ib-checked { margin: 6px 0 0; font: 400 0.74rem/1.35 var(--type); color: var(--ink-2); opacity: 0.85; }
+[data-demo="iris-boundary"] .ib-checked:empty { display: none; }
+
+@media (max-width: 720px) {
+  [data-demo="iris-boundary"] .ib-controls { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  [data-demo="iris-boundary"] .ib-read { grid-template-columns: 1fr; }
+  [data-demo="iris-boundary"] .ib-problems button,
+  [data-demo="iris-boundary"] .ib-kernels button { font-size: 0.86rem; padding: 6px 8px; gap: 6px; }
+  [data-demo="iris-boundary"] .ib-hint { flex-basis: 100%; margin: 2px 0 0; }
+  [data-demo="iris-boundary"] .ib-num { font-size: 1.8rem; }
+  [data-demo="iris-boundary"] .ib-tool { padding: 6px 10px; font-size: 0.86rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-demo="iris-boundary"] .ib-problems button, [data-demo="iris-boundary"] .ib-kernels button, [data-demo="iris-boundary"] .ib-tool { transition: none; }
+}

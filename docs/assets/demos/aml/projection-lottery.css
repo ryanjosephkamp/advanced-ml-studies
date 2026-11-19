@@ -1,0 +1,121 @@
+/* Chapter III's live plate, "Draw a matrix": a punch-card press. Keys like a card punch's, a card
+   stock in the page's paper, holes in two inks, and a plain ruled frame. Every rule is scoped to the
+   plate. */
+[data-demo="projection-lottery"] .pl { container-type: inline-size; display: grid; gap: 14px; font-family: var(--serif); color: var(--ink); }
+[data-demo="projection-lottery"] .pl p { margin: 0; }
+
+/* the keys */
+[data-demo="projection-lottery"] .pl-controls { display: grid; gap: 10px; }
+[data-demo="projection-lottery"] fieldset { border: 0; margin: 0; padding: 0; min-width: 0; display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+[data-demo="projection-lottery"] legend { float: left; width: 100%; padding: 0; margin: 0 0 5px; font: 400 0.7rem/1.2 var(--type); letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-chip { position: relative; display: inline-flex; }
+[data-demo="projection-lottery"] .pl-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
+[data-demo="projection-lottery"] .pl-chip span { display: inline-flex; align-items: center; min-height: 40px; padding: 6px 12px; border: 1px solid var(--rule-2); border-radius: 2px; background: var(--paper); color: var(--ink); font: 400 0.9rem/1.1 var(--type); cursor: pointer; box-shadow: 0 2px 0 var(--rule-2); transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.12s ease; user-select: none; }
+[data-demo="projection-lottery"] .pl-chip span i { font-family: var(--serif); margin-right: 0.25em; }
+[data-demo="projection-lottery"] .pl-chip:hover span { border-color: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-chip input:checked + span { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 0 0 0 var(--rule-2); transform: translateY(2px); }
+[data-demo="projection-lottery"] .pl-chip input:focus-visible + span { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+[data-demo="projection-lottery"] .pl-row2 { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 18px; }
+[data-demo="projection-lottery"] .pl-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+[data-demo="projection-lottery"] .pl-draw, [data-demo="projection-lottery"] .pl-more { all: unset; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; min-height: 44px; padding: 8px 18px; border-radius: 2px; font: 700 1rem/1.1 var(--serif); transition: transform 0.07s ease, box-shadow 0.07s ease; user-select: none; }
+[data-demo="projection-lottery"] .pl-draw { background: var(--accent-ink); color: var(--paper); border: 1px solid var(--accent-ink); box-shadow: 0 4px 0 color-mix(in srgb, var(--accent-ink) 45%, var(--ink)); }
+[data-demo="projection-lottery"] .pl-more { padding: 8px 14px; background: var(--paper); color: var(--accent-ink); border: 1px solid var(--accent-ink); box-shadow: 0 3px 0 color-mix(in srgb, var(--accent-ink) 35%, transparent); font-weight: 400; font-family: var(--type); font-size: 0.9rem; }
+[data-demo="projection-lottery"] .pl-draw:active { transform: translateY(4px); box-shadow: 0 0 0 transparent; }
+[data-demo="projection-lottery"] .pl-more:active { transform: translateY(3px); box-shadow: 0 0 0 transparent; }
+[data-demo="projection-lottery"] .pl-draw:focus-visible, [data-demo="projection-lottery"] .pl-more:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+[data-demo="projection-lottery"] .pl-def { font-size: 0.92rem; line-height: 1.4; color: var(--ink-2); min-height: 2.8em; }
+
+/* the frame and the card */
+[data-demo="projection-lottery"] .pl-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 296px); gap: 18px; align-items: start; }
+[data-demo="projection-lottery"] .pl-viewcol, [data-demo="projection-lottery"] .pl-cardcol { display: grid; gap: 6px; min-width: 0; }
+[data-demo="projection-lottery"] .pl-view { position: relative; height: 410px; }
+[data-demo="projection-lottery"] .pl-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: pan-y; cursor: grab; outline: none; }
+[data-demo="projection-lottery"] .pl-canvas:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+[data-demo="projection-lottery"] .pl-state { position: absolute; left: 0; top: 0; font: 400 0.68rem/1.3 var(--type); letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2); pointer-events: none; max-width: 100%; }
+[data-demo="projection-lottery"] .pl-hint { position: absolute; right: 0; bottom: 10px; font: italic 0.8rem/1 var(--serif); color: var(--ink-2); pointer-events: none; transition: opacity 0.4s ease; }
+[data-demo="projection-lottery"] .pl-hint.is-quiet { opacity: 0; }
+[data-demo="projection-lottery"] .pl-replay { all: unset; box-sizing: border-box; position: absolute; left: 0; bottom: 0; min-height: 40px; padding: 0 6px 0 0; font: 400 0.8rem/40px var(--type); color: var(--ink-2); cursor: pointer; }
+[data-demo="projection-lottery"] .pl-replay:hover { color: var(--accent-ink); }
+[data-demo="projection-lottery"] .pl-replay:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+[data-demo="projection-lottery"] .pl-card { display: block; max-width: 100%; height: auto; overflow: visible; }
+[data-demo="projection-lottery"] .pl-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: center; font-size: 0.84rem; color: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-key { display: inline-flex; align-items: center; gap: 5px; }
+[data-demo="projection-lottery"] .pl-key svg { width: 13px; height: 13px; display: block; overflow: visible; }
+[data-demo="projection-lottery"] .pl-keynote { font-style: italic; }
+[data-demo="projection-lottery"] .pl-m0 { fill: none; stroke: var(--ink); stroke-width: 1.3; }
+[data-demo="projection-lottery"] .pl-m1 { fill: var(--ink); }
+[data-demo="projection-lottery"] .pl-m2 { fill: var(--ink-2); }
+
+/* the card's parts */
+[data-demo="projection-lottery"] .pl-rail, [data-demo="projection-lottery"] .pl-punch { fill: var(--ink); }
+[data-demo="projection-lottery"] .pl-guide { stroke: var(--rule-2); stroke-width: 1; }
+[data-demo="projection-lottery"] .pl-stock { fill: var(--paper); stroke: var(--ink); stroke-width: 1; }
+[data-demo="projection-lottery"] .pl-hair { stroke: var(--ink); stroke-width: 0.8; }
+[data-demo="projection-lottery"] .pl-rowline { stroke: var(--rule); stroke-width: 1; }
+[data-demo="projection-lottery"] .pl-serial, [data-demo="projection-lottery"] .pl-head, [data-demo="projection-lottery"] .pl-tag, [data-demo="projection-lottery"] .pl-foot { font-family: var(--type); font-size: 10px; letter-spacing: 0.08em; fill: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-head, [data-demo="projection-lottery"] .pl-tag { text-anchor: middle; }
+[data-demo="projection-lottery"] .pl-head { fill: var(--ink); }
+[data-demo="projection-lottery"] .pl-tag-l { text-anchor: start; }
+[data-demo="projection-lottery"] .pl-foot { letter-spacing: 0.02em; }
+[data-demo="projection-lottery"] .pl-name { font-family: var(--serif); font-style: italic; font-size: 13.5px; fill: var(--ink); }
+[data-demo="projection-lottery"] .is-dropped .pl-name { fill: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-strike { stroke: var(--ink-2); stroke-width: 1.2; }
+[data-demo="projection-lottery"] .pl-hatch line { stroke: var(--ink-2); stroke-width: 1; opacity: 0.32; }
+[data-demo="projection-lottery"] .pl-val { font-family: var(--type); font-size: 10px; fill: var(--ink-2); text-anchor: middle; font-variant-numeric: tabular-nums; }
+[data-demo="projection-lottery"] .pl-hole { transform-box: fill-box; transform-origin: center; }
+[data-demo="projection-lottery"] .pl-pos { fill: var(--ink); }
+[data-demo="projection-lottery"] .pl-neg { fill: var(--rubric); }
+[data-demo="projection-lottery"] .pl-zero { fill: none; stroke: var(--ink-2); stroke-width: 1.2; }
+[data-demo="projection-lottery"] .pl-glyph { fill: none; stroke: var(--paper); stroke-width: 1.7; stroke-linecap: round; }
+
+/* the words */
+[data-demo="projection-lottery"] .pl-say { display: grid; gap: 3px; min-height: 3.1em; font-size: 1rem; line-height: 1.45; }
+[data-demo="projection-lottery"] .pl-say-rows { font-weight: 700; }
+[data-demo="projection-lottery"] .pl-flower { min-height: 2.9em; font-size: 0.88rem; line-height: 1.45; color: var(--ink-2); font-style: italic; font-variant-numeric: lining-nums tabular-nums; }
+[data-demo="projection-lottery"] .pl-flower.is-on { font-style: normal; color: var(--ink); border-left: 3px solid var(--accent-ink); padding-left: 9px; }
+
+/* the tally */
+[data-demo="projection-lottery"] .pl-tally { display: grid; gap: 10px; padding-top: 10px; border-top: 1px solid var(--rule-2); }
+[data-demo="projection-lottery"] .pl-tally-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 10px; }
+[data-demo="projection-lottery"] .pl-tally-title { margin: 0; font: 400 0.74rem/1.3 var(--type); letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink); }
+[data-demo="projection-lottery"] .pl-tally-title i { font-family: var(--serif); text-transform: none; }
+[data-demo="projection-lottery"] .pl-clear { all: unset; cursor: pointer; min-height: 40px; padding: 0 2px; font: italic 0.88rem/40px var(--serif); color: var(--ink-2); text-decoration: underline; text-underline-offset: 0.18em; }
+[data-demo="projection-lottery"] .pl-clear:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+[data-demo="projection-lottery"] .pl-bar, [data-demo="projection-lottery"] .pl-scale { display: grid; grid-template-columns: 10.5em minmax(0, 1fr) 8.6em; grid-template-areas: "name track val" ". note note"; gap: 3px 12px; align-items: center; }
+[data-demo="projection-lottery"] .pl-bar-name { grid-area: name; font-size: 0.95rem; }
+[data-demo="projection-lottery"] .pl-track { grid-area: track; position: relative; height: 22px; border-left: 1px solid var(--rule-2); border-right: 1px solid var(--rule-2); background: linear-gradient(to right, var(--rule) 1px, transparent 1px) 0 0 / 25% 100%, linear-gradient(var(--rule-2), var(--rule-2)) 0 50% / 100% 1px no-repeat; }
+[data-demo="projection-lottery"] .pl-band { position: absolute; top: 3px; height: 16px; background: repeating-linear-gradient(-45deg, color-mix(in srgb, var(--ink) 16%, transparent) 0 1px, transparent 1px 4px); border-left: 1px dotted var(--ink-2); border-right: 1px dotted var(--ink-2); transition: left 0.35s ease, width 0.35s ease; }
+[data-demo="projection-lottery"] .pl-band[hidden] { display: none; }
+[data-demo="projection-lottery"] .pl-fill { position: absolute; left: 0; top: 7px; height: 8px; background: var(--accent-ink); transition: width 0.35s ease; }
+[data-demo="projection-lottery"] .pl-theory { position: absolute; top: -4px; height: 30px; width: 0; margin-left: -1px; border-left: 2px solid var(--ink); }
+[data-demo="projection-lottery"] .pl-study { position: absolute; top: 6px; width: 8px; height: 8px; margin-left: -4px; border: 1.5px solid var(--ink-2); background: var(--paper-2); transform: rotate(45deg); }
+[data-demo="projection-lottery"] .pl-bar-val { grid-area: val; text-align: right; font: 400 0.86rem/1.2 var(--type); font-variant-numeric: tabular-nums; white-space: nowrap; }
+[data-demo="projection-lottery"] .pl-bar-note { grid-area: note; font-size: 0.8rem; line-height: 1.4; color: var(--ink-2); white-space: pre-line; }
+[data-demo="projection-lottery"] .pl-scale { grid-template-areas: ". track ."; margin-top: -6px; }
+[data-demo="projection-lottery"] .pl-scale-in { grid-area: track; position: relative; height: 1.1em; font: 400 0.68rem/1 var(--type); color: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-scale-in span { position: absolute; top: 0; transform: translateX(-50%); }
+[data-demo="projection-lottery"] .pl-scale-in span:first-child { transform: none; }
+[data-demo="projection-lottery"] .pl-scale-in span:last-child { transform: translateX(-100%); }
+[data-demo="projection-lottery"] .pl-tally-say { font-size: 0.95rem; line-height: 1.45; }
+[data-demo="projection-lottery"] .pl-formula { font-size: 0.84rem; line-height: 1.45; color: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-nb { white-space: nowrap; }
+
+/* the notes */
+[data-demo="projection-lottery"] .pl-notes { display: grid; gap: 6px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 0.82rem; line-height: 1.45; color: var(--ink-2); }
+[data-demo="projection-lottery"] .pl-notes a { color: inherit; }
+[data-demo="projection-lottery"] .pl-checked { font-style: italic; }
+[data-demo="projection-lottery"] .pl-error { font-style: italic; color: var(--ink-2); padding: 30px 0; }
+
+@container (max-width: 640px) {
+  [data-demo="projection-lottery"] .pl-body { grid-template-columns: minmax(0, 1fr); }
+  [data-demo="projection-lottery"] .pl-view { height: 360px; }
+  [data-demo="projection-lottery"] .pl-cardcol { justify-items: center; }
+  [data-demo="projection-lottery"] .pl-bar { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name val" "track track" "note note"; }
+  [data-demo="projection-lottery"] .pl-scale { grid-template-columns: minmax(0, 1fr); grid-template-areas: "track"; }
+  [data-demo="projection-lottery"] .pl-row2 { align-items: stretch; }
+  [data-demo="projection-lottery"] .pl-actions { flex: 1 1 100%; }
+  [data-demo="projection-lottery"] .pl-draw { flex: 1 1 auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-demo="projection-lottery"] .pl-fill, [data-demo="projection-lottery"] .pl-band, [data-demo="projection-lottery"] .pl-chip span, [data-demo="projection-lottery"] .pl-hint { transition: none; }
+}

@@ -1,0 +1,12 @@
+\section{Data}
+\label{sec:data}
+
+The five data sets come from the UCI Machine Learning Repository \cite{uci}, all under CC BY 4.0: Iris \cite{fisher1936,uciiris}, Breast Cancer Wisconsin (Diagnostic) \cite{wolberg1995,ucibc}, Wine \cite{aeberhard1994,uciwine}, Seeds \cite{charytanowicz2010,uciseeds}, and Glass Identification \cite{german1987}. Table~\ref{tab:data} gives their sizes. The study uses the corrected UCI file for Iris, which matches scikit-learn's copy \cite{pedregosa2011}; the February 13, 2026, run and its replication use the older file, which differs in two rows. In the study, Glass is scored by balanced accuracy, whose chance level is $1/6$, because its classes are unbalanced; the original run and its replication (Tables~\ref{tab:original} and~\ref{tab:replication}) report plain accuracy for every data set, as the report did.
+
+\begin{table}[t]
+\caption{The data sets. The last column is the share of the majority class in the test rows.}
+\label{tab:data}
+\centering
+\footnotesize
+\input{table_data.tex}
+\end{table}

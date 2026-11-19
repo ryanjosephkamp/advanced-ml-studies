@@ -1,0 +1,15 @@
+\section{Data}
+\label{sec:data}
+
+The study uses three public data sets, two from PhysioNet \cite{goldberger2000,pollard2026} and one from the BCI Competition IV, under their licenses. EEG Motor Movement/Imagery (EEG MMI) \cite{schalk2004,eegmmidb} has 109 subjects recorded with 64 channels, at 160 Hz for all but three of them; the study uses runs 4, 8, and 12 (imagined left or right fist) and channels C3, Cz, and C4. EEG During Mental Arithmetic Tasks (EEGMAT) \cite{zyma2019,eegmat} has 36 subjects with 19 channels at 500 Hz, a rest recording and a serial-subtraction recording each; the study uses Fp1, Fp2, F3, F4, and Fz. BCI Competition IV data set 2a \cite{brunner2008,tangermann2012} has 9 subjects with 22 channels at 250 Hz and four imagined classes; the study uses the training sessions and channels C3, Cz, and C4. EEG MMI and BCI IV 2a give one two-second window per cue, starting at the cue, and the EEGMAT recordings are cut into consecutive two-second windows. A fourth variant, ``BCI late,'' takes the BCI IV 2a window from 0.5 to 2.5 s after the cue and serves only as a check (Section~\ref{sec:emd}). Table~\ref{tab:data} gives the windows after the fixes.
+
+\begin{table}[t]
+\caption{The data sets after the fixes. Subjects, windows, classes, channels, and sampling rate.}
+\label{tab:data}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\input{table_data.tex}
+\end{table}
+
+\emph{What was dropped.} Three EEG MMI subjects (S088, S092, and S100) were recorded at 128 Hz, which is \N{dg:eeg_mmi:dropped_files} files, and are excluded, so the counts are \N{dg:eeg_mmi:n_subjects} subjects and \N{dg:eeg_mmi:n_windows} windows and not 109 and 4,918. One EEG MMI window and \N{dg:bci_civ_2a:dropped_flat_windows} BCI IV 2a windows were dropped as flat (a channel constant for 0.1 s or more). Every EEGMAT recording ends with about a second that is not EEG, so the last window of each recording (\N{dg:eeg_ma:dropped_flat_windows} windows, 36 per class) was dropped. EEGMAT has \N{dg:eeg_ma:class_0} windows at rest and \N{dg:eeg_ma:class_1} during arithmetic, so its classes are imbalanced. On EEGMAT, EMD returned fewer than four IMFs for \N{dg:eeg_ma:windows_without_4_imfs_p_avg} windows of the channel average, which the corrected baseline and the averaged IMF features (Section~\ref{sec:design}) leave out, and for \N{dg:eeg_ma:windows_without_4_imfs_p_ch} windows in at least one channel, which the per-channel IMF features leave out; band power and Hilbert band power keep all \N{dg:eeg_ma:n_windows} windows. BCI IV 2a keeps \N{dg:bci_civ_2a:artifact_flagged_windows} windows that carry the data set's artifact flag.

@@ -1,0 +1,17 @@
+{
+  "dataset": "eeg_mmi",
+  "feature_type": "inst_freq",
+  "similarity_measure": "itakura_saito",
+  "learning_task": "clustering",
+  "metrics": {
+    "silhouette_score": 0.3602114640114794,
+    "ari": -0.00019735020008872085,
+    "nmi": 4.6317293072092e-06
+  },
+  "parameters": {
+    "n_segments": 4767,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

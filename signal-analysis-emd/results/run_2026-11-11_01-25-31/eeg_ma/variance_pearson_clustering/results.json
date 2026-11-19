@@ -1,0 +1,17 @@
+{
+  "dataset": "eeg_ma",
+  "feature_type": "variance",
+  "similarity_measure": "pearson",
+  "learning_task": "clustering",
+  "metrics": {
+    "silhouette_score": 0.5270048239109413,
+    "ari": 0.0354043344440485,
+    "nmi": 0.018014726550824915
+  },
+  "parameters": {
+    "n_segments": 4260,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

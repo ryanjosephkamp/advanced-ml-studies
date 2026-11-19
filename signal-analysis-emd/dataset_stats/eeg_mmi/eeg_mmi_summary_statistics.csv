@@ -1,0 +1,12 @@
+statistic,value
+global_mean,-4.0989983707578676e-19
+global_std,1.0
+global_min,-5.200974560316367
+global_max,6.808003413663449
+global_median,-0.04844317190590664
+per_segment_mean_range,"[-1.1102230246251565e-15, 6.883382752675971e-16]"
+per_segment_std_range,"[0.9999999999999998, 1.0000000000000002]"
+class_left_hand_count,2406
+class_left_hand_pct,50.5
+class_right_hand_count,2361
+class_right_hand_pct,49.5

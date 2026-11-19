@@ -1,0 +1,22 @@
+{
+  "dataset": "eeg_ma",
+  "feature_type": "inst_freq",
+  "similarity_measure": "pearson",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.6425534305456481,
+    "f1_per_class": {
+      "resting": 0.8114558472553699,
+      "mental_arithmetic": 0.14316702819956617
+    },
+    "accuracy": 0.690923317683881,
+    "balanced_accuracy": 0.49610976934174056,
+    "f1_macro": 0.47731143772746804
+  },
+  "parameters": {
+    "n_segments": 4260,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

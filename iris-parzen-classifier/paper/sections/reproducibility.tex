@@ -1,0 +1,3 @@
+\section*{Reproducing the results}
+
+\texttt{pip install -r requirements.txt} installs the package versions used. \texttt{kamp\_hw1.py} runs the original single-split study, and \texttt{repeated\_splits.py} runs the random-split evaluation and the standardized-feature comparison. Both load Iris through scikit-learn and run on an ordinary computer. The result files are \texttt{parzen\_classifier\_results.csv}, \texttt{repeated\_splits/\allowbreak repeated\_split\_\allowbreak results.csv}, and \texttt{repeated\_splits/\allowbreak standardized\_\allowbreak feature\_results.csv}. Every result number and table in this paper is generated from them, and the distances between species means from the Iris data, by \texttt{paper/make\_numbers.py}.

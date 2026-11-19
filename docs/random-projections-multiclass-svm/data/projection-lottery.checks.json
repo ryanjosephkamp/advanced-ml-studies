@@ -1,0 +1,372 @@
+{
+ "date": "November 19, 2026",
+ "passed": 52,
+ "failed": 0,
+ "line": "Checked November 19, 2026: all 52 checks passed, against the study's own code (study/common.py), its committed files, and the paper's printed numbers.",
+ "checks": [
+  {
+   "name": "the 150 flowers are the study's Iris file (data/iris/bezdekIris.data), value for value",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the four measurement names are UCI's, in order (data/iris/iris.names)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the three species are the file's classes, in the study's (sorted) order",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the families and their s for d = 4 are study/common.py's",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the page's target sizes, 2 and 3, are among the study's for Iris",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the study's draws with an all-zero column equal study/results/raw_svm.csv.gz (15 cells)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the paper's numbers in the data equal paper/numbers.tex",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "37 of the study's 100 Eq. 4 draws at k = 2 had a zero column, as the paper prints",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the plate's petal rows are petal length and petal width",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the data names the files it was read from",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the page's min-max scaling equals scikit-learn's MinMaxScaler on the study's Iris",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every matrix equals study/common.py's projection_matrix on the same G and U (40,000 matrices)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "X R / sqrt(k) in the page equals study/common.py's project (600 matrices, 150 flowers each)",
+   "worst": "8.88e-16",
+   "tol": "1.00e-12",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the flowers span exactly rank(R) dimensions (numpy's matrix_rank of the projected cloud)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the rank the sentences use equals numpy's matrix_rank (30,000 matrices)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Gaussian entries have mean 0 (3,600,000 entries)",
+   "worst": "0.351",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "Gaussian entries have variance 1",
+   "worst": "0.139",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "Gaussian entries follow the standard normal law (Kolmogorov-Smirnov distance times sqrt(n), 200,000 entries; 1.95 is the 0.1% critical value)",
+   "worst": "0.82",
+   "tol": "1.95",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Eq. 3's entries take exactly the study's values (−1.0000000000000000, +1.0000000000000000)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Eq. 3's entries have the study's probabilities (3,600,000 entries)",
+   "worst": "0.412",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "Eq. 4's entries take exactly the study's values (−1.7320508075688772, 0, +1.7320508075688772)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Eq. 4's entries have the study's probabilities (3,600,000 entries)",
+   "worst": "1.86",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "Very sparse's entries take exactly the study's values (−1.4142135623730951, 0, +1.4142135623730951)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "Very sparse's entries have the study's probabilities (3,600,000 entries)",
+   "worst": "1.92",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "One per column's entries take exactly the study's values (−2.0000000000000000, 0, +2.0000000000000000)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "One per column's entries have the study's probabilities (3,600,000 entries)",
+   "worst": "0.806",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "the sparse matrices are masks of the same signs (every family's nonzero entries have G's sign; 20,000 cards)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "k = 2 uses the first two columns of the k = 3 matrix, as in the study",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "a card drawn again from its seed is the same card (2,000 cards)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "consecutive cards of a seed differ",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "theory for Eq. 4 at k = 2: a zero column 35.6%, as the paper prints (z:theory_zero_iris = 35.6)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "theory for Eq. 4 at k = 2: both petal rows zero 19.8%, as the paper prints (z:theory_both_iris = 19.8)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the theory equals exact enumeration over every zero pattern (5 families, k = 2 and 3)",
+   "worst": "8.33e-16",
+   "tol": "1.00e-12",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the formulas the plate writes out evaluate to its theory values",
+   "worst": "0",
+   "tol": "1.00e-12",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "sampled shares of both events land within 4 standard errors of theory (300,000 draws per setting)",
+   "worst": "1.28",
+   "tol": "4",
+   "unit": " standard errors",
+   "pass": true
+  },
+  {
+   "name": "the 95% band equals SciPy's binomial quantiles (220 cases)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "at least 95% of runs land on the whole counts each band's sentence prints, both ends included, by SciPy's binomial law, and its rounded shares hold every count in it (220 cases; three draws of Eq. 4 at k = 3, both petal rows zero: 0 to 1 of 3, 97.8% of runs; one draw of Eq. 4 at k = 2: all of them)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "shares round half up to one decimal as paper/make_numbers.py does (49,450 shares)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "coordinates round half up to two decimals as the paper's rnd does (18,000 values)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every dropped-measurement sentence names exactly the all-zero rows, and the rest as used (240,000 draws)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every column sentence names exactly the all-zero columns and how many dimensions the projected flowers span",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every branch of the two sentences occurs in the sample (16 branches)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "each family's sentence states the study's values, probabilities, and s",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every tally sentence and label carries its run's counts, shares, theory, and band (600 simulated runs)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the tally counts each of the reader's draws, with its zero column and petal rows, and none of the 16,715 cards the plate draws on its own (600 simulated runs)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "every flower readout reads the flower's file values and its scaled and projected coordinates (3,000 readouts)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the chapter page carries the plate, its data file, and its script",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the model checked here is the one in the site's source",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the address's seed is its decimal digits, read exactly and taken modulo 2^32, and anything else is no seed (18 addresses: ?seed=9007199254740993 is seed 1, ?seed=4294967296 and ?seed=0 are seed 0, and ?seed=7abc, -0, 42.5, and 6e3 are none); the plate's ?seed= link reads back as the same seed and cards (403 links)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the bars' short labels are the model's counts, and with no draws of the reader's in the tally, after a reset or the plate's own cards, they say \"no draws of yours\" (no \"yet\")",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the notes on the families and on changing a setting say what the plate does: the Gaussian family is G itself and the others take G's signs and U's mask; once a card exists, a change keeps its G and U, with the chosen family's rule and the first k columns (2,000 cards; the mask stays the same from Gaussian to Eq. 3 on 2,000 and from Eq. 4 to very sparse at k = 2 on 457, so it promises no different mask)",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  },
+  {
+   "name": "the seed line promises cards by number, with the same matrix for the same family and k, and names the plate's own cards, on the built view. Expected: unseeded at seed 42, the plate draws cards 1 and 2 on its own and the reader's first draw is card 3; at its link, ?seed=42, the plate draws only card 1 on its own, two draws reach card 3, and the line says to reload, with no link to the address already open; on both visits, the view's radio inputs then make each of the 50 changes one radio can make (at each k, each family to each other family; in each family, each k to the other), one change event each, and after every event card 3 prints the entries of seed 42's card 3 for the family and k then chosen, under the seed line and link the visit showed before its first change; ?seed=4294967296 shows seed 0 and links ?seed=0. Seen: 2 and 1 cards drawn on their own, first draw card 3, card 3 after two draws, 50 and 50 of the 50 changes made, and those entries and that line after 95 of 95 and 95 of 95 change events",
+   "worst": "0",
+   "tol": "0",
+   "unit": "",
+   "pass": true
+  }
+ ]
+}

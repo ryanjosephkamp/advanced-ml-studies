@@ -1,0 +1,53 @@
+{
+ "date": "2026-11-19",
+ "passed": 609847,
+ "failed": 0,
+ "line": "Checked November 19, 2026: 609,847 checks hold this plate's samples, sums, shares, frequencies, and sentences to the study's file, a recomputation in Python, and the paper, and 0 failed.",
+ "groups": [
+  {
+   "name": "every sample in the plate's data equals results/study/imf_example.csv",
+   "passed": 2574,
+   "failed": 0
+  },
+  {
+   "name": "the window is EEG MMI at 160 Hz, C3, Cz, and C4 averaged and z-scored, stored to six digits, as the code and the paper say",
+   "passed": 339,
+   "failed": 0
+  },
+  {
+   "name": "the numbers the paper prints, and the figure it shows this window in, equal the plate's",
+   "passed": 12,
+   "failed": 0
+  },
+  {
+   "name": "at every sample, the six pieces add up to the signal within the file's rounding (exact decimal arithmetic)",
+   "passed": 645,
+   "failed": 0
+  },
+  {
+   "name": "every share, frequency, and residual the page computes equals a recomputation in Python (numpy, and the study's own frequency function)",
+   "passed": 7165,
+   "failed": 0
+  },
+  {
+   "name": "every sentence and readout the plate can show matches its numbers (all 64 on/off states, the loop, and 30,000 fader states)",
+   "passed": 564790,
+   "failed": 0
+  },
+  {
+   "name": "the idle loop starts on the whole signal and brings the pieces in one at a time, from the residue up to IMF 1",
+   "passed": 32839,
+   "failed": 0
+  },
+  {
+   "name": "the cursor reads the samples themselves, a keyboard step is announced apart from the visible readout, and each fader settles on its level without overshooting",
+   "passed": 1474,
+   "failed": 0
+  },
+  {
+   "name": "the chapter's ink and the second ink read on the plate's stage in both printings",
+   "passed": 9,
+   "failed": 0
+  }
+ ]
+}

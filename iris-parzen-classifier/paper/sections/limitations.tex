@@ -1,0 +1,9 @@
+\section{Limitations}
+
+\emph{Raw features.} The numbers are for measurements in centimeters. The polynomial kernels' result on Problem 3 depends on that choice, and the Gaussian's lead there shrinks when the features are standardized. A likely reason is that, on raw measurements, the polynomial kernel values span a wide range, so the class-mean rule mostly compares vector lengths; this was not tested.
+
+\emph{One width.} The Gaussian width was fixed by the assignment and not tuned. Nothing here shows that $\sigma = 1/\sqrt{2}$ is a good width.
+
+\emph{Equal class weights.} The rule weights each class equally, whatever its size, which ignores the 1:2 class ratio on the one-versus-rest problems. The majority-class baseline is the larger class's share of each test set, which is at least what a fixed prediction scores on average. On Problem 4, whose classes are equal in size, either fixed label scores 0.5 in expectation, against a baseline of \N{maj_p4}.
+
+\emph{Resampling and data.} The random splits resample the same 150 flowers and are not stratified, so class shares vary by split. The intervals describe the choice of splits, not new data. No significance tests were run, so ``higher'' means higher in the means and shares reported. The classifier outputs labels, not probabilities, so no calibration was examined. No decision boundaries were examined either. Iris is one small data set.

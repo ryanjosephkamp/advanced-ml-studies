@@ -1,0 +1,17 @@
+{
+  "dataset": "eeg_mmi",
+  "feature_type": "variance",
+  "similarity_measure": "euclidean",
+  "learning_task": "clustering",
+  "metrics": {
+    "silhouette_score": 0.5699061581896083,
+    "ari": 4.9373854954969196e-05,
+    "nmi": 9.663944471754082e-05
+  },
+  "parameters": {
+    "n_segments": 4767,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

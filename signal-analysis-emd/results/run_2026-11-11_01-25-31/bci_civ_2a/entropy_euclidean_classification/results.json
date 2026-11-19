@@ -1,0 +1,24 @@
+{
+  "dataset": "bci_civ_2a",
+  "feature_type": "entropy",
+  "similarity_measure": "euclidean",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.22458368957510905,
+    "f1_per_class": {
+      "left_hand": 0.2936170212765957,
+      "right_hand": 0.23529411764705882,
+      "both_feet": 0.19791666666666666,
+      "tongue": 0.17177914110429449
+    },
+    "accuracy": 0.23037323037323038,
+    "balanced_accuracy": 0.2304850647634153,
+    "f1_macro": 0.2246517366736539
+  },
+  "parameters": {
+    "n_segments": 2590,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

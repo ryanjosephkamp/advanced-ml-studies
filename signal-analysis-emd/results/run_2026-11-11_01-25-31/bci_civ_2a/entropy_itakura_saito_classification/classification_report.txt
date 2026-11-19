@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+   left_hand       0.25      0.36      0.30       194
+  right_hand       0.23      0.22      0.22       194
+   both_feet       0.20      0.20      0.20       194
+      tongue       0.20      0.13      0.16       195
+
+    accuracy                           0.23       777
+   macro avg       0.22      0.23      0.22       777
+weighted avg       0.22      0.23      0.22       777

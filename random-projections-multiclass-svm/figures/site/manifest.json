@@ -1,0 +1,161 @@
+{
+ "about": "The course book's copies of this study's figures. Each is drawn by the study's own function from the saved data listed, in the book's inks; the checks are described in tools/site_figures.py.",
+ "passed": true,
+ "figures": [
+  {
+   "name": "fig7_original_pipeline_100_draws",
+   "source": "study/figures.py: fig_replication",
+   "data": {
+    "study/results/raw_replication.csv.gz": "f2e647ffc305f1563e25e7d2c9479a329293755bd458d31e8247c273bcef3570"
+   },
+   "committed": "study/figures/fig7_original_pipeline_100_draws.png",
+   "committed_sha256": "afa3195417f986b26410e79286016bb1cae84a64c1dbfb0a9d2f4ff8dcf9c019",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 1865451
+   },
+   "plotted_items": 43,
+   "plotted_fingerprint": "fa015ceb2264913a",
+   "files": {
+    "light": {
+     "file": "fig7_original_pipeline_100_draws.light.svg",
+     "bytes": 171065,
+     "sha256": "214b451965d9a391dffaa57d91717942e8af5c47298a1cd969c56af6ef5dcf31",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig7_original_pipeline_100_draws.dark.svg",
+     "bytes": 171065,
+     "sha256": "213d7621fe4130cd41485878855ae6c750694168eaa6a9b4bb61936066487c6c",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig1_accuracy_vs_k",
+   "source": "study/figures.py: fig_accuracy_vs_k",
+   "data": {
+    "study/results/accuracy_summary.csv": "ab1ace6d023d84c45842605bce56f54fe434f1259c560e0c23ddd5cd01a489b9"
+   },
+   "committed": "study/figures/fig1_accuracy_vs_k.png",
+   "committed_sha256": "120a872d229ee786ce6582f11953822b92cf8a5163e580fd718806c6b933953c",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 4492491
+   },
+   "plotted_items": 111,
+   "plotted_fingerprint": "653bd50f93fb108f",
+   "files": {
+    "light": {
+     "file": "fig1_accuracy_vs_k.light.svg",
+     "bytes": 166450,
+     "sha256": "ab985c9eb04dd872004e11c76367dff8477778a66d7d0079b74e58229a3c5fdf",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig1_accuracy_vs_k.dark.svg",
+     "bytes": 166450,
+     "sha256": "77884d004c38dad37eda9bc9857e5cb946183cafdc7f5d2d1bb50737071a5055",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig2_paired_difference_vs_gaussian",
+   "source": "study/figures.py: fig_paired",
+   "data": {
+    "study/results/paired_differences.csv": "e9fec486e3c9e176b8a28e1aef76282a24b65c851853a31165b8c60522b7411e"
+   },
+   "committed": "study/figures/fig2_paired_difference_vs_gaussian.png",
+   "committed_sha256": "0c31e040bc214c08efdf0a1fa14943d793e26499c72684200e9baf9479b1a355",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 4303041
+   },
+   "plotted_items": 123,
+   "plotted_fingerprint": "29256e7853965142",
+   "files": {
+    "light": {
+     "file": "fig2_paired_difference_vs_gaussian.light.svg",
+     "bytes": 179837,
+     "sha256": "092dfbf6e860ef17fc56d4f77634cd6da24b72a40e3b1c89768e528fc4b309ee",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig2_paired_difference_vs_gaussian.dark.svg",
+     "bytes": 179837,
+     "sha256": "8c97e61fa4e46c9e789d6d9e603d99864e0bf10ec2715941b1cacdfcd702a9e6",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig3_distortion_variance_vs_theory",
+   "source": "study/figures.py: fig_variance",
+   "data": {
+    "study/results/variance_check.csv": "2ff155ca9bb6ce96d2480f1e4b98e182834ea7984d3d546f68b6ca447659ed15"
+   },
+   "committed": "study/figures/fig3_distortion_variance_vs_theory.png",
+   "committed_sha256": "7b49ac15e4b1626a04c4369483126c2b2bccaebf600cf0ae7ac1234342a18d66",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 4566314
+   },
+   "plotted_items": 89,
+   "plotted_fingerprint": "8ba839deb03cfdc0",
+   "files": {
+    "light": {
+     "file": "fig3_distortion_variance_vs_theory.light.svg",
+     "bytes": 138099,
+     "sha256": "d00271034a78523279439231467d993ad25b0421b49065413ba6b31df498da17",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig3_distortion_variance_vs_theory.dark.svg",
+     "bytes": 138099,
+     "sha256": "a4b053b9e4ee2b58f3429ab177646bf04f4420c37fb652b9e5cfd067aadd4515",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig4_distortion_tails_vs_bound",
+   "source": "study/figures.py: fig_tails",
+   "data": {
+    "study/results/distortion_summary.csv": "3c9490750fc1c132d02777b2a68d14662cf4f3da403ac1c1eba6df20771ee4d7"
+   },
+   "committed": "study/figures/fig4_distortion_tails_vs_bound.png",
+   "committed_sha256": "ac053c1b7edf8d607e0783a9e090a76d402188427f44014d19ad05e0bc71b3c3",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2092791
+   },
+   "plotted_items": 40,
+   "plotted_fingerprint": "5c631cc5252ebdff",
+   "files": {
+    "light": {
+     "file": "fig4_distortion_tails_vs_bound.light.svg",
+     "bytes": 103055,
+     "sha256": "77d24682401ba1c1182d820916624fe78c863797b9947421c3cb524f4e7067a0",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig4_distortion_tails_vs_bound.dark.svg",
+     "bytes": 103055,
+     "sha256": "393c72bb7ad227aa7bcf4d9e69bdbd112907ff0f56af79e1de8ad7e889948182",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  }
+ ]
+}

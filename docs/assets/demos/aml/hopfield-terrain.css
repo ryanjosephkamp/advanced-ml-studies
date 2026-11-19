@@ -1,0 +1,97 @@
+/* The recall terrain (chapter II): an engraved survey on the plate's graph paper. Controls are
+   ruled type-specimen keys; readouts are set in the typewriter cut with tabular figures. */
+[data-demo="hopfield-terrain"] .ht { display: flex; flex-direction: column; gap: 12px; }
+[data-demo="hopfield-terrain"] .ht-bar { display: flex; flex-wrap: wrap; gap: 10px 26px; align-items: center; order: 1; }
+[data-demo="hopfield-terrain"] .ht-rules { order: 2; }
+[data-demo="hopfield-terrain"] .ht-stage { order: 3; }
+[data-demo="hopfield-terrain"] .ht-note { order: 4; }
+[data-demo="hopfield-terrain"] .ht-read { order: 5; }
+[data-demo="hopfield-terrain"] .ht-legend { order: 6; }
+[data-demo="hopfield-terrain"] .ht-hint { order: 7; }
+[data-demo="hopfield-terrain"] .ht-checked { order: 8; }
+
+[data-demo="hopfield-terrain"] .ht-radios { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 0; }
+[data-demo="hopfield-terrain"] .ht-lab { font: 400 0.72rem/1 var(--type); letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-2); margin-right: 6px; min-width: 3.4em; }
+[data-demo="hopfield-terrain"] .ht-radios button {
+  all: unset; box-sizing: border-box; cursor: pointer; min-height: 40px; padding: 8px 12px;
+  border: 1px solid var(--rule-2); background: var(--paper); color: var(--ink);
+  font: 400 0.95rem/1.2 var(--serif); white-space: nowrap; transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+[data-demo="hopfield-terrain"] .ht-radios button:hover { border-color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-radios button[aria-checked="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: inset 0 -3px 0 var(--accent-ink); }
+[data-demo="hopfield-terrain"] .ht-radios button:disabled { opacity: 0.4; cursor: not-allowed; }
+[data-demo="hopfield-terrain"] button:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+
+/* The stage: transparent, so the plate's graph paper shows through. */
+[data-demo="hopfield-terrain"] .ht-stage {
+  position: relative; height: clamp(340px, 62vw, 520px); border: 1px solid var(--rule);
+  touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent;
+}
+[data-demo="hopfield-terrain"] .ht-stage:active { cursor: grabbing; }
+[data-demo="hopfield-terrain"] .ht-stage.is-map { cursor: crosshair; }
+[data-demo="hopfield-terrain"] .ht-stage:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 3px; }
+[data-demo="hopfield-terrain"] .ht-gl, [data-demo="hopfield-terrain"] .ht-hud { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+[data-demo="hopfield-terrain"] .ht-gl { opacity: 0; transition: opacity 0.45s ease; }
+[data-demo="hopfield-terrain"] .ht-stage.is-ready .ht-gl { opacity: 1; }
+[data-demo="hopfield-terrain"] .ht-stage.is-map .ht-gl { opacity: 0; }
+[data-demo="hopfield-terrain"] .ht-tools { position: absolute; top: 10px; right: 10px; display: flex; gap: 4px; }
+[data-demo="hopfield-terrain"] .ht-tool {
+  all: unset; box-sizing: border-box; cursor: pointer; min-width: 40px; height: 40px; display: grid; place-items: center;
+  border: 1px solid var(--rule-2); background: var(--paper); color: var(--ink); font: 400 1.15rem/1 var(--type);
+}
+[data-demo="hopfield-terrain"] .ht-tool:hover { border-color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-reset { padding: 0 11px; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+[data-demo="hopfield-terrain"] .ht-stage.is-map .ht-tools { display: none; }
+[data-demo="hopfield-terrain"] .ht-stage:not(.is-ready):not(.is-map) .ht-tools { visibility: hidden; }
+
+[data-demo="hopfield-terrain"] .ht-note { margin: -4px 0 0; font: italic 400 0.86rem/1.35 var(--serif); color: var(--ink-2); min-height: 1.35em; }
+
+/* The reading: a field-book entry. */
+[data-demo="hopfield-terrain"] .ht-read {
+  display: grid; grid-template-columns: auto 1fr; gap: 6px 22px; align-items: end; padding: 12px 14px 13px;
+  border: 1px solid var(--rule-2); border-left: 3px solid var(--accent-ink); background: var(--paper); min-height: 10.5em;
+}
+[data-demo="hopfield-terrain"] .ht-fig { display: flex; flex-direction: column; gap: 2px; }
+[data-demo="hopfield-terrain"] .ht-figlab { font: 400 0.68rem/1.1 var(--type); letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-2); }
+/* not uppercased: a capital rho would read as P */
+[data-demo="hopfield-terrain"] .ht-coords dt { font: italic 400 0.8rem/1.1 var(--serif); color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-big { font: 400 2.2rem/1.05 var(--type); font-variant-numeric: lining-nums tabular-nums; color: var(--ink); }
+[data-demo="hopfield-terrain"] .ht-ci { font: 400 0.9rem/1.2 var(--type); font-variant-numeric: lining-nums tabular-nums; color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-coords { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; padding-bottom: 3px; }
+[data-demo="hopfield-terrain"] .ht-coords div { display: flex; flex-direction: column; gap: 3px; }
+[data-demo="hopfield-terrain"] .ht-coords dd { margin: 0; font: 400 1rem/1.15 var(--type); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+[data-demo="hopfield-terrain"] .ht-say, [data-demo="hopfield-terrain"] .ht-rowsay { grid-column: 1 / -1; margin: 0; font-size: 0.96rem; line-height: 1.45; }
+[data-demo="hopfield-terrain"] .ht-say { margin-top: 4px; padding-top: 8px; border-top: 1px solid var(--rule); }
+[data-demo="hopfield-terrain"] .ht-rowsay { color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-read .ht-big, [data-demo="hopfield-terrain"] .ht-read .ht-ci, [data-demo="hopfield-terrain"] .ht-read .ht-coords { transition: opacity 0.2s; }
+[data-demo="hopfield-terrain"] .ht-read.is-moving .ht-big, [data-demo="hopfield-terrain"] .ht-read.is-moving .ht-ci,
+[data-demo="hopfield-terrain"] .ht-read.is-moving .ht-coords { opacity: 0.35; }
+[data-demo="hopfield-terrain"] .ht-read.is-moving .ht-say { font-style: italic; color: var(--ink-2); }
+
+[data-demo="hopfield-terrain"] .ht-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; font-size: 0.84rem; line-height: 1.5; color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-legend span { display: inline-flex; align-items: center; gap: 6px; }
+[data-demo="hopfield-terrain"] .ht-legend svg { width: 22px; height: 12px; flex: none; overflow: visible; }
+[data-demo="hopfield-terrain"] .ht-legend svg[viewBox^="0 0 12"] { width: 12px; }
+[data-demo="hopfield-terrain"] .k-dot { fill: var(--ink); }
+[data-demo="hopfield-terrain"] .k-thin { stroke: var(--ink); stroke-width: 1; fill: none; opacity: 0.7; }
+[data-demo="hopfield-terrain"] .k-half { stroke: var(--accent-ink); stroke-width: 3; fill: none; }
+[data-demo="hopfield-terrain"] .k-p50 { fill: var(--accent-ink); }
+[data-demo="hopfield-terrain"] .k-open { fill: none; stroke: var(--accent-ink); stroke-width: 1.6; }
+[data-demo="hopfield-terrain"] .k-drop { stroke: var(--ink-2); stroke-width: 0.8; fill: none; }
+[data-demo="hopfield-terrain"] .ht-hint { margin: 0; font: italic 400 0.84rem/1.4 var(--serif); color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-checked { margin: 0; font: 400 0.74rem/1.4 var(--type); color: var(--ink-2); }
+[data-demo="hopfield-terrain"] .ht-checked:empty { display: none; }
+
+@media (max-width: 640px) {
+  [data-demo="hopfield-terrain"] .ht-rules { order: 6; }
+  [data-demo="hopfield-terrain"] .ht-radios button { padding: 8px 10px; font-size: 0.9rem; }
+  [data-demo="hopfield-terrain"] .ht-stage { height: 380px; }
+  [data-demo="hopfield-terrain"] .ht-tools { top: auto; bottom: 8px; right: 8px; }
+  [data-demo="hopfield-terrain"] .ht-read { grid-template-columns: 1fr; align-items: start; min-height: 13.5em; }
+  [data-demo="hopfield-terrain"] .ht-big { font-size: 1.9rem; }
+  [data-demo="hopfield-terrain"] .ht-reset { padding: 0 9px; }
+}
+@media (hover: none) { [data-demo="hopfield-terrain"] .ht-stage { cursor: default; } }
+@media (prefers-reduced-motion: reduce) {
+  [data-demo="hopfield-terrain"] .ht-gl, [data-demo="hopfield-terrain"] .ht-radios button, [data-demo="hopfield-terrain"] .ht-read * { transition: none; }
+}

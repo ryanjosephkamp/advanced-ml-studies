@@ -1,0 +1,5 @@
+# macOS folder metadata
+.DS_Store
+
+# Console logs that scripts/kamp_hw2.py writes on every run
+printouts/

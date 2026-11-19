@@ -1,0 +1,12 @@
+statistic,value
+global_mean,4.6636654011445865e-20
+global_std,1.0
+global_min,-5.803978123170146
+global_max,5.502990312513351
+global_median,0.010382300549206242
+per_segment_mean_range,"[-1.1368683772161603e-16, 1.1368683772161603e-16]"
+per_segment_std_range,"[0.9999999999999998, 1.0000000000000002]"
+class_resting_count,3186
+class_resting_pct,74.7
+class_mental_arithmetic_count,1080
+class_mental_arithmetic_pct,25.3

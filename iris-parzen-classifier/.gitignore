@@ -1,0 +1,8 @@
+# macOS folder metadata
+.DS_Store
+
+# Python bytecode (repeated_splits.py imports kamp_hw1.py)
+__pycache__/
+
+# Per-split outputs that kamp_hw1.py rewrites on every run
+split_*/

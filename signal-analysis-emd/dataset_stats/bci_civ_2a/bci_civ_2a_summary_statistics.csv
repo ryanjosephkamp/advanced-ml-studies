@@ -1,0 +1,16 @@
+statistic,value
+global_mean,-8.778906387769577e-20
+global_std,1.0
+global_min,-6.749258455439201
+global_max,6.682297223061193
+global_median,-0.012231452896271554
+per_segment_mean_range,"[-1.1368683772161603e-16, 1.1368683772161603e-16]"
+per_segment_std_range,"[0.9999999999999998, 1.0000000000000002]"
+class_left_hand_count,648
+class_left_hand_pct,25.0
+class_right_hand_count,648
+class_right_hand_pct,25.0
+class_both_feet_count,646
+class_both_feet_pct,24.9
+class_tongue_count,648
+class_tongue_pct,25.0

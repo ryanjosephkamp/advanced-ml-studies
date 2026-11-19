@@ -1,0 +1,18 @@
+\section{Background}
+\label{sec:background}
+
+\subsection{Distortion and the matrix families}
+
+For two points that differ by $\delta$, a $d \times k$ random matrix $R$ with independent entries of mean 0 and variance 1 maps the squared distance to $\lVert \delta R\rVert^2 / k$. Write $q = \lVert \delta R\rVert^2 / (k\lVert\delta\rVert^2)$ for the ratio of the projected to the original squared distance. Then, $\mathbb{E}\,q = 1$, and if the entries have fourth moment $s$,
+\begin{equation}
+\operatorname{Var}(q) = \frac{2 + (s - 3)\,\kappa}{k}, \qquad \kappa = \frac{\sum_i \delta_i^4}{(\sum_i \delta_i^2)^2}. \label{eq:variance}
+\end{equation}
+The study uses five families, built from one Gaussian matrix $G$ and one uniform matrix $U$ per draw so that the families share signs: the Gaussian itself ($s = 3$); Eq.~3, entries $\pm 1$ ($s = 1$); Eq.~4, entries $\sqrt{3}\,\mathrm{sign}(G)\,[U < 1/3]$ ($s = 3$); a very sparse matrix, each entry nonzero with probability $1/\sqrt{d}$ ($s = \sqrt{d}$); and one nonzero per column on average ($s = d$), in which each entry is nonzero with probability $1/d$, so some columns come out all zero. Equation~\eqref{eq:variance} says that Eq.~3 has a smaller variance of $q$ than the Gaussian, Eq.~4 the same, and matrices with $s > 3$ a larger one, in proportion to $\kappa$. The very sparse family has $s = \sqrt{d}$, which is below 3 on Iris (\N{z:svs:iris}) and Seeds (\N{z:svs:seeds}): there, it is denser than Eq.~4, and over \N{vm:draws} draws, its variance is \N{vsr:iris} and \N{vsr:seeds} times the Gaussian's. Equation~\eqref{eq:variance} is a statement about a second moment. The laws differ: Eq.~4 maps a pair to a single point with positive probability, and a Gaussian never does.
+
+\subsection{What the Johnson--Lindenstrauss theorem guarantees here}
+
+Achlioptas's sufficient condition is $k \ge k_0 = (4 + 2\beta)\ln n / (\varepsilon^2/2 - \varepsilon^3/3)$, which is at least $24 \ln n$ as $\varepsilon \to 1$ and $\beta \to 0$. For these data, that is \N{z:k0:iris} (Iris) to \N{z:k0:breast_cancer} (Breast Cancer). Every target size in this study is at most 24, and $k_0$ exceeds every $d$ (at most 30), so the condition is not met at any $k$ here and could not favor projecting these data. That means the theorem gives no guarantee. It does not mean that distortion must be large.
+
+\subsection{Support vector machines}
+
+The assignment trained four kernels: linear, polynomial of degree 2 and 3, and radial basis function (RBF). The original run used scikit-learn's defaults, which leave the polynomial kernels' offset at zero, so they depend on the origin. The study tunes every kernel (Section~\ref{sec:design}).

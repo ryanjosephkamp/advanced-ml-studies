@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Four studies from Advanced Machine Learning, revised and extended: kernels on Iris, Hopfield networks, sparse random projections, and EMD features on EEG.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%274%27%20fill%3D%27%23f3f4ef%27%2F%3E%3Crect%20x%3D%272%27%20y%3D%272%27%20width%3D%2713%27%20height%3D%2713%27%20rx%3D%271.5%27%20fill%3D%27%235b3fa0%27%2F%3E%3Crect%20x%3D%2717%27%20y%3D%272%27%20width%3D%2713%27%20height%3D%2713%27%20rx%3D%271.5%27%20fill%3D%27%23a8561c%27%2F%3E%3Crect%20x%3D%272%27%20y%3D%2717%27%20width%3D%2713%27%20height%3D%2713%27%20rx%3D%271.5%27%20fill%3D%27%2312756a%27%2F%3E%3Crect%20x%3D%2717%27%20y%3D%2717%27%20width%3D%2713%27%20height%3D%2713%27%20rx%3D%271.5%27%20fill%3D%27%23a3283a%27%2F%3E%3C%2Fsvg%3E">
+<link rel="canonical" href="https://ryanjosephkamp.github.io/advanced-ml-studies/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Advanced Machine Learning Studies">
+<meta property="og:title" content="Advanced Machine Learning Studies">
+<meta property="og:url" content="https://ryanjosephkamp.github.io/advanced-ml-studies/">
+<meta property="og:description" content="Four studies from Advanced Machine Learning, revised and extended: kernels on Iris, Hopfield networks, sparse random projections, and EMD features on EEG.">
+<meta property="og:image" content="https://ryanjosephkamp.github.io/advanced-ml-studies/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Advanced Machine Learning Studies, by Ryan Kamp. CS 7063 Advanced Machine Learning, spring 2026, University of Cincinnati. Contents: I. Eyeing the Iris: four kernels, four problems. II. Alphabet amnesia: why a Hopfield network forgets its letters. III. Shape-shifting: geometry preservation with sparse random projections. IV. EMD for EEG.">
+<meta name="twitter:card" content="summary_large_image">
+<title>Advanced Machine Learning Studies</title>
+<meta name="color-scheme" content="light dark">
+<meta name="book-order" content="contents iris-parzen-classifier classical-hopfield-networks random-projections-multiclass-svm signal-analysis-emd">
+<link rel="index" href="index.html">
+<link rel="stylesheet" href="assets/book.css?v=ced509ca35">
+<script src="assets/book.js?v=9707fc1218"></script>
+<link rel="stylesheet" href="assets/themes/monograph/theme.css?v=eb6ed8f2c4">
+</head>
+<body class="is-title">
+<a class="skip" href="#main">Skip to the text</a>
+<header class="head"><a class="brand" href="index.html">Advanced Machine Learning Studies</a>
+<nav aria-label="Book"><a href="index.html#contents">Contents</a><button class="mode" type="button">◐</button></nav></header>
+<nav class="edge" aria-label="Thumb index"><a href="index.html" style="--c:var(--ink-2)" aria-label="Contents" aria-current="page"></a><a href="iris-parzen-classifier/index.html" style="--c:#5b3fa0" aria-label="Chapter I"></a><a href="classical-hopfield-networks/index.html" style="--c:#a8561c" aria-label="Chapter II"></a><a href="random-projections-multiclass-svm/index.html" style="--c:#12756a" aria-label="Chapter III"></a><a href="signal-analysis-emd/index.html" style="--c:#a3283a" aria-label="Chapter IV"></a></nav>
+<main id="main">
+<section class="title-page">
+<p class="kicker">CS 7063 Advanced Machine Learning, University of Cincinnati</p>
+<h1 class="t">Advanced Machine Learning Studies</h1>
+<p class="sub">Studies from Spring 2026, revised and extended</p>
+<div class="rule"></div>
+<p class="by">by Ryan Kamp</p>
+</section>
+<p class="how pencil">Note. Tap a printed plate to lift it off the page, and pinch, scroll, or drag to look closer. Live plates sit on graph paper: they read the study&#x27;s committed results, or say plainly when they compute something new in the page.</p>
+<section class="contents" id="contents"><h2>Contents</h2><ol><li><a href="iris-parzen-classifier/index.html" style="--accent:#5b3fa0"><span class="no">I.</span><span class="name"><em>Eyeing the Iris</em>: four kernels, four problems</span><span class="sum">One rule that labels a flower by the nearer class average, four kernels, and four problems on Iris: what the kernel changes, and how little the training share moves test accuracy averaged over all 13 problem–kernel pairs and the 500 random splits at each share.</span></a></li><li><a href="classical-hopfield-networks/index.html" style="--accent:#a8561c"><span class="no">II.</span><span class="name"><em>Alphabet amnesia</em>: why a Hopfield network forgets its letters</span><span class="sum">Why a Hopfield network built as the assignment specifies recalls none of 18 dense character bitmaps from noisy copies, and how overlap, density, and the learning rule change exact recall as more patterns are stored.</span></a></li><li><a href="random-projections-multiclass-svm/index.html" style="--accent:#12756a"><span class="no">III.</span><span class="name"><em>Shape-shifting</em>: geometry preservation with sparse random projections</span><span class="sum">Sparse random matrices shrink four to thirty features before a support vector machine: how well they keep class neighborhoods, and how one sparse draw can cost accuracy.</span></a></li><li><a href="signal-analysis-emd/index.html" style="--accent:#a3283a"><span class="no">IV.</span><span class="name"><em>EMD for EEG</em></span><span class="sum">Empirical mode decomposition against plain band power on three EEG data sets: a corrected baseline, the features compared, and what the original split hid.</span></a></li></ol></section>
+<nav class="shelf" aria-label="The other course books"><p class="kicker">The other course books</p><ul><li><a href="https://ryanjosephkamp.github.io/deep-learning-studies/"><span class="name">Deep Learning Studies</span><span class="sum">CS 6073 Deep Learning, Fall 2025</span></a></li><li><a href="https://ryanjosephkamp.github.io/generative-ai-studies/"><span class="name">Generative AI Studies</span><span class="sum">CS 6078 Generative AI, Spring 2026</span></a></li></ul></nav>
+</main>
+<footer class="foot"><div class="foot-inner">
+<p class="foot-title">Advanced Machine Learning Studies</p>
+<nav aria-label="Book and source"><a href="index.html">Title page and contents</a><a href="https://github.com/ryanjosephkamp/advanced-ml-studies">The repository on GitHub</a></nav>
+<p class="fine">CS 7063 Advanced Machine Learning, University of Cincinnati, Spring 2026. The code is under the MIT License; each study credits its data.</p>
+<div class="site-credit">
+  <p class="site-credit-made">Made by <a href="https://ryanjosephkamp.github.io/">Ryan Kamp</a></p>
+  <ul class="site-credit-social" aria-label="Ryan Kamp online">
+    <li><a href="https://ryanjosephkamp.github.io/" aria-label="Ryan Kamp’s website" title="Website"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 5.7 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-5.7-3.9-9.2S9.4 5.4 12 2.8Z"/></g></svg></a></li>
+    <li><a href="https://github.com/ryanjosephkamp/" aria-label="Ryan Kamp on GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+    <li><a href="https://www.linkedin.com/in/ryanjosephkamp/" aria-label="Ryan Kamp on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+    <li><a href="https://x.com/ryanjosephkamp" aria-label="Ryan Kamp on X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a></li>
+    <li><a href="https://m.youtube.com/@RyanJosephKamp" aria-label="Ryan Kamp on YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li>
+  </ul>
+  <a class="site-credit-sponsor" href="https://github.com/sponsors/ryanjosephkamp"><svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 16.8S3 12.6 3 7.6A3.6 3.6 0 0 1 10 6a3.6 3.6 0 0 1 7 1.6c0 5-7 9.2-7 9.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Sponsor on GitHub</a>
+</div>
+
+</div></footer>
+<div class="lifted" hidden role="dialog" aria-modal="true" aria-label="Plate">
+<div class="bar"><span class="title"></span><button class="close" type="button" aria-label="Put the plate back">✕</button></div>
+<div class="stage"><div class="sheet"><img alt=""></div></div>
+<p class="lift-cap"></p>
+</div>
+</body>
+</html>

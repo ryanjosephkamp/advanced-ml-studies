@@ -1,0 +1,22 @@
+{
+  "dataset": "eeg_ma",
+  "feature_type": "variance",
+  "similarity_measure": "itakura_saito",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.6832939960166933,
+    "f1_per_class": {
+      "resting": 0.8273866923818708,
+      "mental_arithmetic": 0.2572614107883817
+    },
+    "accuracy": 0.7198748043818466,
+    "balanced_accuracy": 0.5451898918840064,
+    "f1_macro": 0.5423240515851262
+  },
+  "parameters": {
+    "n_segments": 4260,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

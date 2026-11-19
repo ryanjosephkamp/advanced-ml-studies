@@ -1,0 +1,22 @@
+{
+  "dataset": "eeg_mmi",
+  "feature_type": "entropy",
+  "similarity_measure": "itakura_saito",
+  "learning_task": "classification",
+  "metrics": {
+    "f1_score": 0.5065664139646264,
+    "f1_per_class": {
+      "left_hand": 0.5151098901098901,
+      "right_hand": 0.49786628733997157
+    },
+    "accuracy": 0.506638714185884,
+    "balanced_accuracy": 0.506521807078754,
+    "f1_macro": 0.5064880887249308
+  },
+  "parameters": {
+    "n_segments": 4767,
+    "n_imfs": 4,
+    "window_length": 2.0,
+    "seed": 42
+  }
+}

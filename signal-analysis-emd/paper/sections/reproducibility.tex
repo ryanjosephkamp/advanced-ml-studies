@@ -1,0 +1,3 @@
+\section*{Reproducing the results}
+
+\texttt{scripts/download\_data.py} fetches the raw files and checks them against \texttt{data/raw\_files.sha256}. \texttt{scripts/kamp\_hw4.py} runs the corrected baseline and \texttt{study/run\_study.py} the study, each with the raw and cache directories as arguments, and \texttt{study/extra\_checks.py}, with the cache directory, runs the per-subject tests and the EEGMAT subsets. The tables and most result numbers in this paper are generated from the files in \texttt{results/} by \texttt{paper/make\_numbers.py}; the March counts, some small counts, and a few constants, such as band edges and channel counts, are written into the text.

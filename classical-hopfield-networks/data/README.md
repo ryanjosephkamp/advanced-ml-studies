@@ -1,0 +1,1 @@
+The character patterns (`characters.mat` and `test.mat`, and their CSV copies) were provided with the course CS 7063 Advanced Machine Learning, University of Cincinnati; `scripts/get_data.py` makes the validation sets in `valid_datasets/` from them.

@@ -1,0 +1,83 @@
+/* How alike the characters are (chapter II): a woven quilt of overlaps on the plate's graph paper, a
+   pair laid side by side with cross-stitches, and the selvage of all pairs. Every rule is scoped to
+   this plate. */
+[data-demo="hopfield-overlaps"] .ho { display: flex; flex-direction: column; gap: 12px; }
+[data-demo="hopfield-overlaps"] .ho-bar { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+
+/* Controls: tabs of tape, the chosen one ruled in ink with the chapter's ink sewn along its foot. */
+[data-demo="hopfield-overlaps"] .ho-radios { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0; }
+[data-demo="hopfield-overlaps"] .ho-lab { font: 400 0.7rem/1 var(--type); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); margin-right: 6px; }
+[data-demo="hopfield-overlaps"] .ho-radios button, [data-demo="hopfield-overlaps"] .ho-play {
+  all: unset; box-sizing: border-box; cursor: pointer; min-height: 40px; padding: 8px 13px; display: inline-flex; align-items: center;
+  border: 1px dashed var(--rule-2); background: color-mix(in srgb, var(--paper) 70%, transparent); color: var(--ink-2);
+  font: italic 400 0.95rem/1.2 var(--serif); white-space: nowrap; transition: color 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+[data-demo="hopfield-overlaps"] .ho-radios button:hover, [data-demo="hopfield-overlaps"] .ho-play:hover { color: var(--ink); border-color: var(--ink-2); }
+[data-demo="hopfield-overlaps"] .ho-radios button[aria-checked="true"] {
+  color: var(--ink); font-style: normal; border: 1px solid var(--ink); background: var(--paper);
+  box-shadow: inset 0 -3px 0 var(--accent-ink);
+}
+[data-demo="hopfield-overlaps"] .ho-play { margin-left: auto; font: 400 0.72rem/1 var(--type); letter-spacing: 0.08em; text-transform: uppercase; }
+[data-demo="hopfield-overlaps"] .ho-play.is-on { color: var(--ink); border-style: solid; }
+[data-demo="hopfield-overlaps"] .ho-play:disabled { display: none; }
+[data-demo="hopfield-overlaps"] button:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+
+[data-demo="hopfield-overlaps"] .ho-body { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(16px, 3vw, 30px); align-items: start; }
+[data-demo="hopfield-overlaps"] .ho-quilt { min-width: 0; }
+/* The stage: transparent, so the plate's graph paper shows through the cloth. */
+[data-demo="hopfield-overlaps"] .ho-stage {
+  position: relative; touch-action: manipulation; cursor: crosshair; user-select: none; -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent; min-height: 200px;
+}
+[data-demo="hopfield-overlaps"] .ho-stage:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
+[data-demo="hopfield-overlaps"] .ho-cv { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+[data-demo="hopfield-overlaps"] .ho-ordernote { margin: 8px 0 0; font: italic 400 0.84rem/1.4 var(--serif); color: var(--ink-2); }
+
+/* The pair: a sewn-on label. */
+[data-demo="hopfield-overlaps"] .ho-pair {
+  min-width: 0; padding: 10px 14px 13px; background: var(--paper);
+  border: 1px solid var(--rule-2); outline: 1px dashed var(--rule-2); outline-offset: -6px;
+}
+[data-demo="hopfield-overlaps"] .ho-pairhead {
+  display: flex; justify-content: space-between; gap: 8px; margin: 2px 2px 10px; font: 400 0.7rem/1.2 var(--type);
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2);
+}
+[data-demo="hopfield-overlaps"] .ho-pairhead span:first-child { color: var(--ink); }
+[data-demo="hopfield-overlaps"] .ho-pairhead span:last-child { color: var(--accent-ink); }
+[data-demo="hopfield-overlaps"] .ho-cmp { display: block; width: 100%; height: auto; max-width: 340px; margin: 0 auto; overflow: visible; }
+[data-demo="hopfield-overlaps"] .ho-cbody { fill: var(--paper); }
+[data-demo="hopfield-overlaps"] .ho-cgrid { fill: none; stroke: var(--rule); stroke-width: 0.5; }
+[data-demo="hopfield-overlaps"] .ho-cframe { fill: none; stroke: var(--rule-2); stroke-width: 0.8; }
+[data-demo="hopfield-overlaps"] .ho-cink { fill: var(--ink); }
+[data-demo="hopfield-overlaps"] .ho-xhalo { fill: none; stroke: var(--paper); stroke-width: 3.6; stroke-linecap: round; }
+[data-demo="hopfield-overlaps"] .ho-x { fill: none; stroke: var(--rubric); stroke-width: 1.7; stroke-linecap: round; }
+[data-demo="hopfield-overlaps"] .ho-cnum { font: 400 9px var(--type); fill: var(--ink-2); letter-spacing: 0.04em; }
+[data-demo="hopfield-overlaps"] .ho-gapn { font: 400 22px var(--type); fill: var(--rubric); }
+[data-demo="hopfield-overlaps"] .ho-gapl { font: italic 400 9px var(--serif); fill: var(--ink-2); }
+[data-demo="hopfield-overlaps"] .ho-figs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 10px 2px 0; padding-top: 8px; border-top: 1px solid var(--rule); }
+[data-demo="hopfield-overlaps"] .ho-figlab { flex-basis: 100%; font: 400 0.66rem/1 var(--type); letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-2); }
+[data-demo="hopfield-overlaps"] .ho-big { font: 400 2.1rem/1.05 var(--type); font-variant-numeric: lining-nums tabular-nums; color: var(--ink); }
+[data-demo="hopfield-overlaps"] .ho-frac { font: 400 0.86rem/1.2 var(--type); font-variant-numeric: lining-nums tabular-nums; color: var(--ink-2); }
+[data-demo="hopfield-overlaps"] .ho-say { margin: 8px 2px 0; font-size: 0.94rem; line-height: 1.45; min-height: 5.8em; font-variant-numeric: lining-nums tabular-nums; }
+
+[data-demo="hopfield-overlaps"] .ho-selv { display: block; width: 100%; height: 104px; }
+[data-demo="hopfield-overlaps"] .ho-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 0.84rem; line-height: 1.5; color: var(--ink-2); }
+[data-demo="hopfield-overlaps"] .ho-legend > span { display: inline-flex; align-items: center; gap: 7px; }
+[data-demo="hopfield-overlaps"] .ho-sw { width: 20px; height: 20px; flex: none; }
+[data-demo="hopfield-overlaps"] .ho-legnote { flex-basis: 100%; margin: 2px 0 0; font-style: italic; }
+[data-demo="hopfield-overlaps"] .ho-stats { margin: 0; padding-top: 10px; border-top: 1px solid var(--rule-2); font-size: 0.96rem; line-height: 1.5; font-variant-numeric: lining-nums tabular-nums; }
+[data-demo="hopfield-overlaps"] .ho-checked { margin: 0; font: 400 0.74rem/1.4 var(--type); color: var(--ink-2); }
+[data-demo="hopfield-overlaps"] .ho-checked:empty { display: none; }
+
+@media (max-width: 760px) {
+  [data-demo="hopfield-overlaps"] .ho-body { grid-template-columns: 1fr; }
+  [data-demo="hopfield-overlaps"] .ho-say { min-height: 0; }
+}
+@media (max-width: 640px) {
+  [data-demo="hopfield-overlaps"] .ho-radios button { padding: 8px 10px; font-size: 0.9rem; }
+  [data-demo="hopfield-overlaps"] .ho-play { margin-left: 0; }
+  [data-demo="hopfield-overlaps"] .ho-big { font-size: 1.85rem; }
+  [data-demo="hopfield-overlaps"] .ho-pair { padding: 9px 11px 12px; }
+}
+@media (hover: none) { [data-demo="hopfield-overlaps"] .ho-stage { cursor: default; } }
+@media (prefers-reduced-motion: reduce) { [data-demo="hopfield-overlaps"] .ho-radios button { transition: none; } }

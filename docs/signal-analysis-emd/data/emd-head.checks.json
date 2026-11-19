@@ -1,0 +1,43 @@
+{
+ "date": "2026-11-19",
+ "passed": 196736,
+ "failed": 0,
+ "line": "Checked November 19, 2026: 196,736 checks hold this plate's values and sentences to the study's spectra and the paper, its electrode positions to the 10-20 rules on an idealized head, and its colors to 3:1 contrast with the page for the two end inks and to a scale that, at 20 sampled levels a side, moves steadily away from the neutral ink with near-equal lightness on both sides, and 0 failed.",
+ "groups": [
+  {
+   "name": "every value in the plate's data equals its row in results/study/spectra.csv",
+   "passed": 2720,
+   "failed": 0
+  },
+  {
+   "name": "the numbers the paper prints (paper/numbers.tex) equal the plate's, rounded as the paper does",
+   "passed": 1669,
+   "failed": 0
+  },
+  {
+   "name": "C3, Cz, and C4 sit at their 10-20 positions, and the views keep the subject's left on the left",
+   "passed": 1946,
+   "failed": 0
+  },
+  {
+   "name": "every state the plate can show reads its numbers straight from the data, at a measured frequency",
+   "passed": 8208,
+   "failed": 0
+  },
+  {
+   "name": "every readout and sentence the plate can show matches its numbers (all variants, all frequencies, 5,000 random states)",
+   "passed": 182135,
+   "failed": 0
+  },
+  {
+   "name": "the notes under the plate: the intervals caveat, with its addition for few subjects, how the average channel was made, and the keyboard hint",
+   "passed": 41,
+   "failed": 0
+  },
+  {
+   "name": "the diverging scale's inks read on the day page and the night board, apart from the accent",
+   "passed": 17,
+   "failed": 0
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+\section{Introduction}
+
+The classifier studied here comes from the Parzen-window family. Every training point of a class gets the same weight, and a new point is labeled by comparing its average kernel similarity to each class, after subtracting a bias term. With a Gaussian kernel, these averages are proportional to Parzen density estimates \cite{parzen1962}. With other kernels, they are other similarity scores, and the same rule applies. Nothing is tuned: the only quantities taken from the training set are the two class means in the kernel's feature space and the bias, so given the data and the kernel, the classifier is fixed.
+
+This paper compares four kernels on four binary problems built from Fisher's Iris data \cite{fisher1936}, chosen to range from linearly separable classes to a class that lies between the two parts of the other. It asks two questions. Which kernel classifies best on each problem, and why? Does the share of flowers used for training change accuracy?
+
+The original coursework evaluated each training share on one random split. Because all five splits came from the same shuffle, their test sets were nested, and each share was a single draw. This version evaluates every share on \N{n_splits_ratio} random splits and keeps the original splits for comparison. That evaluation is the main result here, and it changes some of the original conclusions: accuracies are lower on average, and, unlike the original report, which found 90/10 best, the average over problem--kernel pairs shows no trend with training share.

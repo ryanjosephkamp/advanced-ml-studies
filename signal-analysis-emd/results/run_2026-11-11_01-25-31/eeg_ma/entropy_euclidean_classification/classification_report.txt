@@ -1,0 +1,8 @@
+                   precision    recall  f1-score   support
+
+          resting       0.75      0.89      0.81       955
+mental_arithmetic       0.27      0.12      0.16       323
+
+         accuracy                           0.70      1278
+        macro avg       0.51      0.50      0.49      1278
+     weighted avg       0.63      0.70      0.65      1278

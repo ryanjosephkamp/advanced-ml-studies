@@ -1,0 +1,127 @@
+/* The Iris specimen case (chapter I). Every rule is scoped to this plate. The three species' inks:
+   setosa a deep teal, versicolor the chapter's own violet, virginica a burnt orange; in the night
+   printing, their chalk versions. Checked for contrast against the stage and for separation under
+   the common color-vision deficiencies (tools/aml/iris-specimens.check.mjs). */
+[data-demo="iris-specimens"] {
+  --iris-setosa: #17766b;
+  --iris-versicolor: var(--accent, #5b3fa0);
+  --iris-virginica: #b8541c;
+  --is-accent: var(--accent, #5b3fa0);
+}
+:root[data-theme="dark"] [data-demo="iris-specimens"] {
+  --iris-setosa: #4fb39c;
+  --iris-versicolor: var(--accent-night, #c9b8ff);
+  --iris-virginica: #ffb27d;
+  --is-accent: var(--accent-night, #c9b8ff);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) [data-demo="iris-specimens"] {
+    --iris-setosa: #4fb39c;
+    --iris-versicolor: var(--accent-night, #c9b8ff);
+    --iris-virginica: #ffb27d;
+    --is-accent: var(--accent-night, #c9b8ff);
+  }
+}
+
+[data-demo="iris-specimens"] .demo-root { min-height: 0; }
+[data-demo="iris-specimens"] .is-k {
+  display: block; margin: 0 0 5px; font: 400 0.7rem/1.2 var(--type); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2);
+}
+
+/* Controls: the problem as a radio group, and the three measurements drawn */
+[data-demo="iris-specimens"] .is-controls { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px 22px; margin: 0 0 12px; align-items: end; }
+[data-demo="iris-specimens"] .is-problems { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+[data-demo="iris-specimens"] .is-problems button,
+[data-demo="iris-specimens"] .is-tool {
+  all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 7px 11px;
+  border: 1px solid var(--rule-2); background: var(--paper); color: var(--ink); font: 400 0.93rem/1.2 var(--serif);
+}
+[data-demo="iris-specimens"] .is-pn { font: 700 0.95rem/1 var(--fat); min-width: 0.9em; color: var(--is-accent); }
+[data-demo="iris-specimens"] .is-problems button[aria-checked="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+[data-demo="iris-specimens"] .is-problems button[aria-checked="true"] .is-pn { color: var(--paper); }
+[data-demo="iris-specimens"] .is-problems button:hover:not([aria-checked="true"]),
+[data-demo="iris-specimens"] .is-tool:hover:not(:disabled) { border-color: var(--ink); }
+[data-demo="iris-specimens"] button:focus-visible,
+[data-demo="iris-specimens"] select:focus-visible,
+[data-demo="iris-specimens"] .is-cv:focus-visible { outline: 2px solid var(--is-accent); outline-offset: 2px; }
+
+[data-demo="iris-specimens"] .is-axes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+[data-demo="iris-specimens"] .is-axis { display: block; min-width: 0; }
+[data-demo="iris-specimens"] .is-axis .is-k { margin-bottom: 3px; }
+[data-demo="iris-specimens"] select {
+  -webkit-appearance: none; appearance: none; box-sizing: border-box; width: 100%; min-height: 40px; margin: 0; padding: 6px 22px 6px 9px;
+  border: 1px solid var(--rule-2); border-radius: 0; color: var(--ink); font: 400 0.9rem/1.2 var(--serif); cursor: pointer;
+  background-color: var(--paper);
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-2) 50%), linear-gradient(-45deg, transparent 50%, var(--ink-2) 50%);
+  background-size: 5px 5px, 5px 5px; background-position: right 12px center, right 7px center; background-repeat: no-repeat;
+  text-overflow: ellipsis;
+}
+
+/* The case */
+[data-demo="iris-specimens"] .is-case { position: relative; margin: 0 -2px; }
+[data-demo="iris-specimens"] .is-cv { display: block; width: 100%; height: 360px; touch-action: pan-y; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; }
+[data-demo="iris-specimens"] .is-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 6px 0 14px; }
+[data-demo="iris-specimens"] .is-tool { font-size: 0.88rem; padding: 7px 12px; }
+[data-demo="iris-specimens"] .is-tool[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+[data-demo="iris-specimens"] .is-tool:disabled { opacity: 0.45; cursor: default; }
+[data-demo="iris-specimens"] .is-zooms { display: inline-flex; }
+[data-demo="iris-specimens"] .is-zoom { justify-content: center; min-width: 40px; padding: 4px 0; font: 400 1.15rem/1 var(--type); }
+[data-demo="iris-specimens"] .is-zoom + .is-zoom { border-left: 0; }
+[data-demo="iris-specimens"] .is-wheel {
+  position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); margin: 0; padding: 5px 12px; pointer-events: none;
+  background: var(--ink); color: var(--paper); font: 400 0.84rem/1.3 var(--serif); white-space: nowrap;
+  opacity: 0; transition: opacity 0.2s;
+}
+[data-demo="iris-specimens"] .is-wheel.is-on { opacity: 0.92; }
+[data-demo="iris-specimens"] .is-hint { flex: 1 1 14rem; margin: 0 0 0 6px; font: italic 400 0.84rem/1.35 var(--serif); color: var(--ink-2); }
+
+/* Readouts: the distance between the averages, and the picked specimen's label */
+[data-demo="iris-specimens"] .is-read { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+[data-demo="iris-specimens"] .is-avg,
+[data-demo="iris-specimens"] .is-card { margin: 0; padding: 11px 14px 12px; background: var(--paper); border: 1px solid var(--rule-2); }
+[data-demo="iris-specimens"] .is-card { position: relative; box-shadow: inset 0 0 0 3px var(--paper), inset 0 0 0 4px var(--rule); }
+[data-demo="iris-specimens"] .is-big { margin: 0; font: 400 0.95rem/1.3 var(--serif); color: var(--ink-2); }
+[data-demo="iris-specimens"] .is-num { font: 400 2.05rem/1 var(--type); font-variant-numeric: tabular-nums lining-nums; color: var(--ink); letter-spacing: -0.02em; }
+[data-demo="iris-specimens"] .is-unit { white-space: normal; }
+[data-demo="iris-specimens"] .is-small { margin: 2px 0 0; font: 400 0.8rem/1.3 var(--type); font-variant-numeric: tabular-nums; color: var(--ink-2); }
+[data-demo="iris-specimens"] .is-scale { display: block; width: 100%; max-width: 360px; height: auto; margin: 8px 0 2px; overflow: visible; }
+[data-demo="iris-specimens"] .is-sc-base { stroke: var(--ink); stroke-width: 1.1; }
+[data-demo="iris-specimens"] .is-sc-tick { stroke: var(--ink-2); stroke-width: 0.8; }
+[data-demo="iris-specimens"] .is-sc-cm { stroke: var(--ink); }
+[data-demo="iris-specimens"] .is-sc-lab { font: 400 10px var(--type); fill: var(--ink-2); text-anchor: middle; }
+[data-demo="iris-specimens"] .is-pin-stem { stroke: var(--ink-2); stroke-width: 1; }
+[data-demo="iris-specimens"] .is-pin-head { fill: var(--paper); stroke: var(--ink-2); stroke-width: 1; }
+[data-demo="iris-specimens"] .is-pin-n { font: 700 10px var(--type); fill: var(--ink-2); text-anchor: middle; }
+[data-demo="iris-specimens"] .is-pin.is-on .is-pin-head { fill: var(--ink); stroke: var(--ink); }
+[data-demo="iris-specimens"] .is-pin.is-on .is-pin-n { fill: var(--paper); }
+[data-demo="iris-specimens"] .is-pin.is-on .is-pin-stem { stroke: var(--ink); stroke-width: 1.4; }
+[data-demo="iris-specimens"] .is-card-body { margin: 0; font: 400 0.95rem/1.45 var(--serif); color: var(--ink); min-height: 5.8em; font-variant-numeric: tabular-nums lining-nums; }
+[data-demo="iris-specimens"] .is-card.is-empty .is-card-body { color: var(--ink-2); font-style: italic; }
+
+[data-demo="iris-specimens"] .is-caption { margin: 14px 0 0; font: 400 1rem/1.5 var(--serif); min-height: 4.5em; font-variant-numeric: lining-nums; }
+[data-demo="iris-specimens"] .is-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 10px 0 0; font: 400 0.84rem/1.3 var(--serif); color: var(--ink-2); }
+[data-demo="iris-specimens"] .is-key { display: inline-flex; align-items: center; gap: 6px; }
+[data-demo="iris-specimens"] .is-seed { display: inline-block; width: 9px; height: 9px; border-radius: 50%; box-shadow: 0 0 0 1px var(--ink); opacity: 0.95; }
+[data-demo="iris-specimens"] .is-s0 { background: var(--iris-setosa); }
+[data-demo="iris-specimens"] .is-s1 { background: var(--iris-versicolor); }
+[data-demo="iris-specimens"] .is-s2 { background: var(--iris-virginica); }
+[data-demo="iris-specimens"] .is-ico { width: 18px; height: 18px; flex: none; overflow: visible; }
+[data-demo="iris-specimens"] .is-ico-line { fill: none; stroke: var(--ink); stroke-width: 1.4; stroke-linecap: round; }
+[data-demo="iris-specimens"] .is-ico-fill { fill: var(--paper); }
+[data-demo="iris-specimens"] .is-ico-ring { fill: none; stroke: var(--ink-2); stroke-width: 2.2; }
+[data-demo="iris-specimens"] .is-note { margin: 8px 0 0; font: italic 400 0.84rem/1.4 var(--serif); color: var(--ink-2); }
+[data-demo="iris-specimens"] .is-checked { margin: 6px 0 0; font: 400 0.74rem/1.35 var(--type); color: var(--ink-2); opacity: 0.85; }
+[data-demo="iris-specimens"] .is-checked:empty { display: none; }
+
+@media (max-width: 720px) {
+  [data-demo="iris-specimens"] .is-controls { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  [data-demo="iris-specimens"] .is-read { grid-template-columns: 1fr; }
+  [data-demo="iris-specimens"] .is-problems button { font-size: 0.86rem; padding: 6px 8px; gap: 6px; }
+  [data-demo="iris-specimens"] select { font-size: 0.84rem; padding-left: 7px; }
+  [data-demo="iris-specimens"] .is-hint { flex-basis: 100%; margin: 2px 0 0; }
+  [data-demo="iris-specimens"] .is-num { font-size: 1.8rem; }
+  [data-demo="iris-specimens"] .is-tool { padding: 6px 10px; font-size: 0.86rem; }
+  [data-demo="iris-specimens"] .is-zoom { min-width: 38px; padding: 4px 0; font-size: 1.1rem; }
+}

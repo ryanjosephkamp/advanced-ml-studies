@@ -1,0 +1,4 @@
+Dataset,N_Samples,N_Features,Total_Values,Ones_Count,Zeros_Count,Ones_Proportion,Zeros_Proportion,Ones_Per_Sample_Mean,Ones_Per_Sample_Std,Ones_Per_Sample_Min,Ones_Per_Sample_Max,Density_Mean,Density_Std,Avg_Feature_Variance,Avg_Feature_Entropy
+Training,18,144,2592,2055,537,0.7928,0.2072,114.17,14.53,86,129,0.7928,0.1009,0.1264,0.5445
+Testing,18,144,2592,1893,699,0.7303,0.2697,105.17,12.5,79,120,0.7303,0.0868,0.1264,0.5445
+Validation,18,144,2592,1767,825,0.6817,0.3183,98.17,9.52,77,110,0.6817,0.0661,0.1939,0.8224

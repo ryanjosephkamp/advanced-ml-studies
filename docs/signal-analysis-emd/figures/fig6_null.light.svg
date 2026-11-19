@@ -1,0 +1,3281 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="520.776pt" height="656.09625pt" viewBox="0 0 520.776 656.09625" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 656.09625 
+L 520.776 656.09625 
+L 520.776 0 
+L 0 0 
+L 0 656.09625 
+z
+" style="fill: none; opacity: 0"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 25.316041 177.371667 
+L 509.976 177.371667 
+L 509.976 28.6 
+L 25.316041 28.6 
+L 25.316041 177.371667 
+z
+" style="fill: none; opacity: 0"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 171.942144 177.371667 
+L 391.160672 177.371667 
+L 391.160672 28.6 
+L 171.942144 28.6 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #e2e3e2; stroke: #e2e3e2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m2d7e1366cf" d="M 0 0 
+L 0 3.5 
+" style="stroke: #4a5468; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="31.408019" y="177.371667" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- 0.44 -->
+      <g style="fill: #4a5468" transform="translate(20.740206 192.711667) scale(0.12 -0.12)">
+       <defs>
+        <path id="CMUConcrete-Roman-30" d="M 269 2042 
+Q 269 3341 698 3821 
+Q 1043 4192 1594 4192 
+Q 2189 4192 2522 3782 
+Q 2918 3296 2918 2061 
+Q 2918 742 2477 282 
+Q 2144 -70 1594 -70 
+Q 998 -70 666 339 
+Q 269 826 269 2042 
+z
+M 749 2099 
+Q 749 941 1005 602 
+Q 1216 307 1594 307 
+Q 1984 307 2195 621 
+Q 2438 973 2438 2112 
+Q 2438 2445 2432 2637 
+Q 2426 2829 2368 3097 
+Q 2310 3366 2202 3520 
+Q 1984 3821 1594 3821 
+Q 1184 3821 973 3501 
+Q 870 3347 816 3075 
+Q 762 2803 755 2614 
+Q 749 2426 749 2099 
+z
+" transform="scale(0.015625)"/>
+        <path id="CMUConcrete-Roman-2e" d="M 544 339 
+Q 544 474 640 573 
+Q 736 672 883 672 
+Q 1024 672 1123 569 
+Q 1222 467 1222 339 
+Q 1222 205 1123 102 
+Q 1024 0 883 0 
+Q 742 0 643 105 
+Q 544 211 544 339 
+z
+" transform="scale(0.015625)"/>
+        <path id="CMUConcrete-Roman-34" d="M 173 1114 
+L 173 1389 
+Q 173 1498 243 1600 
+L 1786 4013 
+Q 1869 4141 1904 4169 
+Q 1939 4198 2022 4205 
+L 2176 4205 
+Q 2234 4205 2266 4195 
+Q 2298 4186 2323 4147 
+Q 2349 4109 2349 4038 
+L 2349 1485 
+L 3014 1485 
+L 3014 1114 
+L 2349 1114 
+L 2349 378 
+L 2970 378 
+L 2970 0 
+L 1286 0 
+L 1286 378 
+L 1907 378 
+L 1907 1114 
+L 173 1114 
+z
+M 614 1485 
+L 1939 1485 
+L 1939 3725 
+Q 1875 3539 1603 3078 
+Q 1331 2618 1004 2106 
+Q 678 1594 614 1485 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="116.93173" y="177.371667" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- 0.46 -->
+      <g style="fill: #4a5468" transform="translate(106.263917 192.711667) scale(0.12 -0.12)">
+       <defs>
+        <path id="CMUConcrete-Roman-36" d="M 288 2029 
+Q 288 2522 397 2909 
+Q 506 3296 678 3529 
+Q 851 3763 1078 3920 
+Q 1306 4077 1517 4134 
+Q 1728 4192 1946 4192 
+Q 2374 4192 2572 3990 
+Q 2771 3789 2771 3546 
+Q 2771 3398 2688 3334 
+Q 2605 3270 2509 3270 
+Q 2406 3270 2329 3340 
+Q 2253 3411 2253 3520 
+Q 2253 3616 2336 3718 
+Q 2182 3853 1952 3853 
+Q 1760 3853 1574 3779 
+Q 1389 3706 1206 3542 
+Q 1024 3379 905 3052 
+Q 787 2726 781 2285 
+Q 1190 2784 1843 2784 
+Q 2419 2784 2733 2214 
+Q 2912 1888 2912 1363 
+Q 2912 800 2656 448 
+Q 2266 -70 1619 -70 
+Q 755 -70 435 864 
+Q 288 1299 288 2029 
+z
+M 806 1498 
+Q 806 1197 867 944 
+Q 928 691 1120 489 
+Q 1312 288 1619 288 
+Q 2003 288 2214 550 
+Q 2419 806 2419 1344 
+L 2419 1478 
+Q 2419 1722 2358 1917 
+Q 2298 2112 2118 2259 
+Q 1939 2406 1651 2406 
+Q 1274 2406 1040 2134 
+Q 806 1862 806 1498 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="202.455441" y="177.371667" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- 0.48 -->
+      <g style="fill: #4a5468" transform="translate(191.787628 192.711667) scale(0.12 -0.12)">
+       <defs>
+        <path id="CMUConcrete-Roman-38" d="M 262 1043 
+Q 262 1818 1133 2240 
+Q 1126 2246 1040 2300 
+Q 954 2355 912 2384 
+Q 870 2413 784 2480 
+Q 698 2547 653 2614 
+Q 608 2682 550 2771 
+Q 493 2861 467 2969 
+Q 442 3078 442 3200 
+Q 442 3648 755 3920 
+Q 1069 4192 1594 4192 
+Q 2125 4192 2435 3933 
+Q 2746 3674 2746 3238 
+Q 2746 3027 2675 2854 
+Q 2605 2682 2467 2554 
+Q 2330 2426 2246 2368 
+Q 2163 2310 2029 2234 
+Q 2042 2227 2160 2153 
+Q 2278 2080 2313 2054 
+Q 2349 2029 2454 1952 
+Q 2560 1875 2605 1824 
+Q 2650 1773 2726 1680 
+Q 2803 1587 2835 1504 
+Q 2867 1421 2896 1309 
+Q 2925 1197 2925 1075 
+Q 2925 557 2563 243 
+Q 2202 -70 1594 -70 
+Q 979 -70 620 234 
+Q 262 538 262 1043 
+z
+M 691 1050 
+Q 691 678 947 483 
+Q 1203 288 1594 288 
+Q 2016 288 2253 480 
+Q 2490 672 2490 1005 
+Q 2490 1107 2454 1206 
+Q 2419 1306 2384 1360 
+Q 2349 1414 2269 1484 
+Q 2189 1555 2173 1564 
+Q 2157 1574 2080 1626 
+Q 1978 1690 1862 1766 
+Q 1747 1843 1699 1875 
+Q 1651 1907 1600 1936 
+Q 1549 1965 1526 1974 
+Q 1504 1984 1478 1984 
+Q 1453 1984 1376 1952 
+Q 1299 1920 1180 1846 
+Q 1062 1773 953 1670 
+Q 845 1568 768 1401 
+Q 691 1235 691 1050 
+z
+M 832 3283 
+Q 832 3226 848 3171 
+Q 864 3117 880 3075 
+Q 896 3034 944 2982 
+Q 992 2931 1021 2902 
+Q 1050 2874 1126 2816 
+Q 1203 2758 1248 2732 
+Q 1293 2707 1398 2640 
+Q 1504 2573 1562 2534 
+Q 1651 2477 1690 2477 
+Q 1734 2477 1878 2547 
+Q 2022 2618 2188 2803 
+Q 2355 2989 2355 3232 
+Q 2355 3533 2137 3693 
+Q 1920 3853 1594 3853 
+Q 1274 3853 1053 3712 
+Q 832 3571 832 3283 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-38" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="287.979152" y="177.371667" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- 0.50 -->
+      <g style="fill: #4a5468" transform="translate(277.31134 192.711667) scale(0.12 -0.12)">
+       <defs>
+        <path id="CMUConcrete-Roman-35" d="M 320 934 
+Q 320 1082 406 1149 
+Q 493 1216 582 1216 
+Q 698 1216 771 1136 
+Q 845 1056 845 954 
+Q 845 845 736 736 
+Q 832 538 1037 413 
+Q 1242 288 1510 288 
+Q 1882 288 2138 512 
+Q 2394 736 2394 1280 
+Q 2394 2240 1683 2240 
+L 1677 2240 
+Q 1229 2240 960 1920 
+Q 909 1850 873 1830 
+Q 838 1811 755 1811 
+Q 621 1811 589 1849 
+Q 557 1888 557 2010 
+L 557 4019 
+Q 557 4179 627 4179 
+Q 653 4179 777 4131 
+Q 902 4083 1120 4035 
+Q 1338 3987 1594 3987 
+Q 1862 3987 2076 4035 
+Q 2291 4083 2409 4131 
+Q 2528 4179 2560 4179 
+Q 2630 4179 2630 4045 
+L 2630 3949 
+Q 2630 3891 2617 3865 
+Q 2605 3840 2515 3792 
+Q 2426 3744 2234 3680 
+Q 1837 3552 1427 3552 
+Q 1178 3552 934 3610 
+L 934 2374 
+Q 1293 2618 1683 2618 
+Q 2221 2618 2547 2250 
+Q 2874 1882 2874 1280 
+Q 2874 646 2490 288 
+Q 2106 -70 1510 -70 
+Q 966 -70 643 246 
+Q 320 563 320 934 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-35" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-30" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="373.502863" y="177.371667" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 0.52 -->
+      <g style="fill: #4a5468" transform="translate(362.835051 192.711667) scale(0.12 -0.12)">
+       <defs>
+        <path id="CMUConcrete-Roman-32" d="M 320 0 
+Q 320 0 320 237 
+Q 320 333 381 403 
+Q 442 474 902 915 
+Q 1030 1043 1264 1260 
+Q 1498 1478 1597 1577 
+Q 1696 1677 1859 1843 
+Q 2022 2010 2092 2112 
+Q 2163 2214 2246 2355 
+Q 2330 2496 2358 2627 
+Q 2387 2758 2387 2899 
+Q 2387 3341 2057 3581 
+Q 1728 3821 1338 3821 
+Q 890 3821 723 3258 
+Q 864 3149 864 3014 
+Q 864 2912 781 2832 
+Q 698 2752 589 2752 
+Q 538 2752 483 2771 
+Q 429 2790 374 2864 
+Q 320 2938 320 3066 
+Q 320 3462 643 3827 
+Q 966 4192 1523 4192 
+Q 2106 4192 2493 3830 
+Q 2880 3469 2880 2912 
+Q 2880 2739 2829 2576 
+Q 2778 2413 2717 2297 
+Q 2656 2182 2509 2019 
+Q 2362 1856 2275 1773 
+Q 2189 1690 1984 1504 
+Q 1779 1318 1690 1235 
+L 864 461 
+L 1734 461 
+L 2381 474 
+L 2451 768 
+L 2502 1088 
+L 2880 1088 
+L 2701 0 
+L 320 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-35" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="459.026575" y="177.371667" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 0.54 -->
+      <g style="fill: #4a5468" transform="translate(448.358762 192.711667) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-35" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_4">
+    <path d="M 47.346039 177.371667 
+L 62.032704 177.371667 
+L 62.032704 175.668694 
+L 47.346039 175.668694 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 62.032704 177.371667 
+L 76.71937 177.371667 
+L 76.71937 177.371667 
+L 62.032704 177.371667 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 76.71937 177.371667 
+L 91.406035 177.371667 
+L 91.406035 175.668694 
+L 76.71937 175.668694 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 91.406035 177.371667 
+L 106.092701 177.371667 
+L 106.092701 177.371667 
+L 91.406035 177.371667 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 106.092701 177.371667 
+L 120.779366 177.371667 
+L 120.779366 173.965722 
+L 106.092701 173.965722 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 120.779366 177.371667 
+L 135.466032 177.371667 
+L 135.466032 175.668694 
+L 120.779366 175.668694 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 135.466032 177.371667 
+L 150.152697 177.371667 
+L 150.152697 173.965722 
+L 135.466032 173.965722 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 150.152697 177.371667 
+L 164.839362 177.371667 
+L 164.839362 167.153832 
+L 150.152697 167.153832 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 164.839362 177.371667 
+L 179.526028 177.371667 
+L 179.526028 163.747888 
+L 164.839362 163.747888 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 179.526028 177.371667 
+L 194.212693 177.371667 
+L 194.212693 141.609247 
+L 179.526028 141.609247 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 194.212693 177.371667 
+L 208.899359 177.371667 
+L 208.899359 141.609247 
+L 194.212693 141.609247 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 208.899359 177.371667 
+L 223.586024 177.371667 
+L 223.586024 136.50033 
+L 208.899359 136.50033 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 223.586024 177.371667 
+L 238.27269 177.371667 
+L 238.27269 82.005214 
+L 223.586024 82.005214 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 238.27269 177.371667 
+L 252.959355 177.371667 
+L 252.959355 82.005214 
+L 238.27269 82.005214 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 252.959355 177.371667 
+L 267.64602 177.371667 
+L 267.64602 87.114131 
+L 252.959355 87.114131 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 267.64602 177.371667 
+L 282.332686 177.371667 
+L 282.332686 80.302241 
+L 267.64602 80.302241 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 282.332686 177.371667 
+L 297.019351 177.371667 
+L 297.019351 68.381435 
+L 282.332686 68.381435 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 297.019351 177.371667 
+L 311.706017 177.371667 
+L 311.706017 100.73791 
+L 297.019351 100.73791 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 311.706017 177.371667 
+L 326.392682 177.371667 
+L 326.392682 88.817103 
+L 311.706017 88.817103 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 326.392682 177.371667 
+L 341.079348 177.371667 
+L 341.079348 107.549799 
+L 326.392682 107.549799 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 341.079348 177.371667 
+L 355.766013 177.371667 
+L 355.766013 131.391413 
+L 341.079348 131.391413 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 355.766013 177.371667 
+L 370.452678 177.371667 
+L 370.452678 138.203302 
+L 355.766013 138.203302 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 370.452678 177.371667 
+L 385.139344 177.371667 
+L 385.139344 145.015192 
+L 370.452678 145.015192 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 385.139344 177.371667 
+L 399.826009 177.371667 
+L 399.826009 160.341943 
+L 385.139344 160.341943 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 399.826009 177.371667 
+L 414.512675 177.371667 
+L 414.512675 173.965722 
+L 399.826009 173.965722 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 414.512675 177.371667 
+L 429.19934 177.371667 
+L 429.19934 172.26275 
+L 414.512675 172.26275 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 429.19934 177.371667 
+L 443.886006 177.371667 
+L 443.886006 170.559777 
+L 429.19934 170.559777 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 443.886006 177.371667 
+L 458.572671 177.371667 
+L 458.572671 177.371667 
+L 443.886006 177.371667 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 458.572671 177.371667 
+L 473.259336 177.371667 
+L 473.259336 177.371667 
+L 458.572671 177.371667 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 473.259336 177.371667 
+L 487.946002 177.371667 
+L 487.946002 175.668694 
+L 473.259336 175.668694 
+z
+" clip-path="url(#pe1836b4cf0)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_7">
+    <defs>
+     <path id="mf09fd15379" d="M 0 8 
+L 0 -8 
+" style="stroke: #4a5468; stroke-width: 2.5"/>
+    </defs>
+    <g>
+     <use xlink:href="#mf09fd15379" x="290.792978" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="313.482197" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="258.370788" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="377.823545" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="366.167065" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="346.170928" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="256.138182" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="252.227355" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="261.820411" y="53.776744" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+    </g>
+   </g>
+   <g id="line2d_8">
+    <defs>
+     <path id="m7c71d2afe6" d="M 0 8 
+L 0 -8 
+" style="stroke: #a3283a; stroke-width: 2.5"/>
+    </defs>
+    <g>
+     <use xlink:href="#m7c71d2afe6" x="293.336925" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="285.901732" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="319.119143" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="325.239932" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="330.78684" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="316.058357" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="307.433817" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="301.811892" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="327.963165" y="40.043974" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+    </g>
+   </g>
+   <g id="patch_34">
+    <path d="M 25.316041 177.371667 
+L 25.316041 28.6 
+" style="fill: none; stroke: #4a5468; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 25.316041 177.371667 
+L 509.976 177.371667 
+" style="fill: none; stroke: #4a5468; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <!-- EEG MMI: left vs. right hand -->
+    <g style="fill: #131a2b" transform="translate(25.316041 20.6) scale(0.14 -0.14)">
+     <defs>
+      <path id="CMUConcrete-Roman-45" d="M 307 0 
+L 307 378 
+L 877 378 
+L 877 3981 
+L 307 3981 
+L 307 4352 
+L 3782 4352 
+L 3962 2733 
+L 3584 2733 
+Q 3494 3552 3437 3763 
+Q 3405 3866 3344 3904 
+Q 3283 3942 3062 3961 
+Q 2842 3981 2304 3981 
+L 1357 3981 
+L 1357 2451 
+L 1850 2451 
+Q 2419 2451 2490 2502 
+Q 2541 2547 2554 2720 
+Q 2566 3002 2566 3136 
+L 2566 3200 
+L 2938 3200 
+L 2938 1325 
+L 2566 1325 
+L 2566 1389 
+Q 2566 1523 2554 1805 
+Q 2541 1984 2490 2022 
+Q 2419 2074 1856 2074 
+L 1357 2074 
+L 1357 378 
+L 2381 378 
+Q 3085 378 3302 416 
+Q 3456 442 3507 531 
+Q 3584 666 3738 1645 
+Q 3744 1715 3763 1824 
+L 4141 1824 
+L 3872 0 
+L 307 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-47" d="M 352 2182 
+Q 352 3245 966 3843 
+Q 1581 4442 2490 4442 
+Q 3245 4442 3795 3859 
+Q 3853 3968 3930 4122 
+Q 4045 4352 4077 4393 
+Q 4109 4435 4166 4435 
+L 4179 4435 
+Q 4262 4435 4262 4301 
+L 4262 2886 
+Q 4262 2790 4230 2768 
+Q 4198 2746 4070 2746 
+Q 3987 2746 3952 2752 
+Q 3917 2758 3897 2787 
+Q 3878 2816 3878 2854 
+Q 3878 2893 3859 2985 
+Q 3840 3078 3802 3181 
+Q 3686 3507 3401 3785 
+Q 3117 4064 2662 4064 
+Q 2413 4064 2176 4016 
+Q 1939 3968 1692 3833 
+Q 1446 3699 1264 3494 
+Q 1082 3290 966 2950 
+Q 851 2611 851 2176 
+Q 851 1293 1337 800 
+Q 1824 307 2701 307 
+Q 3526 307 3718 614 
+Q 3776 717 3776 902 
+L 3776 1491 
+L 2976 1491 
+L 2976 1862 
+L 4704 1862 
+L 4704 1491 
+L 4262 1491 
+L 4262 122 
+Q 4262 19 4211 19 
+Q 4122 19 3936 307 
+Q 3462 -70 2534 -70 
+Q 1517 -70 934 557 
+Q 352 1184 352 2182 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-20" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-4d" d="M 346 0 
+L 346 378 
+L 915 378 
+L 915 4000 
+L 346 4000 
+L 346 4371 
+L 1318 4371 
+Q 1421 4371 1469 4339 
+Q 1517 4307 1555 4205 
+L 2893 531 
+Q 2931 653 3021 896 
+L 4230 4205 
+Q 4269 4307 4317 4339 
+Q 4365 4371 4467 4371 
+L 5440 4371 
+L 5440 4000 
+L 4870 4000 
+L 4870 378 
+L 5440 378 
+L 5440 0 
+L 3898 0 
+L 3898 378 
+L 4467 378 
+L 4467 3450 
+L 4461 3904 
+Q 4435 3827 4384 3686 
+Q 4333 3546 4320 3507 
+L 3098 166 
+Q 3066 70 3021 38 
+Q 2976 6 2880 0 
+Q 2758 0 2713 38 
+Q 2669 77 2611 230 
+L 1286 3853 
+L 1286 378 
+L 1856 378 
+L 1856 0 
+L 346 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-49" d="M 282 0 
+L 282 378 
+L 877 378 
+L 877 4000 
+L 282 4000 
+L 282 4371 
+L 1958 4371 
+L 1958 4000 
+L 1363 4000 
+L 1363 378 
+L 1958 378 
+L 1958 0 
+L 282 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-3a" d="M 544 339 
+Q 544 474 640 573 
+Q 736 672 883 672 
+Q 1024 672 1123 569 
+Q 1222 467 1222 339 
+Q 1222 205 1123 102 
+Q 1024 0 883 0 
+Q 742 0 643 105 
+Q 544 211 544 339 
+z
+M 544 2579 
+Q 544 2714 640 2813 
+Q 736 2912 883 2912 
+Q 1024 2912 1123 2809 
+Q 1222 2707 1222 2579 
+Q 1222 2445 1123 2342 
+Q 1024 2240 883 2240 
+Q 742 2240 643 2345 
+Q 544 2451 544 2579 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-6c" d="M 192 0 
+L 192 378 
+L 723 378 
+L 723 3808 
+Q 723 3923 656 3952 
+Q 589 3981 314 3981 
+L 192 3981 
+L 192 4352 
+L 1152 4448 
+L 1152 378 
+L 1690 378 
+L 1690 0 
+L 192 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-65" d="M 198 1491 
+Q 198 2163 560 2572 
+Q 922 2982 1510 2982 
+Q 1837 2982 2073 2864 
+Q 2310 2746 2432 2547 
+Q 2554 2349 2605 2137 
+Q 2656 1926 2656 1696 
+Q 2656 1594 2611 1565 
+Q 2566 1536 2483 1536 
+L 678 1536 
+Q 678 1197 771 957 
+Q 864 717 1024 592 
+Q 1184 467 1360 412 
+Q 1536 358 1741 358 
+Q 2112 358 2266 781 
+Q 2304 864 2336 889 
+Q 2368 915 2464 915 
+L 2490 915 
+Q 2650 915 2650 800 
+Q 2650 582 2346 275 
+Q 2042 -32 1581 -32 
+Q 992 -32 595 368 
+Q 198 768 198 1491 
+z
+M 717 1888 
+L 2272 1888 
+Q 2170 2611 1517 2611 
+Q 864 2611 717 1888 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-66" d="M 173 0 
+L 173 378 
+L 704 378 
+L 704 2560 
+L 205 2560 
+L 205 2931 
+L 704 2931 
+L 704 3437 
+Q 704 3686 790 3881 
+Q 877 4077 1005 4185 
+Q 1133 4294 1299 4364 
+Q 1466 4435 1603 4457 
+Q 1741 4480 1875 4480 
+Q 2061 4480 2141 4352 
+Q 2221 4224 2221 4090 
+Q 2221 3981 2150 3904 
+Q 2080 3827 1971 3827 
+Q 1882 3827 1805 3888 
+Q 1728 3949 1722 4102 
+Q 1376 4096 1248 3917 
+Q 1120 3738 1120 3430 
+L 1120 2931 
+L 1869 2931 
+L 1869 2560 
+L 1133 2560 
+L 1133 378 
+L 1805 378 
+L 1805 0 
+L 173 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-74" d="M 115 2560 
+L 115 2931 
+Q 435 2957 579 3251 
+Q 723 3546 730 4192 
+L 1107 4192 
+L 1107 2931 
+L 2022 2931 
+L 2022 2560 
+L 1107 2560 
+L 1107 883 
+Q 1107 358 1421 358 
+Q 1574 358 1670 512 
+Q 1754 646 1754 922 
+L 1754 1229 
+L 2131 1229 
+L 2131 877 
+Q 2131 621 2032 429 
+Q 1933 237 1779 144 
+Q 1626 51 1488 9 
+Q 1350 -32 1235 -32 
+Q 1069 -32 953 41 
+Q 838 115 784 204 
+Q 730 294 698 441 
+Q 666 589 662 665 
+Q 659 742 659 864 
+L 659 2560 
+L 115 2560 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-76" d="M 128 2560 
+L 128 2931 
+L 1478 2931 
+L 1478 2560 
+L 1050 2560 
+L 1619 896 
+L 1728 538 
+L 1824 838 
+L 2413 2560 
+L 1984 2560 
+L 1984 2931 
+L 3283 2931 
+L 3283 2560 
+L 2790 2560 
+Q 2752 2426 2662 2179 
+Q 2573 1933 2554 1882 
+L 1958 160 
+Q 1914 38 1872 6 
+Q 1830 -26 1722 -26 
+L 1696 -26 
+Q 1581 -26 1533 12 
+Q 1485 51 1440 186 
+L 864 1856 
+Q 672 2406 621 2560 
+L 128 2560 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-73" d="M 211 134 
+L 211 1024 
+Q 211 1101 240 1129 
+Q 269 1158 378 1158 
+Q 454 1158 492 1155 
+Q 531 1152 556 1126 
+Q 582 1101 588 1085 
+Q 595 1069 611 998 
+Q 627 928 646 877 
+Q 813 339 1280 339 
+Q 1626 339 1760 486 
+Q 1894 634 1894 819 
+Q 1894 896 1868 966 
+Q 1843 1037 1804 1085 
+Q 1766 1133 1708 1174 
+Q 1651 1216 1600 1238 
+Q 1549 1261 1481 1280 
+Q 1414 1299 1376 1308 
+Q 1338 1318 1286 1331 
+L 1235 1338 
+Q 1229 1338 1171 1347 
+Q 1114 1357 1059 1369 
+Q 1005 1382 918 1408 
+Q 832 1434 758 1466 
+Q 685 1498 601 1542 
+Q 518 1587 451 1651 
+Q 384 1715 326 1788 
+Q 269 1862 240 1964 
+Q 211 2067 211 2182 
+Q 211 2323 252 2448 
+Q 294 2573 396 2701 
+Q 499 2829 713 2905 
+Q 928 2982 1229 2982 
+Q 1594 2982 1850 2784 
+Q 1862 2803 1878 2828 
+Q 1894 2854 1904 2867 
+Q 1914 2880 1930 2899 
+Q 1946 2918 1952 2928 
+Q 1958 2938 1974 2950 
+Q 1990 2963 2000 2969 
+Q 2010 2976 2026 2979 
+Q 2042 2982 2054 2982 
+Q 2125 2982 2137 2944 
+Q 2150 2906 2150 2822 
+L 2150 2157 
+Q 2150 2035 2118 2006 
+Q 2086 1978 1946 1978 
+Q 1888 1978 1853 1981 
+Q 1818 1984 1802 2006 
+Q 1786 2029 1782 2041 
+Q 1779 2054 1772 2102 
+Q 1766 2150 1760 2182 
+Q 1747 2272 1708 2358 
+Q 1670 2445 1532 2537 
+Q 1395 2630 1190 2630 
+Q 877 2630 752 2508 
+Q 627 2387 627 2234 
+Q 627 2086 742 1990 
+Q 858 1894 986 1856 
+Q 1114 1818 1328 1776 
+Q 1542 1734 1626 1709 
+Q 1882 1626 2096 1408 
+Q 2310 1190 2310 851 
+Q 2310 698 2268 560 
+Q 2227 422 2124 281 
+Q 2022 141 1808 54 
+Q 1594 -32 1286 -32 
+Q 858 -32 550 275 
+Q 538 256 512 205 
+Q 486 154 467 122 
+Q 448 90 422 48 
+Q 397 6 368 -13 
+Q 339 -32 307 -32 
+Q 269 -32 237 -6 
+Q 211 13 211 134 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-72" d="M 154 0 
+L 154 378 
+L 685 378 
+L 685 2323 
+Q 685 2438 617 2470 
+Q 550 2502 250 2502 
+L 154 2502 
+L 154 2880 
+L 1082 2970 
+L 1082 2522 
+Q 1414 2963 1862 2963 
+Q 2061 2963 2192 2857 
+Q 2323 2752 2323 2592 
+Q 2323 2483 2249 2412 
+Q 2176 2342 2074 2342 
+Q 1990 2342 1910 2400 
+Q 1830 2458 1824 2592 
+Q 1491 2534 1299 2240 
+Q 1114 1952 1114 1459 
+L 1114 378 
+L 1786 378 
+L 1786 0 
+L 154 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-69" d="M 490 4109 
+Q 490 4256 592 4352 
+Q 694 4448 828 4448 
+Q 963 4448 1062 4352 
+Q 1162 4256 1162 4109 
+Q 1162 3968 1059 3872 
+Q 957 3776 829 3776 
+Q 694 3776 592 3872 
+Q 490 3968 490 4109 
+z
+M 192 0 
+L 192 378 
+L 723 378 
+L 723 2278 
+Q 723 2432 668 2467 
+Q 614 2502 314 2502 
+L 218 2502 
+L 218 2880 
+L 1152 2970 
+L 1152 378 
+L 1632 378 
+L 1632 0 
+L 192 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-67" d="M 173 -416 
+Q 173 -256 259 -57 
+Q 346 141 582 269 
+Q 429 512 429 736 
+Q 429 1005 595 1242 
+Q 403 1542 403 1907 
+Q 403 2381 681 2675 
+Q 960 2970 1414 2970 
+Q 1741 2970 2042 2778 
+Q 2355 3002 2694 3002 
+Q 2867 3002 2982 2909 
+Q 3098 2816 3098 2682 
+Q 3098 2586 3034 2522 
+Q 2970 2458 2880 2458 
+Q 2726 2458 2662 2624 
+L 2464 2598 
+L 2259 2547 
+Q 2432 2240 2432 1914 
+Q 2432 1440 2150 1149 
+Q 1869 858 1414 858 
+Q 1094 858 819 1024 
+Q 762 883 762 800 
+Q 762 672 835 569 
+Q 909 467 1037 454 
+Q 1082 448 1171 448 
+L 1638 448 
+Q 1888 448 2067 429 
+Q 2246 410 2448 355 
+Q 2650 301 2784 169 
+Q 2918 38 2976 -160 
+Q 3014 -282 3014 -416 
+Q 3014 -755 2681 -1017 
+Q 2349 -1280 1606 -1280 
+Q 832 -1280 502 -1014 
+Q 173 -749 173 -416 
+z
+M 582 -403 
+Q 582 -608 809 -765 
+Q 1037 -922 1606 -922 
+Q 2138 -922 2371 -768 
+Q 2605 -614 2605 -422 
+Q 2605 38 1613 38 
+L 1133 38 
+Q 806 38 694 -99 
+Q 582 -237 582 -403 
+z
+M 832 1920 
+Q 832 1216 1414 1216 
+Q 1997 1216 1997 1907 
+Q 1997 2611 1421 2611 
+Q 832 2611 832 1920 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-68" d="M 179 0 
+L 179 378 
+L 710 378 
+L 710 3808 
+Q 710 3923 646 3952 
+Q 582 3981 301 3981 
+L 179 3981 
+L 179 4352 
+L 1139 4448 
+L 1139 2835 
+L 1146 2560 
+Q 1523 2970 2067 2970 
+Q 2355 2970 2544 2886 
+Q 2733 2803 2813 2646 
+Q 2893 2490 2915 2358 
+Q 2938 2227 2938 2029 
+L 2938 378 
+L 3469 378 
+L 3469 0 
+L 1958 0 
+L 1958 378 
+L 2490 378 
+L 2490 2010 
+Q 2490 2131 2474 2211 
+Q 2458 2291 2403 2390 
+Q 2349 2490 2214 2541 
+Q 2080 2592 1862 2592 
+Q 1542 2592 1350 2361 
+Q 1158 2131 1158 1747 
+L 1158 378 
+L 1690 378 
+L 1690 0 
+L 179 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-61" d="M 288 832 
+Q 288 1005 361 1165 
+Q 435 1325 617 1485 
+Q 800 1645 1174 1744 
+Q 1549 1843 2080 1850 
+L 2080 1997 
+L 2086 2010 
+Q 2086 2022 2086 2035 
+Q 2086 2611 1357 2611 
+Q 1210 2611 998 2592 
+Q 1005 2432 925 2361 
+Q 845 2291 742 2291 
+Q 621 2291 553 2368 
+Q 486 2445 486 2554 
+Q 486 2982 1389 2982 
+Q 1914 2982 2224 2736 
+Q 2534 2490 2534 2035 
+Q 2534 2029 2531 2019 
+Q 2528 2010 2528 2003 
+L 2528 672 
+Q 2528 570 2541 525 
+Q 2573 410 2806 384 
+Q 3040 358 3046 352 
+Q 3104 320 3104 173 
+Q 3104 70 3062 35 
+Q 3021 0 2918 0 
+L 2803 0 
+Q 2246 6 2144 339 
+Q 1670 -38 1011 -38 
+Q 666 -38 477 230 
+Q 288 499 288 832 
+z
+M 736 845 
+Q 736 627 915 483 
+Q 1094 339 1344 339 
+Q 1459 339 1574 364 
+Q 1690 390 1811 454 
+Q 1933 518 2009 649 
+Q 2086 781 2086 966 
+Q 2086 986 2083 1014 
+Q 2080 1043 2080 1056 
+L 2080 1523 
+Q 1382 1498 1056 1312 
+Q 736 1139 736 845 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-6e" d="M 179 0 
+L 179 378 
+L 710 378 
+L 710 2323 
+Q 710 2438 643 2470 
+Q 576 2502 275 2502 
+L 179 2502 
+L 179 2880 
+L 1126 2970 
+L 1126 2541 
+Q 1498 2970 2061 2970 
+Q 2355 2970 2544 2886 
+Q 2733 2803 2813 2646 
+Q 2893 2490 2915 2358 
+Q 2938 2227 2938 2029 
+L 2938 378 
+L 3469 378 
+L 3469 0 
+L 1958 0 
+L 1958 378 
+L 2490 378 
+L 2490 2010 
+Q 2490 2131 2474 2211 
+Q 2458 2291 2403 2390 
+Q 2349 2490 2214 2541 
+Q 2080 2592 1862 2592 
+Q 1542 2592 1350 2361 
+Q 1158 2131 1158 1747 
+L 1158 378 
+L 1690 378 
+L 1690 0 
+L 179 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-64" d="M 237 1459 
+Q 237 2138 544 2554 
+Q 851 2970 1408 2970 
+Q 1965 2970 2464 2630 
+L 2464 3808 
+Q 2458 3930 2384 3955 
+Q 2310 3981 2010 3981 
+L 1933 3981 
+L 1933 4352 
+L 2893 4448 
+L 2893 563 
+Q 2893 448 2953 413 
+Q 3014 378 3290 378 
+L 3430 378 
+L 3430 0 
+L 2445 -32 
+L 2445 371 
+Q 1952 -32 1370 -32 
+Q 858 -32 547 371 
+Q 237 774 237 1459 
+z
+M 717 1459 
+Q 717 1120 800 880 
+Q 883 640 1027 531 
+Q 1171 422 1305 380 
+Q 1440 339 1594 339 
+Q 1933 339 2189 572 
+Q 2445 806 2445 1069 
+L 2445 1952 
+Q 2445 1958 2448 1977 
+Q 2451 1997 2451 2003 
+Q 2451 2246 2204 2419 
+Q 1958 2592 1658 2592 
+Q 1491 2592 1347 2550 
+Q 1203 2509 1049 2397 
+Q 896 2285 806 2045 
+Q 717 1805 717 1459 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#CMUConcrete-Roman-45"/>
+     <use xlink:href="#CMUConcrete-Roman-45" transform="translate(67.499985 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-47" transform="translate(134.999969 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(213.199951 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-4d" transform="translate(246.499939 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-4d" transform="translate(337.09993 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-49" transform="translate(427.699921 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-3a" transform="translate(462.699905 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(490.499893 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(523.799881 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-65" transform="translate(552.099869 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-66" transform="translate(596.499863 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-74" transform="translate(627.099854 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(665.999847 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-76" transform="translate(699.299835 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-73" transform="translate(752.599823 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(791.999817 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(819.799805 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-72" transform="translate(853.099792 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-69" transform="translate(892.299789 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-67" transform="translate(920.599777 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-68" transform="translate(970.599762 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-74" transform="translate(1026.699753 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1065.599747 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-68" transform="translate(1098.899734 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-61" transform="translate(1154.999725 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(1203.899719 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1259.99971 0)"/>
+    </g>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_9">
+     <g>
+      <use xlink:href="#mf09fd15379" x="39.616041" y="42.35" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     </g>
+    </g>
+    <g id="text_8">
+     <!-- March 2026 run -->
+     <g style="fill: #131a2b" transform="translate(52.816041 46.2) scale(0.11 -0.11)">
+      <defs>
+       <path id="CMUConcrete-Roman-63" d="M 237 1459 
+Q 237 1728 301 1974 
+Q 365 2221 515 2457 
+Q 666 2694 960 2838 
+Q 1254 2982 1658 2982 
+Q 1830 2982 1948 2972 
+Q 2067 2963 2236 2928 
+Q 2406 2893 2499 2797 
+Q 2592 2701 2592 2554 
+Q 2592 2438 2521 2364 
+Q 2451 2291 2336 2291 
+Q 2086 2291 2074 2573 
+Q 1869 2592 1722 2592 
+Q 1242 2592 1011 2362 
+Q 717 2067 717 1491 
+Q 717 1171 816 934 
+Q 915 698 1078 579 
+Q 1242 461 1405 409 
+Q 1568 358 1747 358 
+Q 1952 358 2073 467 
+Q 2195 576 2249 707 
+Q 2304 838 2323 851 
+Q 2349 877 2502 877 
+Q 2650 877 2650 794 
+Q 2650 742 2595 624 
+Q 2541 506 2432 349 
+Q 2323 192 2099 80 
+Q 1875 -32 1594 -32 
+Q 992 -32 614 371 
+Q 237 774 237 1459 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-75" d="M 179 2502 
+L 179 2880 
+L 1158 2970 
+L 1158 870 
+Q 1158 576 1254 457 
+Q 1350 339 1696 339 
+Q 2003 339 2246 531 
+Q 2490 723 2490 1171 
+L 2490 2298 
+Q 2490 2438 2429 2470 
+Q 2368 2502 2048 2502 
+L 1958 2502 
+L 1958 2880 
+L 2938 2970 
+L 2938 570 
+Q 2938 435 3002 406 
+Q 3066 378 3373 378 
+L 3469 378 
+L 3469 0 
+L 2509 -32 
+L 2509 384 
+Q 2093 -32 1466 -32 
+Q 1261 -32 1113 25 
+Q 966 83 889 163 
+Q 813 243 771 374 
+Q 730 506 720 602 
+Q 710 698 710 838 
+L 710 2330 
+Q 710 2438 640 2470 
+Q 570 2502 307 2502 
+L 179 2502 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#CMUConcrete-Roman-4d"/>
+      <use xlink:href="#CMUConcrete-Roman-61" transform="translate(90.599991 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-72" transform="translate(139.499985 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-63" transform="translate(178.699982 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-68" transform="translate(223.099976 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(279.199966 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-32" transform="translate(312.499954 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-30" transform="translate(362.499939 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-32" transform="translate(412.499924 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-36" transform="translate(462.499908 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(512.499893 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-72" transform="translate(545.799881 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-75" transform="translate(584.999878 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(641.099869 0)"/>
+     </g>
+    </g>
+    <g id="line2d_10">
+     <g>
+      <use xlink:href="#m7c71d2afe6" x="39.616041" y="57.695" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     </g>
+    </g>
+    <g id="text_9">
+     <!-- Corrected baseline -->
+     <g style="fill: #131a2b" transform="translate(52.816041 61.545) scale(0.11 -0.11)">
+      <defs>
+       <path id="CMUConcrete-Roman-43" d="M 352 2182 
+Q 352 3245 963 3843 
+Q 1574 4442 2490 4442 
+Q 3232 4442 3795 3859 
+Q 3853 3968 3930 4122 
+Q 4045 4352 4077 4393 
+Q 4109 4435 4166 4435 
+L 4179 4435 
+Q 4262 4435 4262 4301 
+L 4262 2886 
+Q 4262 2790 4227 2768 
+Q 4192 2746 4038 2746 
+Q 3955 2746 3923 2762 
+Q 3891 2778 3878 2848 
+Q 3795 3354 3478 3709 
+Q 3162 4064 2650 4064 
+Q 2330 4064 2038 3974 
+Q 1747 3885 1468 3686 
+Q 1190 3488 1020 3101 
+Q 851 2714 851 2182 
+Q 851 1645 1024 1257 
+Q 1197 870 1481 675 
+Q 1766 480 2057 393 
+Q 2349 307 2669 307 
+Q 3174 307 3504 624 
+Q 3834 941 3878 1382 
+Q 3885 1498 3910 1523 
+Q 3936 1549 4038 1549 
+L 4122 1549 
+Q 4262 1549 4262 1434 
+Q 4262 1114 4073 778 
+Q 3885 442 3465 186 
+Q 3046 -70 2496 -70 
+Q 1542 -70 947 547 
+Q 352 1165 352 2182 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-6f" d="M 198 1453 
+Q 198 2150 579 2566 
+Q 960 2982 1594 2982 
+Q 2214 2982 2601 2566 
+Q 2989 2150 2989 1459 
+Q 2989 768 2601 368 
+Q 2214 -32 1593 -32 
+Q 973 -32 585 368 
+Q 198 768 198 1453 
+z
+M 678 1530 
+Q 678 358 1594 358 
+Q 2502 358 2502 1523 
+Q 2502 2611 1594 2611 
+Q 678 2611 678 1530 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-62" d="M 154 3981 
+L 154 4352 
+L 1114 4448 
+L 1114 2618 
+Q 1600 2963 2259 2963 
+Q 2784 2963 3065 2547 
+Q 3347 2131 3347 1478 
+Q 3347 1062 3235 755 
+Q 3123 448 2934 285 
+Q 2746 122 2544 45 
+Q 2342 -32 2131 -32 
+Q 1555 -32 1094 384 
+L 1062 0 
+L 685 0 
+L 685 3802 
+Q 685 3917 624 3949 
+Q 563 3981 275 3981 
+L 154 3981 
+z
+M 1133 1018 
+Q 1133 826 1357 582 
+Q 1581 339 1926 339 
+Q 2080 339 2217 377 
+Q 2355 416 2512 521 
+Q 2669 627 2765 867 
+Q 2861 1107 2861 1459 
+Q 2861 2592 1984 2592 
+Q 1677 2592 1405 2422 
+Q 1133 2253 1133 1997 
+L 1133 1018 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#CMUConcrete-Roman-43"/>
+      <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(72.199982 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-72" transform="translate(122.199966 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-72" transform="translate(161.399963 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(200.59996 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-63" transform="translate(244.999954 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-74" transform="translate(289.399948 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(328.299942 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-64" transform="translate(372.699936 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(428.799927 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-62" transform="translate(462.099915 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-61" transform="translate(518.199905 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-73" transform="translate(567.099899 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(606.499893 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(650.899887 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-69" transform="translate(679.199875 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(707.499863 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(763.599854 0)"/>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_36">
+    <path d="M 25.316041 375.478333 
+L 509.976 375.478333 
+L 509.976 226.706667 
+L 25.316041 226.706667 
+L 25.316041 375.478333 
+z
+" style="fill: none; opacity: 0"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 132.552539 375.478333 
+L 429.839079 375.478333 
+L 429.839079 226.706667 
+L 132.552539 226.706667 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #e2e3e2; stroke: #e2e3e2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="72.023163" y="375.478333" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 0.20 -->
+      <g style="fill: #4a5468" transform="translate(61.355351 390.818333) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-30" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="165.592733" y="375.478333" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- 0.22 -->
+      <g style="fill: #4a5468" transform="translate(154.92492 390.818333) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="259.162303" y="375.478333" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- 0.24 -->
+      <g style="fill: #4a5468" transform="translate(248.49449 390.818333) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="352.731872" y="375.478333" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- 0.26 -->
+      <g style="fill: #4a5468" transform="translate(342.06406 390.818333) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="446.301442" y="375.478333" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <!-- 0.28 -->
+      <g style="fill: #4a5468" transform="translate(435.633629 390.818333) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-38" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4"/>
+   <g id="patch_38">
+    <path d="M 47.346039 375.478333 
+L 62.032704 375.478333 
+L 62.032704 373.34127 
+L 47.346039 373.34127 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 62.032704 375.478333 
+L 76.71937 375.478333 
+L 76.71937 375.478333 
+L 62.032704 375.478333 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 76.71937 375.478333 
+L 91.406035 375.478333 
+L 91.406035 373.34127 
+L 76.71937 373.34127 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 91.406035 375.478333 
+L 106.092701 375.478333 
+L 106.092701 366.93008 
+L 91.406035 366.93008 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 106.092701 375.478333 
+L 120.779366 375.478333 
+L 120.779366 366.93008 
+L 106.092701 366.93008 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 120.779366 375.478333 
+L 135.466032 375.478333 
+L 135.466032 360.51889 
+L 120.779366 360.51889 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 135.466032 375.478333 
+L 150.152697 375.478333 
+L 150.152697 366.93008 
+L 135.466032 366.93008 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_45">
+    <path d="M 150.152697 375.478333 
+L 164.839362 375.478333 
+L 164.839362 349.833573 
+L 150.152697 349.833573 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_46">
+    <path d="M 164.839362 375.478333 
+L 179.526028 375.478333 
+L 179.526028 332.737066 
+L 164.839362 332.737066 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_47">
+    <path d="M 179.526028 375.478333 
+L 194.212693 375.478333 
+L 194.212693 317.777622 
+L 179.526028 317.777622 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_48">
+    <path d="M 194.212693 375.478333 
+L 208.899359 375.478333 
+L 208.899359 315.640559 
+L 194.212693 315.640559 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_49">
+    <path d="M 208.899359 375.478333 
+L 223.586024 375.478333 
+L 223.586024 298.544052 
+L 208.899359 298.544052 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_50">
+    <path d="M 223.586024 375.478333 
+L 238.27269 375.478333 
+L 238.27269 302.818179 
+L 223.586024 302.818179 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_51">
+    <path d="M 238.27269 375.478333 
+L 252.959355 375.478333 
+L 252.959355 275.036355 
+L 238.27269 275.036355 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_52">
+    <path d="M 252.959355 375.478333 
+L 267.64602 375.478333 
+L 267.64602 272.899291 
+L 252.959355 272.899291 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_53">
+    <path d="M 267.64602 375.478333 
+L 282.332686 375.478333 
+L 282.332686 287.858735 
+L 267.64602 287.858735 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_54">
+    <path d="M 282.332686 375.478333 
+L 297.019351 375.478333 
+L 297.019351 266.488101 
+L 282.332686 266.488101 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_55">
+    <path d="M 297.019351 375.478333 
+L 311.706017 375.478333 
+L 311.706017 289.995798 
+L 297.019351 289.995798 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_56">
+    <path d="M 311.706017 375.478333 
+L 326.392682 375.478333 
+L 326.392682 285.721672 
+L 311.706017 285.721672 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_57">
+    <path d="M 326.392682 375.478333 
+L 341.079348 375.478333 
+L 341.079348 287.858735 
+L 326.392682 287.858735 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_58">
+    <path d="M 341.079348 375.478333 
+L 355.766013 375.478333 
+L 355.766013 311.366432 
+L 341.079348 311.366432 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_59">
+    <path d="M 355.766013 375.478333 
+L 370.452678 375.478333 
+L 370.452678 332.737066 
+L 355.766013 332.737066 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_60">
+    <path d="M 370.452678 375.478333 
+L 385.139344 375.478333 
+L 385.139344 337.011193 
+L 370.452678 337.011193 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_61">
+    <path d="M 385.139344 375.478333 
+L 399.826009 375.478333 
+L 399.826009 351.970636 
+L 385.139344 351.970636 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_62">
+    <path d="M 399.826009 375.478333 
+L 414.512675 375.478333 
+L 414.512675 356.244763 
+L 399.826009 356.244763 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_63">
+    <path d="M 414.512675 375.478333 
+L 429.19934 375.478333 
+L 429.19934 358.381826 
+L 414.512675 358.381826 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_64">
+    <path d="M 429.19934 375.478333 
+L 443.886006 375.478333 
+L 443.886006 360.51889 
+L 429.19934 360.51889 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_65">
+    <path d="M 443.886006 375.478333 
+L 458.572671 375.478333 
+L 458.572671 369.067143 
+L 443.886006 369.067143 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_66">
+    <path d="M 458.572671 375.478333 
+L 473.259336 375.478333 
+L 473.259336 371.204207 
+L 458.572671 371.204207 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_67">
+    <path d="M 473.259336 375.478333 
+L 487.946002 375.478333 
+L 487.946002 366.93008 
+L 473.259336 366.93008 
+z
+" clip-path="url(#pd424b0259f)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_16">
+    <g>
+     <use xlink:href="#mf09fd15379" x="175.73307" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="245.954608" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="224.47003" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="360.854681" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="363.66482" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="330.662526" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="362.864624" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="356.213607" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="240.912196" y="251.88341" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <g>
+     <use xlink:href="#m7c71d2afe6" x="228.927736" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="344.503381" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="166.142944" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="229.13149" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="187.037426" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="164.59852" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="263.025974" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="358.613234" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="412.968344" y="238.150641" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+    </g>
+   </g>
+   <g id="patch_68">
+    <path d="M 25.316041 375.478333 
+L 25.316041 226.706667 
+" style="fill: none; stroke: #4a5468; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_69">
+    <path d="M 25.316041 375.478333 
+L 509.976 375.478333 
+" style="fill: none; stroke: #4a5468; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <!-- BCI IV 2a: four imagery classes -->
+    <g style="fill: #131a2b" transform="translate(25.316041 218.706667) scale(0.14 -0.14)">
+     <defs>
+      <path id="CMUConcrete-Roman-42" d="M 320 0 
+L 320 378 
+L 890 378 
+L 890 4000 
+L 320 4000 
+L 320 4371 
+L 2470 4371 
+Q 2906 4371 3219 4259 
+Q 3533 4147 3683 3964 
+Q 3834 3782 3894 3612 
+Q 3955 3443 3955 3270 
+Q 3955 2554 3053 2285 
+Q 3526 2221 3830 1929 
+Q 4134 1638 4134 1184 
+Q 4134 698 3801 381 
+Q 3469 64 2925 13 
+Q 2816 0 2598 0 
+L 320 0 
+z
+M 1338 378 
+L 2470 378 
+Q 3123 378 3385 627 
+Q 3648 877 3648 1203 
+Q 3648 1331 3609 1459 
+Q 3571 1587 3468 1740 
+Q 3366 1894 3129 1990 
+Q 2893 2086 2554 2086 
+L 1338 2086 
+L 1338 378 
+z
+M 1338 2464 
+L 2291 2464 
+Q 2298 2464 2317 2461 
+Q 2336 2458 2349 2458 
+Q 2938 2458 3213 2704 
+Q 3488 2950 3488 3264 
+Q 3488 3552 3261 3776 
+Q 3034 4000 2464 4000 
+L 1338 4000 
+L 1338 2464 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-56" d="M 128 4000 
+L 128 4371 
+L 1606 4371 
+L 1606 4000 
+L 1152 4000 
+L 2406 614 
+L 3667 4000 
+L 3206 4000 
+L 3206 4371 
+L 4595 4371 
+L 4595 4000 
+L 4070 4000 
+L 2624 115 
+Q 2579 13 2534 -19 
+Q 2490 -51 2381 -51 
+L 2336 -51 
+Q 2214 -51 2169 -6 
+Q 2125 38 2067 192 
+L 653 4000 
+L 128 4000 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-6d" d="M 179 0 
+L 179 378 
+L 710 378 
+L 710 2323 
+Q 710 2438 643 2470 
+Q 576 2502 275 2502 
+L 179 2502 
+L 179 2880 
+L 1126 2970 
+L 1126 2541 
+Q 1498 2970 2067 2970 
+Q 2714 2970 2880 2509 
+Q 3136 2784 3379 2880 
+Q 3597 2970 3853 2970 
+Q 4090 2970 4256 2909 
+Q 4422 2848 4512 2761 
+Q 4602 2675 4650 2537 
+Q 4698 2400 4710 2291 
+Q 4723 2182 4723 2029 
+L 4723 378 
+L 5254 378 
+L 5254 0 
+L 3738 0 
+L 3738 378 
+L 4275 378 
+L 4275 2010 
+Q 4275 2131 4259 2211 
+Q 4243 2291 4188 2390 
+Q 4134 2490 3996 2541 
+Q 3859 2592 3642 2592 
+Q 3322 2592 3130 2361 
+Q 2938 2131 2938 1747 
+L 2938 378 
+L 3475 378 
+L 3475 0 
+L 1958 0 
+L 1958 378 
+L 2490 378 
+L 2490 2010 
+Q 2490 2131 2474 2211 
+Q 2458 2291 2403 2390 
+Q 2349 2490 2214 2541 
+Q 2080 2592 1862 2592 
+Q 1542 2592 1350 2361 
+Q 1158 2131 1158 1747 
+L 1158 378 
+L 1690 378 
+L 1690 0 
+L 179 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-79" d="M 128 2560 
+L 128 2931 
+L 1478 2931 
+L 1478 2560 
+L 1050 2560 
+Q 1600 1037 1728 538 
+L 1990 1338 
+L 2413 2560 
+L 1984 2560 
+L 1984 2931 
+L 3283 2931 
+L 3283 2560 
+L 2790 2560 
+L 1805 -250 
+Q 1734 -448 1692 -553 
+Q 1651 -659 1548 -809 
+Q 1446 -960 1306 -1069 
+Q 1043 -1280 730 -1280 
+Q 499 -1280 323 -1145 
+Q 147 -1011 147 -813 
+Q 147 -698 217 -630 
+Q 288 -563 390 -563 
+Q 486 -563 563 -630 
+Q 640 -698 640 -813 
+Q 640 -832 627 -896 
+Q 640 -896 672 -899 
+Q 704 -902 717 -902 
+Q 819 -902 908 -873 
+Q 998 -845 1065 -806 
+Q 1133 -768 1190 -704 
+Q 1248 -640 1283 -585 
+Q 1318 -531 1356 -451 
+Q 1395 -371 1408 -326 
+Q 1421 -282 1443 -208 
+Q 1466 -134 1472 -122 
+Q 1504 -38 1504 -6 
+Q 1504 19 1472 115 
+L 621 2560 
+L 128 2560 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#CMUConcrete-Roman-42"/>
+     <use xlink:href="#CMUConcrete-Roman-43" transform="translate(70.299988 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-49" transform="translate(142.499969 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(177.499954 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-49" transform="translate(210.799942 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-56" transform="translate(245.799927 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(319.699921 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-32" transform="translate(352.999908 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-61" transform="translate(402.999893 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-3a" transform="translate(451.899887 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(479.699875 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-66" transform="translate(512.999863 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(543.599854 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-75" transform="translate(593.599838 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-72" transform="translate(649.699829 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(688.899826 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-69" transform="translate(722.199814 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-6d" transform="translate(750.499802 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-61" transform="translate(834.399796 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-67" transform="translate(883.299789 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-65" transform="translate(933.299774 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-72" transform="translate(977.699768 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-79" transform="translate(1016.899765 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1070.199753 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-63" transform="translate(1103.499741 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(1147.899734 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-61" transform="translate(1176.199722 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1225.099716 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1264.49971 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1303.899704 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1348.299698 0)"/>
+    </g>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_70">
+    <path d="M 25.316041 573.585 
+L 509.976 573.585 
+L 509.976 424.813333 
+L 25.316041 424.813333 
+L 25.316041 573.585 
+z
+" style="fill: none; opacity: 0"/>
+   </g>
+   <g id="patch_71">
+    <path d="M 109.450568 573.585 
+L 254.433295 573.585 
+L 254.433295 424.813333 
+L 109.450568 424.813333 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #e2e3e2; stroke: #e2e3e2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_12">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="47.902394" y="573.585" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <!-- 0.62 -->
+      <g style="fill: #4a5468" transform="translate(37.234582 588.925) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-32" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="150.74195" y="573.585" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <!-- 0.64 -->
+      <g style="fill: #4a5468" transform="translate(140.074137 588.925) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-34" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="253.581506" y="573.585" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <!-- 0.66 -->
+      <g style="fill: #4a5468" transform="translate(242.913693 588.925) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="356.421062" y="573.585" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <!-- 0.68 -->
+      <g style="fill: #4a5468" transform="translate(345.753249 588.925) scale(0.12 -0.12)">
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-36" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-38" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m2d7e1366cf" x="459.260618" y="573.585" style="fill: #4a5468; stroke: #4a5468; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <!-- 0.70 -->
+      <g style="fill: #4a5468" transform="translate(448.592805 588.925) scale(0.12 -0.12)">
+       <defs>
+        <path id="CMUConcrete-Roman-37" d="M 352 3040 
+L 563 4333 
+L 941 4333 
+L 941 4243 
+L 979 4134 
+L 1338 4128 
+L 3104 4128 
+L 3104 3949 
+Q 3104 3846 3091 3811 
+Q 3078 3776 2995 3667 
+Q 2317 2739 2227 2598 
+Q 1946 2163 1821 1596 
+Q 1696 1030 1680 579 
+Q 1664 128 1664 115 
+Q 1613 -64 1414 -64 
+Q 1325 -64 1248 0 
+Q 1171 64 1165 160 
+Q 1158 198 1158 269 
+Q 1165 576 1203 864 
+Q 1242 1152 1286 1366 
+Q 1331 1581 1436 1833 
+Q 1542 2086 1603 2224 
+Q 1664 2362 1824 2608 
+Q 1984 2854 2051 2947 
+Q 2118 3040 2316 3309 
+Q 2515 3578 2573 3661 
+L 1210 3661 
+L 851 3648 
+Q 826 3578 730 3040 
+L 352 3040 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#CMUConcrete-Roman-30"/>
+       <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(49.999985 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-37" transform="translate(77.799973 0)"/>
+       <use xlink:href="#CMUConcrete-Roman-30" transform="translate(127.799957 0)"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_21">
+     <!-- Weighted F1, 70/30 split of windows (seed 42) -->
+     <g style="fill: #131a2b" transform="translate(134.091333 605.015) scale(0.13 -0.13)">
+      <defs>
+       <path id="CMUConcrete-Roman-57" d="M 122 4000 
+L 122 4371 
+L 1542 4371 
+L 1542 4000 
+L 1062 4000 
+Q 1965 1011 2074 640 
+L 2176 1005 
+L 3021 3802 
+L 3053 3930 
+L 3053 4000 
+L 2573 4000 
+L 2573 4371 
+L 3994 4371 
+L 3994 4000 
+L 3514 4000 
+L 4339 1274 
+L 4518 640 
+L 4653 1107 
+L 5530 4000 
+L 4992 4000 
+L 4992 4371 
+L 6381 4371 
+L 6381 4000 
+L 5901 4000 
+L 4717 115 
+Q 4685 13 4637 -19 
+Q 4589 -51 4480 -51 
+L 4454 -51 
+Q 4339 -51 4297 -9 
+Q 4256 32 4218 173 
+L 3322 3098 
+Q 3309 3136 3273 3261 
+Q 3238 3386 3213 3456 
+Q 3162 3181 2938 2381 
+L 2445 704 
+Q 2246 64 2221 26 
+Q 2163 -51 2035 -51 
+L 2003 -51 
+Q 1965 -51 1933 -44 
+Q 1901 -38 1878 -22 
+Q 1856 -6 1840 6 
+Q 1824 19 1811 48 
+Q 1798 77 1795 93 
+Q 1792 109 1779 147 
+Q 1766 186 1760 205 
+L 602 4000 
+L 122 4000 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-46" d="M 307 0 
+L 307 378 
+L 877 378 
+L 877 3981 
+L 307 3981 
+L 307 4352 
+L 3693 4352 
+L 3866 2733 
+L 3494 2733 
+Q 3443 3206 3414 3417 
+Q 3386 3629 3341 3760 
+Q 3296 3891 3261 3910 
+Q 3226 3930 3136 3942 
+L 3130 3942 
+Q 2867 3981 2259 3981 
+L 1357 3981 
+L 1357 2368 
+L 1952 2368 
+Q 2349 2368 2425 2403 
+Q 2502 2438 2515 2630 
+Q 2528 2899 2528 3046 
+L 2528 3110 
+L 2899 3110 
+L 2899 1242 
+L 2528 1242 
+L 2528 1312 
+Q 2528 1453 2515 1722 
+Q 2515 1734 2509 1766 
+Q 2496 1920 2432 1952 
+Q 2355 1990 1798 1990 
+L 1357 1990 
+L 1357 378 
+L 2067 378 
+L 2067 0 
+L 307 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-31" d="M 614 3405 
+L 614 3782 
+Q 909 3789 1123 3853 
+Q 1338 3917 1427 3993 
+Q 1517 4070 1597 4131 
+Q 1677 4192 1741 4192 
+Q 1843 4192 1868 4147 
+Q 1894 4102 1894 3994 
+L 1894 378 
+L 2694 378 
+L 2694 0 
+L 646 0 
+L 646 378 
+L 1446 378 
+L 1446 3635 
+Q 1094 3418 614 3405 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-2c" d="M 544 339 
+Q 544 480 640 576 
+Q 736 672 883 672 
+Q 1107 672 1200 461 
+Q 1293 250 1293 -38 
+Q 1293 -320 1193 -608 
+Q 1094 -896 979 -1059 
+Q 864 -1222 800 -1222 
+Q 755 -1222 665 -1136 
+Q 576 -1050 576 -998 
+Q 576 -973 659 -854 
+Q 742 -736 828 -512 
+Q 915 -288 915 0 
+Q 768 6 678 73 
+Q 589 141 566 205 
+Q 544 269 544 339 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-2f" d="M 358 -1408 
+Q 358 -1357 422 -1178 
+L 2445 4602 
+Q 2515 4794 2650 4794 
+Q 2726 4794 2780 4739 
+Q 2835 4685 2835 4608 
+Q 2835 4570 2784 4416 
+L 762 -1344 
+Q 736 -1427 713 -1472 
+Q 691 -1517 646 -1555 
+Q 602 -1594 538 -1594 
+Q 467 -1594 412 -1539 
+Q 358 -1485 358 -1408 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-33" d="M 262 941 
+Q 262 1101 352 1168 
+Q 442 1235 538 1235 
+Q 646 1235 729 1158 
+Q 813 1082 813 960 
+Q 813 832 691 730 
+Q 947 288 1594 288 
+Q 2010 288 2218 528 
+Q 2426 768 2426 1165 
+Q 2426 1536 2246 1760 
+Q 2067 1984 1741 2029 
+Q 1664 2042 1504 2042 
+L 1222 2042 
+Q 1152 2042 1123 2048 
+Q 1094 2054 1078 2083 
+Q 1062 2112 1062 2182 
+Q 1062 2374 1088 2394 
+Q 1114 2419 1200 2425 
+Q 1286 2432 1411 2438 
+Q 1536 2445 1619 2464 
+Q 1901 2528 2086 2765 
+Q 2272 3002 2272 3283 
+Q 2272 3558 2096 3705 
+Q 1920 3853 1594 3853 
+Q 1120 3853 877 3571 
+L 896 3546 
+Q 915 3526 931 3507 
+Q 947 3488 960 3446 
+Q 973 3405 973 3360 
+Q 973 3245 896 3171 
+Q 819 3098 704 3098 
+Q 589 3098 515 3174 
+Q 442 3251 442 3379 
+Q 442 3725 771 3958 
+Q 1101 4192 1606 4192 
+Q 2125 4192 2435 3942 
+Q 2746 3693 2746 3283 
+Q 2746 2630 2080 2227 
+Q 2470 2125 2697 1840 
+Q 2925 1555 2925 1152 
+Q 2925 653 2582 291 
+Q 2240 -70 1606 -70 
+Q 1037 -70 649 224 
+Q 262 518 262 941 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-70" d="M 154 -870 
+L 685 -870 
+L 685 2336 
+Q 678 2445 611 2473 
+Q 544 2502 269 2502 
+L 154 2502 
+L 154 2880 
+L 1114 2970 
+L 1114 2611 
+Q 1606 2963 2285 2963 
+Q 2797 2963 3072 2550 
+Q 3347 2138 3347 1478 
+Q 3347 698 2982 333 
+Q 2618 -32 2131 -32 
+Q 1574 -32 1133 352 
+L 1133 -870 
+L 1664 -870 
+L 1664 -1248 
+L 154 -1248 
+L 154 -870 
+z
+M 1133 1043 
+Q 1133 806 1363 572 
+Q 1594 339 1926 339 
+Q 2304 339 2582 624 
+Q 2861 909 2861 1466 
+Q 2861 2029 2601 2301 
+Q 2342 2573 1978 2573 
+Q 1677 2573 1405 2403 
+Q 1133 2234 1133 1990 
+L 1133 1043 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-77" d="M 122 2560 
+L 122 2931 
+L 1446 2931 
+L 1446 2560 
+L 1005 2560 
+Q 1549 730 1581 538 
+Q 1619 768 1875 1613 
+Q 2131 2458 2131 2490 
+Q 2131 2496 2128 2521 
+Q 2125 2547 2125 2560 
+L 1670 2560 
+L 1670 2931 
+L 2938 2931 
+L 2938 2560 
+L 2496 2560 
+L 3098 538 
+L 3706 2560 
+L 3206 2560 
+L 3206 2931 
+L 4531 2931 
+L 4531 2560 
+L 4077 2560 
+L 3354 192 
+Q 3322 96 3306 61 
+Q 3290 26 3242 0 
+Q 3194 -26 3104 -26 
+L 3072 -26 
+Q 2976 -26 2934 9 
+Q 2893 45 2861 141 
+Q 2739 544 2633 886 
+Q 2528 1229 2477 1398 
+Q 2426 1568 2384 1702 
+Q 2342 1837 2323 1901 
+Q 2304 1965 2285 2016 
+Q 2208 1517 1792 141 
+Q 1760 45 1715 9 
+Q 1670 -26 1574 -26 
+L 1536 -26 
+Q 1434 -26 1392 9 
+Q 1350 45 1306 179 
+L 576 2560 
+L 122 2560 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-28" d="M 518 1600 
+Q 518 2624 825 3414 
+Q 1133 4205 1677 4704 
+Q 1779 4800 1888 4800 
+L 1984 4800 
+Q 2112 4800 2112 4742 
+Q 2112 4717 2032 4633 
+Q 1952 4550 1824 4403 
+Q 1696 4256 1555 4048 
+Q 1414 3840 1276 3491 
+Q 1139 3142 1056 2726 
+Q 947 2163 947 1613 
+Q 947 954 1065 397 
+Q 1184 -160 1357 -489 
+Q 1530 -819 1702 -1049 
+Q 1875 -1280 1993 -1398 
+Q 2112 -1517 2112 -1542 
+Q 2112 -1600 1952 -1600 
+L 1882 -1600 
+Q 1811 -1600 1750 -1561 
+Q 1690 -1523 1536 -1363 
+Q 518 -275 518 1600 
+z
+" transform="scale(0.015625)"/>
+       <path id="CMUConcrete-Roman-29" d="M 371 -1542 
+Q 371 -1517 489 -1398 
+Q 608 -1280 777 -1046 
+Q 947 -813 1120 -483 
+Q 1293 -154 1411 396 
+Q 1530 947 1530 1594 
+Q 1530 3533 506 4576 
+Q 371 4710 371 4755 
+Q 371 4800 550 4800 
+L 589 4800 
+Q 666 4800 723 4765 
+Q 781 4730 922 4589 
+Q 1958 3520 1958 1600 
+Q 1958 570 1654 -220 
+Q 1350 -1011 800 -1510 
+Q 704 -1600 589 -1600 
+L 493 -1600 
+Q 371 -1600 371 -1542 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#CMUConcrete-Roman-57"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(101.699982 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-69" transform="translate(146.099976 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-67" transform="translate(174.399963 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-68" transform="translate(224.399948 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-74" transform="translate(280.499939 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(319.399933 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-64" transform="translate(363.799927 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(419.899918 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-46" transform="translate(453.199905 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-31" transform="translate(517.899902 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-2c" transform="translate(567.899887 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(595.699875 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-37" transform="translate(628.999863 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-30" transform="translate(678.999847 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-2f" transform="translate(728.999832 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-33" transform="translate(778.999817 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-30" transform="translate(828.999802 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(878.999786 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-73" transform="translate(912.299774 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-70" transform="translate(951.699768 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(1007.799759 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-69" transform="translate(1036.099747 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-74" transform="translate(1064.399734 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1103.299728 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(1136.599716 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-66" transform="translate(1186.599701 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1217.199692 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-77" transform="translate(1250.49968 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-69" transform="translate(1323.299667 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(1351.599655 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1407.699646 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(1463.799637 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-77" transform="translate(1513.799622 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1586.599609 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1625.999603 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-28" transform="translate(1659.299591 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1698.199585 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1737.599579 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1781.999573 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1826.399567 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1882.499557 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-34" transform="translate(1915.799545 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-32" transform="translate(1965.79953 0)"/>
+      <use xlink:href="#CMUConcrete-Roman-29" transform="translate(2015.799515 0)"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6"/>
+   <g id="patch_72">
+    <path d="M 47.346039 573.585 
+L 55.445566 573.585 
+L 55.445566 572.561618 
+L 47.346039 572.561618 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_73">
+    <path d="M 55.445566 573.585 
+L 63.545093 573.585 
+L 63.545093 573.585 
+L 55.445566 573.585 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_74">
+    <path d="M 63.545093 573.585 
+L 71.64462 573.585 
+L 71.64462 573.585 
+L 63.545093 573.585 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_75">
+    <path d="M 71.64462 573.585 
+L 79.744147 573.585 
+L 79.744147 573.585 
+L 71.64462 573.585 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_76">
+    <path d="M 79.744147 573.585 
+L 87.843674 573.585 
+L 87.843674 573.073309 
+L 79.744147 573.073309 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_77">
+    <path d="M 87.843674 573.585 
+L 95.943201 573.585 
+L 95.943201 572.049926 
+L 87.843674 572.049926 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_78">
+    <path d="M 95.943201 573.585 
+L 104.042728 573.585 
+L 104.042728 570.003161 
+L 95.943201 570.003161 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_79">
+    <path d="M 104.042728 573.585 
+L 112.142255 573.585 
+L 112.142255 571.026544 
+L 104.042728 571.026544 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_80">
+    <path d="M 112.142255 573.585 
+L 120.241782 573.585 
+L 120.241782 569.49147 
+L 112.142255 569.49147 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_81">
+    <path d="M 120.241782 573.585 
+L 128.341309 573.585 
+L 128.341309 565.39794 
+L 120.241782 565.39794 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_82">
+    <path d="M 128.341309 573.585 
+L 136.440835 573.585 
+L 136.440835 567.444705 
+L 128.341309 567.444705 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_83">
+    <path d="M 136.440835 573.585 
+L 144.540362 573.585 
+L 144.540362 464.594768 
+L 136.440835 464.594768 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_84">
+    <path d="M 144.540362 573.585 
+L 152.639889 573.585 
+L 152.639889 560.281028 
+L 144.540362 560.281028 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_85">
+    <path d="M 152.639889 573.585 
+L 160.739416 573.585 
+L 160.739416 554.652424 
+L 152.639889 554.652424 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_86">
+    <path d="M 160.739416 573.585 
+L 168.838943 573.585 
+L 168.838943 560.792719 
+L 160.739416 560.792719 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_87">
+    <path d="M 168.838943 573.585 
+L 176.93847 573.585 
+L 176.93847 561.30441 
+L 168.838943 561.30441 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_88">
+    <path d="M 176.93847 573.585 
+L 185.037997 573.585 
+L 185.037997 561.816102 
+L 176.93847 561.816102 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_89">
+    <path d="M 185.037997 573.585 
+L 193.137524 573.585 
+L 193.137524 558.234263 
+L 185.037997 558.234263 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_90">
+    <path d="M 193.137524 573.585 
+L 201.237051 573.585 
+L 201.237051 556.699189 
+L 193.137524 556.699189 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_91">
+    <path d="M 201.237051 573.585 
+L 209.336578 573.585 
+L 209.336578 554.652424 
+L 201.237051 554.652424 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_92">
+    <path d="M 209.336578 573.585 
+L 217.436105 573.585 
+L 217.436105 562.839484 
+L 209.336578 562.839484 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_93">
+    <path d="M 217.436105 573.585 
+L 225.535632 573.585 
+L 225.535632 562.839484 
+L 217.436105 562.839484 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_94">
+    <path d="M 225.535632 573.585 
+L 233.635159 573.585 
+L 233.635159 566.933014 
+L 225.535632 566.933014 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_95">
+    <path d="M 233.635159 573.585 
+L 241.734686 573.585 
+L 241.734686 567.444705 
+L 233.635159 567.444705 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_96">
+    <path d="M 241.734686 573.585 
+L 249.834213 573.585 
+L 249.834213 569.49147 
+L 241.734686 569.49147 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_97">
+    <path d="M 249.834213 573.585 
+L 257.93374 573.585 
+L 257.93374 568.979779 
+L 249.834213 568.979779 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_98">
+    <path d="M 257.93374 573.585 
+L 266.033267 573.585 
+L 266.033267 572.049926 
+L 257.93374 572.049926 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_99">
+    <path d="M 266.033267 573.585 
+L 274.132794 573.585 
+L 274.132794 571.026544 
+L 266.033267 571.026544 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_100">
+    <path d="M 274.132794 573.585 
+L 282.232321 573.585 
+L 282.232321 573.073309 
+L 274.132794 573.073309 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_101">
+    <path d="M 282.232321 573.585 
+L 290.331848 573.585 
+L 290.331848 571.026544 
+L 282.232321 571.026544 
+z
+" clip-path="url(#p150ad0c71e)" style="fill: #bdbfc1; stroke: #fcfcf9; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_23">
+    <g>
+     <use xlink:href="#mf09fd15379" x="251.93134" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="204.070182" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="321.580002" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="195.900606" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="240.15429" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="266.712577" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="162.904251" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="487.946002" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+     <use xlink:href="#mf09fd15379" x="325.422063" y="449.990077" style="fill: #4a5468; stroke: #4a5468; stroke-width: 2.5"/>
+    </g>
+   </g>
+   <g id="line2d_24">
+    <g>
+     <use xlink:href="#m7c71d2afe6" x="300.576806" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="386.549583" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="373.358716" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="128.179031" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="199.858704" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="187.948042" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="163.871633" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="473.405767" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+     <use xlink:href="#m7c71d2afe6" x="367.399336" y="436.257308" style="fill: #a3283a; stroke: #a3283a; stroke-width: 2.5"/>
+    </g>
+   </g>
+   <g id="patch_102">
+    <path d="M 25.316041 573.585 
+L 25.316041 424.813333 
+" style="fill: none; stroke: #4a5468; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_103">
+    <path d="M 25.316041 573.585 
+L 509.976 573.585 
+" style="fill: none; stroke: #4a5468; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_22">
+    <!-- EEGMAT: rest vs. arithmetic -->
+    <g style="fill: #131a2b" transform="translate(25.316041 416.813333) scale(0.14 -0.14)">
+     <defs>
+      <path id="CMUConcrete-Roman-41" d="M 218 0 
+L 218 378 
+L 762 378 
+L 2080 4211 
+Q 2131 4365 2176 4406 
+Q 2221 4448 2342 4448 
+L 2381 4448 
+Q 2445 4448 2480 4441 
+Q 2515 4435 2553 4396 
+Q 2592 4358 2618 4288 
+L 3962 378 
+L 4506 378 
+L 4506 0 
+L 3002 0 
+L 3002 378 
+L 3475 378 
+L 3130 1370 
+L 1498 1370 
+L 1158 378 
+L 1626 378 
+L 1626 0 
+L 218 0 
+z
+M 1632 1747 
+L 3002 1747 
+L 2317 3731 
+L 1632 1747 
+z
+" transform="scale(0.015625)"/>
+      <path id="CMUConcrete-Roman-54" d="M 224 2720 
+L 352 4339 
+L 4256 4339 
+L 4384 2720 
+L 4006 2720 
+Q 3930 3603 3904 3757 
+Q 3885 3846 3833 3884 
+Q 3782 3923 3628 3942 
+Q 3475 3962 3130 3962 
+L 2547 3962 
+L 2547 378 
+L 3347 378 
+L 3347 0 
+L 1261 0 
+L 1261 378 
+L 2061 378 
+L 2061 3962 
+L 1478 3962 
+Q 1133 3962 979 3942 
+Q 826 3923 774 3884 
+Q 723 3846 704 3757 
+Q 678 3603 602 2720 
+L 224 2720 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#CMUConcrete-Roman-45"/>
+     <use xlink:href="#CMUConcrete-Roman-45" transform="translate(67.499985 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-47" transform="translate(134.999969 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-4d" transform="translate(213.199951 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-41" transform="translate(303.799942 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-54" transform="translate(377.699936 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-3a" transform="translate(449.899918 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(477.699905 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-72" transform="translate(510.999893 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-65" transform="translate(550.19989 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-73" transform="translate(594.599884 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-74" transform="translate(633.999878 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(672.899872 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-76" transform="translate(706.19986 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-73" transform="translate(759.499847 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(798.899841 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-20" transform="translate(826.699829 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-61" transform="translate(859.999817 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-72" transform="translate(908.899811 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-69" transform="translate(948.099808 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-74" transform="translate(976.399796 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-68" transform="translate(1015.299789 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-6d" transform="translate(1071.39978 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1155.299774 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-74" transform="translate(1199.699768 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-69" transform="translate(1238.599762 0)"/>
+     <use xlink:href="#CMUConcrete-Roman-63" transform="translate(1266.89975 0)"/>
+    </g>
+   </g>
+  </g>
+  <g id="text_23">
+   <!-- Gray bars: 600 label shuffles of the corrected windows, 200 for each of -->
+   <g style="fill: #4a5468" transform="translate(10.8 630.99625) scale(0.11 -0.11)">
+    <use xlink:href="#CMUConcrete-Roman-47"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(78.199982 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-61" transform="translate(117.399979 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-79" transform="translate(166.299973 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(219.59996 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-62" transform="translate(252.899948 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-61" transform="translate(308.999939 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(357.899933 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-73" transform="translate(397.09993 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-3a" transform="translate(436.499924 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(464.299911 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-36" transform="translate(497.599899 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-30" transform="translate(547.599884 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-30" transform="translate(597.599869 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(647.599854 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(680.899841 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-61" transform="translate(709.199829 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-62" transform="translate(758.099823 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(814.199814 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(858.599808 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(886.899796 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-73" transform="translate(920.199783 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-68" transform="translate(959.599777 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-75" transform="translate(1015.699768 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-66" transform="translate(1071.799759 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-66" transform="translate(1102.39975 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(1132.999741 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1161.299728 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1205.699722 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1245.099716 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(1278.399704 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-66" transform="translate(1328.399689 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1358.99968 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-74" transform="translate(1392.299667 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-68" transform="translate(1431.199661 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1487.299652 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1531.699646 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-63" transform="translate(1564.999634 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(1609.399628 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(1659.399612 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(1698.599609 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1737.799606 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-63" transform="translate(1782.1996 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-74" transform="translate(1826.599594 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1865.499588 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1909.899582 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1965.999573 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-77" transform="translate(1999.299561 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-69" transform="translate(2072.099548 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(2100.399536 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(2156.499527 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(2212.599518 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-77" transform="translate(2262.599503 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-73" transform="translate(2335.39949 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-2c" transform="translate(2374.799484 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(2402.599472 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-32" transform="translate(2435.89946 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-30" transform="translate(2485.899445 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-30" transform="translate(2535.899429 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(2585.899414 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-66" transform="translate(2619.199402 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(2649.799393 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(2699.799377 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(2738.999374 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(2772.299362 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-61" transform="translate(2816.699356 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-63" transform="translate(2865.59935 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-68" transform="translate(2909.999344 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(2966.099335 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(2999.399323 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-66" transform="translate(3049.399307 0)"/>
+   </g>
+   <!-- three configurations, pooled; shaded: their middle 95%. -->
+   <g style="fill: #4a5468" transform="translate(10.8 643.09625) scale(0.11 -0.11)">
+    <defs>
+     <path id="CMUConcrete-Roman-3b" d="M 544 2579 
+Q 544 2714 640 2813 
+Q 736 2912 883 2912 
+Q 1024 2912 1123 2809 
+Q 1222 2707 1222 2579 
+Q 1222 2445 1123 2342 
+Q 1024 2240 883 2240 
+Q 742 2240 643 2345 
+Q 544 2451 544 2579 
+z
+M 544 339 
+Q 544 480 640 576 
+Q 736 672 883 672 
+Q 1107 672 1200 461 
+Q 1293 250 1293 -38 
+Q 1293 -320 1193 -608 
+Q 1094 -896 979 -1059 
+Q 864 -1222 800 -1222 
+Q 755 -1222 665 -1136 
+Q 576 -1050 576 -998 
+Q 576 -973 659 -854 
+Q 742 -736 828 -512 
+Q 915 -288 915 0 
+Q 768 6 678 73 
+Q 589 141 566 205 
+Q 544 269 544 339 
+z
+" transform="scale(0.015625)"/>
+     <path id="CMUConcrete-Roman-39" d="M 288 2758 
+Q 288 3315 518 3642 
+Q 902 4192 1613 4192 
+Q 2253 4192 2579 3667 
+Q 2912 3136 2912 2106 
+Q 2912 1491 2758 1043 
+Q 2605 595 2355 364 
+Q 2106 134 1850 32 
+Q 1594 -70 1325 -70 
+Q 851 -70 640 128 
+Q 429 326 429 576 
+Q 429 723 515 790 
+Q 602 858 691 858 
+Q 794 858 867 787 
+Q 941 717 941 602 
+Q 941 518 870 416 
+Q 1050 288 1318 288 
+Q 1709 288 1965 537 
+Q 2221 787 2313 1116 
+Q 2406 1446 2413 1843 
+Q 1997 1344 1350 1344 
+Q 794 1344 474 1894 
+Q 288 2214 288 2758 
+z
+M 774 2650 
+Q 774 2266 950 1994 
+Q 1126 1722 1542 1722 
+Q 1933 1722 2163 2000 
+Q 2394 2278 2394 2643 
+Q 2394 3136 2211 3494 
+Q 2029 3853 1613 3853 
+Q 1197 3853 986 3584 
+Q 851 3418 812 3238 
+Q 774 3059 774 2778 
+L 774 2650 
+z
+" transform="scale(0.015625)"/>
+     <path id="CMUConcrete-Roman-25" d="M 352 3501 
+Q 352 3866 441 4134 
+Q 531 4403 672 4540 
+Q 813 4678 960 4739 
+Q 1107 4800 1254 4800 
+Q 1414 4800 1520 4755 
+Q 1626 4710 1773 4598 
+Q 1920 4486 2022 4429 
+Q 2515 4147 3021 4147 
+Q 3712 4147 4128 4646 
+Q 4134 4659 4153 4678 
+Q 4173 4698 4179 4707 
+Q 4186 4717 4202 4733 
+Q 4218 4749 4224 4755 
+Q 4230 4762 4243 4771 
+Q 4256 4781 4265 4784 
+Q 4275 4787 4288 4790 
+Q 4301 4794 4314 4794 
+Q 4422 4794 4442 4646 
+Q 4512 4595 4512 4557 
+Q 4512 4454 4198 4186 
+Q 4179 4166 4144 4140 
+Q 4109 4115 4096 4102 
+Q 4083 4090 4054 4054 
+Q 4026 4019 3994 3968 
+L 1165 -224 
+Q 1075 -346 1011 -346 
+Q 896 -346 896 -224 
+Q 896 -198 947 -96 
+L 3616 3872 
+Q 3328 3795 3053 3795 
+Q 2598 3795 2080 4000 
+Q 2131 3731 2131 3507 
+Q 2131 2835 1859 2528 
+Q 1587 2221 1254 2221 
+Q 915 2221 633 2528 
+Q 352 2835 352 3501 
+z
+M 768 3514 
+Q 768 2963 934 2758 
+Q 1062 2598 1254 2598 
+Q 1446 2598 1609 2816 
+Q 1773 3034 1773 3514 
+Q 1773 3962 1616 4192 
+Q 1459 4422 1248 4422 
+Q 1062 4422 928 4250 
+Q 768 4038 768 3514 
+z
+M 3194 928 
+Q 3194 1606 3472 1913 
+Q 3750 2221 4090 2221 
+Q 4422 2221 4697 1917 
+Q 4973 1613 4973 934 
+Q 4973 256 4701 -48 
+Q 4429 -352 4096 -352 
+Q 3757 -352 3475 -45 
+Q 3194 262 3194 928 
+z
+M 3610 934 
+Q 3610 384 3776 179 
+Q 3898 26 4096 26 
+Q 4294 26 4454 240 
+Q 4614 454 4614 934 
+Q 4614 1382 4460 1612 
+Q 4307 1843 4096 1843 
+Q 3898 1843 3770 1677 
+Q 3610 1466 3610 934 
+z
+" transform="scale(0.015625)"/>
+    </defs>
+    <use xlink:href="#CMUConcrete-Roman-74"/>
+    <use xlink:href="#CMUConcrete-Roman-68" transform="translate(38.899994 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(94.999985 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(134.199982 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(178.599976 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(222.999969 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-63" transform="translate(256.299957 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(300.699951 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(350.699936 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-66" transform="translate(406.799927 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-69" transform="translate(437.399918 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-67" transform="translate(465.699905 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-75" transform="translate(515.69989 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(571.799881 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-61" transform="translate(610.999878 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-74" transform="translate(659.899872 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-69" transform="translate(698.799866 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(727.099854 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6e" transform="translate(777.099838 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-73" transform="translate(833.199829 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-2c" transform="translate(872.599823 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(900.399811 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-70" transform="translate(933.699799 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(989.799789 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6f" transform="translate(1039.799774 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(1089.799759 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1118.099747 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1162.499741 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-3b" transform="translate(1218.599731 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1246.399719 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-73" transform="translate(1279.699707 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-68" transform="translate(1319.099701 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-61" transform="translate(1375.199692 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1424.099686 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1480.199677 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1524.59967 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-3a" transform="translate(1580.699661 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1608.499649 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-74" transform="translate(1641.799637 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-68" transform="translate(1680.699631 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(1736.799622 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-69" transform="translate(1781.199615 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-72" transform="translate(1809.499603 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(1848.6996 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6d" transform="translate(1881.999588 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-69" transform="translate(1965.899582 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(1994.19957 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-64" transform="translate(2050.299561 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-6c" transform="translate(2106.399551 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-65" transform="translate(2134.699539 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-20" transform="translate(2179.099533 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-39" transform="translate(2212.399521 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-35" transform="translate(2262.399506 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-25" transform="translate(2312.39949 0)"/>
+    <use xlink:href="#CMUConcrete-Roman-2e" transform="translate(2395.699478 0)"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe1836b4cf0">
+   <rect x="25.316041" y="28.6" width="484.659959" height="148.771667"/>
+  </clipPath>
+  <clipPath id="pd424b0259f">
+   <rect x="25.316041" y="226.706667" width="484.659959" height="148.771667"/>
+  </clipPath>
+  <clipPath id="p150ad0c71e">
+   <rect x="25.316041" y="424.813333" width="484.659959" height="148.771667"/>
+  </clipPath>
+ </defs>
+</svg>

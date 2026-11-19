@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Data downloaded or built locally (scripts/download_data.py, --raw-dir, --cache-dir)
+data/*/raw_download/raw_data/
+data/*/preprocessed_data/

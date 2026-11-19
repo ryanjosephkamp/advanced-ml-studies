@@ -1,0 +1,6 @@
+{
+ "date": "2026-11-19",
+ "passed": 53,
+ "failed": 0,
+ "line": "Checked November 19, 2026: 53 of 53 checks passed, holding this network's random orders, weights, and updates to the study's own code; its recall counts to every whole-set run the study recorded for the four pairings of rule and update that both run (3,200); and the sentences it sampled, from 2,517 runs, 268 tallies, and 8 made-up cases, to what they describe. Replaying the study's own storage order, noise, and update orders, the checks also reproduced the recall counts of all but 4 of the 27,200 subset runs the study recorded for those pairings (in each of those 4, a query in the replay met a field that this page's model computed as nonzero but within 10⁻⁹ of 0, a tie that rounding can decide)."
+}

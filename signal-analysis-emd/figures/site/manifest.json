@@ -1,0 +1,195 @@
+{
+ "about": "The course book's copies of this study's figures. Each is drawn by the study's own function from the saved data listed, in the book's inks; the checks are described in tools/site_figures.py.",
+ "passed": true,
+ "figures": [
+  {
+   "name": "fig7_imf_example",
+   "source": "study/figures.py: fig_imf_example, with the arguments make_all passes",
+   "data": {
+    "results/study/imf_example.csv": "5e4f7a378cd15cf2dbb437c61c2466247a2b0200a77f86cc88a73e768ec9865d"
+   },
+   "committed": "results/study/figures/fig7_imf_example.png",
+   "committed_sha256": "b216dd5329da81be34f2b8dc9f5c0c8a57d0eeb8b2abb01c0b2e525303eeb9f0",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2624587
+   },
+   "plotted_items": 37,
+   "plotted_fingerprint": "ffd5c9f64e782eab",
+   "files": {
+    "light": {
+     "file": "fig7_imf_example.light.svg",
+     "bytes": 121949,
+     "sha256": "02eef3023c4d9026fd0122e4ac919474967c6efbd4fd0ccbc223ee02e638c2ce",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig7_imf_example.dark.svg",
+     "bytes": 121949,
+     "sha256": "99d3b1d91106eaa7df7b551c583eb2dfb1a7c7d4f4a2b078fb15602239eb00d7",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig6_null",
+   "source": "study/figures.py: fig_null, with the arguments make_all passes",
+   "data": {
+    "results/study/split_null.csv": "44b68c7bda42e67415d0ba376c9287f28facc9056c345d26a82c791bfdc43c29",
+    "results/study/march_2026_comparison_table.csv": "6e222755f89de0d6fd26d9024f2674f3a4ce09ae90cb4520e31c3e93601eb064",
+    "results/run_2026-11-11_01-25-31/comparative_analysis/comparison_table.csv": "17e77c6c878145c22421d229b4589eb08d04c0276378462468e9a7d85dc8953c"
+   },
+   "committed": "results/study/figures/fig6_null.png",
+   "committed_sha256": "b59c8cfa0f4929897e33095894724d2ceed97ef96726ad0ee318802a426993f7",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2636058
+   },
+   "plotted_items": 118,
+   "plotted_fingerprint": "c3f917f8da0cdc06",
+   "files": {
+    "light": {
+     "file": "fig6_null.light.svg",
+     "bytes": 104257,
+     "sha256": "86bb5bb5fa6fb2fbc760423d49f48c0a381d5f7f17e2fa84edc41f894826c023",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig6_null.dark.svg",
+     "bytes": 104257,
+     "sha256": "8ac18fa037fefd28952c3ec0d5ddf4ca7d709317ba6f5d9eba36f837a9988973",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig1_heldout",
+   "source": "study/figures.py: fig_dots, with the arguments make_all passes",
+   "data": {
+    "results/study/summary.csv": "837dc24a53387e2247efcd3d821511faa4e65c01e681ad8699dc32085b9cfa04"
+   },
+   "committed": "results/study/figures/fig1_heldout.png",
+   "committed_sha256": "72cbcb42d535ea90db5a06c1b659561f279dc73273b550fbf39459f65f935a18",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 3183092
+   },
+   "plotted_items": 57,
+   "plotted_fingerprint": "731410bd643ba035",
+   "files": {
+    "light": {
+     "file": "fig1_heldout.light.svg",
+     "bytes": 146566,
+     "sha256": "1b775ccb8b8e7877c355490534a31141ec76f744a5fe5668c275fdb23bc26453",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig1_heldout.dark.svg",
+     "bytes": 146566,
+     "sha256": "bb203a7baed25ac959af00064cd9b0e6822db7645537ab151e12e23bc1a1b5c6",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig3_emd_vs_bandpower",
+   "source": "study/figures.py: fig_emd_vs_bandpower, with the arguments make_all passes",
+   "data": {
+    "results/study/paired_tests.csv": "dea63a4aa91e815721ec7ee5e5193fe1decd77924ac86fc24e3196567274817d"
+   },
+   "committed": "results/study/figures/fig3_emd_vs_bandpower.png",
+   "committed_sha256": "996349f185607a69f2a2af2811f800cc2d1f3efc51c9d8cf6111e30525434aa6",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2317938
+   },
+   "plotted_items": 42,
+   "plotted_fingerprint": "3657fa113954ae6f",
+   "files": {
+    "light": {
+     "file": "fig3_emd_vs_bandpower.light.svg",
+     "bytes": 102771,
+     "sha256": "b8aaca206392b1a07a2eeeb8f44e4c6950d4d3ff9407b9cb7c7c80ac24a06852",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig3_emd_vs_bandpower.dark.svg",
+     "bytes": 102771,
+     "sha256": "8ec2e6b89943347944040d1925f88699a25e8d973ae61e629d5fd4c743c5de04",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig5_leak",
+   "source": "study/figures.py: fig_leak, with the arguments make_all passes",
+   "data": {
+    "results/study/split_summary.csv": "820d6ce38d2c061ad0f49d62336351fa888f267b74b0f5cd3ea8cc6a7c41a244",
+    "results/study/summary.csv": "837dc24a53387e2247efcd3d821511faa4e65c01e681ad8699dc32085b9cfa04"
+   },
+   "committed": "results/study/figures/fig5_leak.png",
+   "committed_sha256": "583759939d399c617f20a9b918333390bc73f6dc47a15b92c9b8fc841db6c6cf",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 2876535
+   },
+   "plotted_items": 115,
+   "plotted_fingerprint": "2c2802988e4a544d",
+   "files": {
+    "light": {
+     "file": "fig5_leak.light.svg",
+     "bytes": 142862,
+     "sha256": "8e57b7aba31f237e512286683630d6b03579b5fcaa6ea8edb4fd5331ccb1562c",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig5_leak.dark.svg",
+     "bytes": 142862,
+     "sha256": "07cf5a63c590691cd728792c04547ab2d6498c3f0b3a1b1c536b8245c707ae4a",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  },
+  {
+   "name": "fig8_clustering",
+   "source": "study/figures.py: fig_clustering, with the arguments make_all passes",
+   "data": {
+    "results/study/clustering.csv": "976fcbdc11c148b8f2e5cdc9719f276771431222fce80018f2847641b553902b"
+   },
+   "committed": "results/study/figures/fig8_clustering.png",
+   "committed_sha256": "f9d757a6e52595e94dd3271452babd1900e556a3fb29d482ea9f28bd3cf28dc7",
+   "plain_run_vs_committed": {
+    "same_size": true,
+    "pixels_differing": 0,
+    "pixels": 3330138
+   },
+   "plotted_items": 87,
+   "plotted_fingerprint": "c59f45f411beeaec",
+   "files": {
+    "light": {
+     "file": "fig8_clustering.light.svg",
+     "bytes": 156902,
+     "sha256": "4367096b97200d57cc85d2a7f3d80ebf223ff3dc2571cb59e8ca5880b9ed3a73",
+     "plotted_items_match": true
+    },
+    "dark": {
+     "file": "fig8_clustering.dark.svg",
+     "bytes": 156902,
+     "sha256": "60d53c39c56b5fb60453782790daa066a54b8f5a21869823af87c5cc85470c55",
+     "plotted_items_match": true
+    }
+   },
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,661 @@
+
+======================================================================
+Author: Ryan Kamp
+Affiliation: Department of Computer Science, University of Cincinnati
+Location: Cincinnati, OH, USA
+GitHub: https://github.com/ryanjosephkamp
+
+Course: CS7063 Advanced Machine Learning
+Assignment: Assignment 4 – ML for Signal Analysis using EMD
+Date: November 11, 2026
+
+kamp_hw4.py Printout
+======================================================================
+
+
+──────────────────────────────────────────────────────────────────────
+  RUN CONFIGURATION
+──────────────────────────────────────────────────────────────────────
+  Timestamp:    2026-11-11_01-25-31
+  Output dir:   results/run_2026-11-11_01-25-31
+  Datasets:     eeg_mmi, bci_civ_2a, eeg_ma
+  Features:     variance, entropy, inst_freq
+  Similarity:   pearson, euclidean, itakura_saito
+  Tasks:        classification, clustering
+  IMFs used:    first 4 per segment (residue excluded)
+  Window:       2.0s
+  N subjects:   all
+  Stats:        enabled
+  Random seed:  42
+──────────────────────────────────────────────────────────────────────
+
+  Total experiment configurations: 54
+
+======================================================================
+  DATASET 1/3: EEG Motor Movement/Imagery Dataset
+  (eeg_mmi)
+======================================================================
+
+  [Task 1] Loading and preprocessing data...
+  Loading preprocessed data from cache: eeg_mmi_v2_w2.0_nall_ch41626.npz
+  Loaded: 4767 segments, 320 samples each, sfreq=160.0 Hz
+  Classes: {0: 'left_hand', 1: 'right_hand'}
+  Distribution: {'left_hand': 2406, 'right_hand': 2361}
+  Dropped while windowing: {"files_wrong_sfreq": [{"file": "S088R04.edf", "sfreq": 128.0}, {"file": "S088R08.edf", "sfreq": 128.0}, {"file": "S088R12.edf", "sfreq": 128.0}, {"file": "S092R04.edf", "sfreq": 128.0}, {"file": "S092R08.edf", "sfreq": 128.0}, {"file": "S092R12.edf", "sfreq": 128.0}, {"file": "S100R04.edf", "sfreq": 128.0}, {"file": "S100R08.edf", "sfreq": 128.0}, {"file": "S100R12.edf", "sfreq": 128.0}], "subjects_wrong_sfreq": ["S088", "S092", "S100"], "out_of_range": 0, "flat_windows": 1, "flat_windows_by_label": {"0": 0, "1": 1}}
+
+  [Stats] Computing dataset statistics...
+
+────────────────────────────────────────────────────────────
+  Dataset Statistics: EEG Motor Movement/Imagery Dataset
+────────────────────────────────────────────────────────────
+
+  +---------------------+-----------------------------------------------+
+| Property            | Value                                         |
++=====================+===============================================+
+| Dataset             | EEG Motor Movement/Imagery Dataset            |
++---------------------+-----------------------------------------------+
+| Source URL          | https://physionet.org/content/eegmmidb/1.0.0/ |
++---------------------+-----------------------------------------------+
+| Subjects Loaded     | 106                                           |
++---------------------+-----------------------------------------------+
+| Channels            | 3                                             |
++---------------------+-----------------------------------------------+
+| Sampling Frequency  | 160.0 Hz                                      |
++---------------------+-----------------------------------------------+
+| Total Segments      | 4767                                          |
++---------------------+-----------------------------------------------+
+| Samples per Segment | 320                                           |
++---------------------+-----------------------------------------------+
+| Window Duration     | 2.00 sec                                      |
++---------------------+-----------------------------------------------+
+
+  Signal Statistics:
+  +-------------+-----------+
+| Statistic   |     Value |
++=============+===========+
+| Mean        | -0        |
++-------------+-----------+
+| Std Dev     |  1        |
++-------------+-----------+
+| Min         | -5.20097  |
++-------------+-----------+
+| Max         |  6.808    |
++-------------+-----------+
+| Median      | -0.048443 |
++-------------+-----------+
+
+  Class Distribution:
+  +------------+---------+--------------+
+| Class      |   Count | Percentage   |
++============+=========+==============+
+| left_hand  |    2406 | 50.5%        |
++------------+---------+--------------+
+| right_hand |    2361 | 49.5%        |
++------------+---------+--------------+
+  Statistics saved to: dataset_stats/eeg_mmi
+
+  [Task 1] Generating signal visualizations...
+  Saved representative signals plot.
+
+  [Task 2] Applying EMD to 4767 segments...
+Applying EMD to signals:   0%|          | 0/4767 [00:00<?, ?it/s]Applying EMD to signals:   1%|          | 25/4767 [00:00<00:19, 242.72it/s]Applying EMD to signals:   1%|          | 51/4767 [00:00<00:19, 247.77it/s]Applying EMD to signals:   2%|▏         | 76/4767 [00:00<00:20, 229.32it/s]Applying EMD to signals:   2%|▏         | 102/4767 [00:00<00:19, 238.23it/s]Applying EMD to signals:   3%|▎         | 127/4767 [00:00<00:19, 237.89it/s]Applying EMD to signals:   3%|▎         | 153/4767 [00:00<00:19, 242.20it/s]Applying EMD to signals:   4%|▎         | 178/4767 [00:00<00:18, 243.54it/s]Applying EMD to signals:   5%|▍         | 215/4767 [00:00<00:16, 281.87it/s]Applying EMD to signals:   5%|▌         | 248/4767 [00:00<00:15, 295.52it/s]Applying EMD to signals:   6%|▌         | 278/4767 [00:01<00:15, 289.99it/s]Applying EMD to signals:   7%|▋         | 313/4767 [00:01<00:14, 305.26it/s]Applying EMD to signals:   7%|▋         | 344/4767 [00:01<00:15, 276.70it/s]Applying EMD to signals:   8%|▊         | 373/4767 [00:01<00:15, 277.50it/s]Applying EMD to signals:   8%|▊         | 402/4767 [00:01<00:16, 266.90it/s]Applying EMD to signals:   9%|▉         | 430/4767 [00:01<00:17, 244.61it/s]Applying EMD to signals:  10%|▉         | 455/4767 [00:01<00:21, 202.62it/s]Applying EMD to signals:  10%|█         | 482/4767 [00:01<00:19, 217.29it/s]Applying EMD to signals:  11%|█         | 507/4767 [00:02<00:19, 223.91it/s]Applying EMD to signals:  11%|█         | 531/4767 [00:02<00:18, 225.94it/s]Applying EMD to signals:  12%|█▏        | 556/4767 [00:02<00:18, 231.56it/s]Applying EMD to signals:  12%|█▏        | 581/4767 [00:02<00:17, 235.83it/s]Applying EMD to signals:  13%|█▎        | 606/4767 [00:02<00:17, 232.31it/s]Applying EMD to signals:  13%|█▎        | 631/4767 [00:02<00:17, 236.79it/s]Applying EMD to signals:  14%|█▎        | 655/4767 [00:02<00:17, 233.29it/s]Applying EMD to signals:  14%|█▍        | 679/4767 [00:02<00:17, 235.00it/s]Applying EMD to signals:  15%|█▍        | 703/4767 [00:02<00:17, 231.91it/s]Applying EMD to signals:  15%|█▌        | 729/4767 [00:02<00:16, 237.64it/s]Applying EMD to signals:  16%|█▌        | 755/4767 [00:03<00:16, 243.77it/s]Applying EMD to signals:  16%|█▋        | 780/4767 [00:03<00:16, 241.41it/s]Applying EMD to signals:  17%|█▋        | 805/4767 [00:03<00:16, 236.53it/s]Applying EMD to signals:  17%|█▋        | 830/4767 [00:03<00:16, 239.52it/s]Applying EMD to signals:  18%|█▊        | 857/4767 [00:03<00:15, 246.13it/s]Applying EMD to signals:  19%|█▊        | 886/4767 [00:03<00:15, 257.51it/s]Applying EMD to signals:  19%|█▉        | 912/4767 [00:03<00:14, 257.27it/s]Applying EMD to signals:  20%|█▉        | 938/4767 [00:03<00:15, 250.05it/s]Applying EMD to signals:  20%|██        | 964/4767 [00:03<00:15, 248.39it/s]Applying EMD to signals:  21%|██        | 990/4767 [00:04<00:15, 250.48it/s]Applying EMD to signals:  21%|██▏       | 1016/4767 [00:04<00:14, 252.94it/s]Applying EMD to signals:  22%|██▏       | 1043/4767 [00:04<00:14, 255.40it/s]Applying EMD to signals:  23%|██▎       | 1074/4767 [00:04<00:13, 269.02it/s]Applying EMD to signals:  23%|██▎       | 1102/4767 [00:04<00:13, 269.76it/s]Applying EMD to signals:  24%|██▎       | 1129/4767 [00:04<00:13, 266.40it/s]Applying EMD to signals:  24%|██▍       | 1156/4767 [00:04<00:14, 241.00it/s]Applying EMD to signals:  25%|██▍       | 1181/4767 [00:04<00:15, 236.67it/s]Applying EMD to signals:  25%|██▌       | 1205/4767 [00:04<00:15, 236.59it/s]Applying EMD to signals:  26%|██▌       | 1230/4767 [00:04<00:14, 239.33it/s]Applying EMD to signals:  26%|██▋       | 1261/4767 [00:05<00:13, 257.04it/s]Applying EMD to signals:  27%|██▋       | 1287/4767 [00:05<00:14, 235.57it/s]Applying EMD to signals:  28%|██▊       | 1311/4767 [00:05<00:15, 226.93it/s]Applying EMD to signals:  28%|██▊       | 1334/4767 [00:05<00:16, 208.03it/s]Applying EMD to signals:  28%|██▊       | 1356/4767 [00:05<00:17, 197.56it/s]Applying EMD to signals:  29%|██▉       | 1384/4767 [00:05<00:15, 218.63it/s]Applying EMD to signals:  30%|██▉       | 1407/4767 [00:05<00:16, 202.62it/s]Applying EMD to signals:  30%|██▉       | 1429/4767 [00:05<00:16, 205.92it/s]Applying EMD to signals:  30%|███       | 1451/4767 [00:06<00:17, 193.33it/s]Applying EMD to signals:  31%|███       | 1471/4767 [00:06<00:17, 186.49it/s]Applying EMD to signals:  31%|███▏      | 1490/4767 [00:06<00:20, 156.45it/s]Applying EMD to signals:  32%|███▏      | 1507/4767 [00:06<00:21, 154.16it/s]Applying EMD to signals:  32%|███▏      | 1529/4767 [00:06<00:19, 169.72it/s]Applying EMD to signals:  33%|███▎      | 1571/4767 [00:06<00:13, 233.96it/s]Applying EMD to signals:  33%|███▎      | 1596/4767 [00:06<00:14, 225.52it/s]Applying EMD to signals:  34%|███▍      | 1620/4767 [00:06<00:14, 222.90it/s]Applying EMD to signals:  34%|███▍      | 1643/4767 [00:07<00:14, 221.37it/s]Applying EMD to signals:  35%|███▌      | 1669/4767 [00:07<00:13, 230.38it/s]Applying EMD to signals:  36%|███▌      | 1693/4767 [00:07<00:13, 230.26it/s]Applying EMD to signals:  36%|███▌      | 1717/4767 [00:07<00:13, 230.63it/s]Applying EMD to signals:  37%|███▋      | 1747/4767 [00:07<00:12, 249.76it/s]Applying EMD to signals:  37%|███▋      | 1773/4767 [00:07<00:12, 249.36it/s]Applying EMD to signals:  38%|███▊      | 1799/4767 [00:07<00:12, 246.32it/s]Applying EMD to signals:  38%|███▊      | 1824/4767 [00:07<00:12, 227.80it/s]Applying EMD to signals:  39%|███▉      | 1849/4767 [00:07<00:12, 233.46it/s]Applying EMD to signals:  39%|███▉      | 1873/4767 [00:07<00:12, 233.75it/s]Applying EMD to signals:  40%|███▉      | 1897/4767 [00:08<00:12, 234.70it/s]Applying EMD to signals:  40%|████      | 1921/4767 [00:08<00:12, 234.19it/s]Applying EMD to signals:  41%|████      | 1948/4767 [00:08<00:11, 241.58it/s]Applying EMD to signals:  41%|████▏     | 1974/4767 [00:08<00:11, 243.65it/s]Applying EMD to signals:  42%|████▏     | 2001/4767 [00:08<00:11, 247.98it/s]Applying EMD to signals:  43%|████▎     | 2028/4767 [00:08<00:10, 252.91it/s]Applying EMD to signals:  43%|████▎     | 2054/4767 [00:08<00:10, 253.82it/s]Applying EMD to signals:  44%|████▎     | 2080/4767 [00:08<00:10, 248.60it/s]Applying EMD to signals:  44%|████▍     | 2105/4767 [00:08<00:10, 247.71it/s]Applying EMD to signals:  45%|████▍     | 2130/4767 [00:09<00:10, 248.08it/s]Applying EMD to signals:  45%|████▌     | 2156/4767 [00:09<00:10, 249.97it/s]Applying EMD to signals:  46%|████▌     | 2182/4767 [00:09<00:10, 250.34it/s]Applying EMD to signals:  46%|████▋     | 2208/4767 [00:09<00:10, 252.57it/s]Applying EMD to signals:  47%|████▋     | 2234/4767 [00:09<00:10, 245.66it/s]Applying EMD to signals:  47%|████▋     | 2259/4767 [00:09<00:10, 239.71it/s]Applying EMD to signals:  48%|████▊     | 2284/4767 [00:09<00:10, 233.69it/s]Applying EMD to signals:  48%|████▊     | 2310/4767 [00:09<00:10, 239.17it/s]Applying EMD to signals:  49%|████▉     | 2335/4767 [00:09<00:10, 240.86it/s]Applying EMD to signals:  50%|████▉     | 2361/4767 [00:09<00:09, 243.33it/s]Applying EMD to signals:  50%|█████     | 2387/4767 [00:10<00:09, 246.01it/s]Applying EMD to signals:  51%|█████     | 2413/4767 [00:10<00:09, 248.58it/s]Applying EMD to signals:  51%|█████     | 2438/4767 [00:10<00:09, 245.66it/s]Applying EMD to signals:  52%|█████▏    | 2463/4767 [00:10<00:09, 243.37it/s]Applying EMD to signals:  52%|█████▏    | 2488/4767 [00:10<00:09, 234.91it/s]Applying EMD to signals:  53%|█████▎    | 2512/4767 [00:10<00:10, 211.03it/s]Applying EMD to signals:  53%|█████▎    | 2539/4767 [00:10<00:09, 225.12it/s]Applying EMD to signals:  54%|█████▍    | 2564/4767 [00:10<00:09, 231.00it/s]Applying EMD to signals:  54%|█████▍    | 2594/4767 [00:10<00:08, 250.02it/s]Applying EMD to signals:  55%|█████▍    | 2620/4767 [00:11<00:08, 250.82it/s]Applying EMD to signals:  56%|█████▌    | 2646/4767 [00:11<00:08, 239.60it/s]Applying EMD to signals:  56%|█████▌    | 2673/4767 [00:11<00:08, 247.96it/s]Applying EMD to signals:  57%|█████▋    | 2701/4767 [00:11<00:08, 253.75it/s]Applying EMD to signals:  57%|█████▋    | 2728/4767 [00:11<00:07, 258.19it/s]Applying EMD to signals:  58%|█████▊    | 2755/4767 [00:11<00:07, 260.40it/s]Applying EMD to signals:  58%|█████▊    | 2782/4767 [00:11<00:07, 249.65it/s]Applying EMD to signals:  59%|█████▉    | 2815/4767 [00:11<00:07, 270.64it/s]Applying EMD to signals:  60%|█████▉    | 2847/4767 [00:11<00:06, 281.47it/s]Applying EMD to signals:  60%|██████    | 2876/4767 [00:12<00:07, 268.62it/s]Applying EMD to signals:  61%|██████    | 2904/4767 [00:12<00:07, 262.86it/s]Applying EMD to signals:  61%|██████▏   | 2931/4767 [00:12<00:07, 260.21it/s]Applying EMD to signals:  62%|██████▏   | 2964/4767 [00:12<00:06, 278.54it/s]Applying EMD to signals:  63%|██████▎   | 2993/4767 [00:12<00:06, 273.25it/s]Applying EMD to signals:  63%|██████▎   | 3021/4767 [00:12<00:06, 263.94it/s]Applying EMD to signals:  64%|██████▍   | 3048/4767 [00:12<00:06, 261.45it/s]Applying EMD to signals:  65%|██████▍   | 3075/4767 [00:12<00:06, 253.28it/s]Applying EMD to signals:  65%|██████▌   | 3101/4767 [00:12<00:06, 248.16it/s]Applying EMD to signals:  66%|██████▌   | 3126/4767 [00:13<00:06, 237.40it/s]Applying EMD to signals:  66%|██████▌   | 3150/4767 [00:13<00:06, 232.85it/s]Applying EMD to signals:  67%|██████▋   | 3175/4767 [00:13<00:06, 237.16it/s]Applying EMD to signals:  67%|██████▋   | 3200/4767 [00:13<00:06, 239.78it/s]Applying EMD to signals:  68%|██████▊   | 3228/4767 [00:13<00:06, 249.83it/s]Applying EMD to signals:  68%|██████▊   | 3254/4767 [00:13<00:06, 249.71it/s]Applying EMD to signals:  69%|██████▉   | 3280/4767 [00:13<00:05, 251.03it/s]Applying EMD to signals:  69%|██████▉   | 3307/4767 [00:13<00:05, 254.49it/s]Applying EMD to signals:  70%|██████▉   | 3335/4767 [00:13<00:05, 261.38it/s]Applying EMD to signals:  71%|███████   | 3362/4767 [00:13<00:05, 260.84it/s]Applying EMD to signals:  71%|███████   | 3389/4767 [00:14<00:05, 261.03it/s]Applying EMD to signals:  72%|███████▏  | 3418/4767 [00:14<00:05, 268.76it/s]Applying EMD to signals:  72%|███████▏  | 3446/4767 [00:14<00:04, 269.87it/s]Applying EMD to signals:  73%|███████▎  | 3474/4767 [00:14<00:04, 259.73it/s]Applying EMD to signals:  73%|███████▎  | 3501/4767 [00:14<00:04, 257.22it/s]Applying EMD to signals:  74%|███████▍  | 3527/4767 [00:14<00:04, 253.07it/s]Applying EMD to signals:  75%|███████▍  | 3553/4767 [00:14<00:04, 252.95it/s]Applying EMD to signals:  75%|███████▌  | 3579/4767 [00:14<00:04, 246.18it/s]Applying EMD to signals:  76%|███████▌  | 3604/4767 [00:14<00:04, 246.13it/s]Applying EMD to signals:  76%|███████▌  | 3629/4767 [00:14<00:04, 246.02it/s]Applying EMD to signals:  77%|███████▋  | 3655/4767 [00:15<00:04, 248.74it/s]Applying EMD to signals:  77%|███████▋  | 3682/4767 [00:15<00:04, 253.61it/s]Applying EMD to signals:  78%|███████▊  | 3708/4767 [00:15<00:04, 249.40it/s]Applying EMD to signals:  78%|███████▊  | 3733/4767 [00:15<00:04, 249.31it/s]Applying EMD to signals:  79%|███████▉  | 3763/4767 [00:15<00:03, 263.54it/s]Applying EMD to signals:  80%|███████▉  | 3790/4767 [00:15<00:03, 260.11it/s]Applying EMD to signals:  80%|████████  | 3817/4767 [00:15<00:03, 251.10it/s]Applying EMD to signals:  81%|████████  | 3843/4767 [00:15<00:03, 233.25it/s]Applying EMD to signals:  81%|████████  | 3867/4767 [00:15<00:03, 230.02it/s]Applying EMD to signals:  82%|████████▏ | 3891/4767 [00:16<00:04, 203.95it/s]Applying EMD to signals:  82%|████████▏ | 3912/4767 [00:16<00:05, 160.11it/s]Applying EMD to signals:  83%|████████▎ | 3935/4767 [00:16<00:04, 175.55it/s]Applying EMD to signals:  83%|████████▎ | 3961/4767 [00:16<00:04, 194.43it/s]Applying EMD to signals:  84%|████████▎ | 3983/4767 [00:16<00:04, 163.47it/s]Applying EMD to signals:  84%|████████▍ | 4002/4767 [00:16<00:05, 137.81it/s]Applying EMD to signals:  84%|████████▍ | 4018/4767 [00:17<00:05, 134.42it/s]Applying EMD to signals:  85%|████████▍ | 4033/4767 [00:17<00:05, 136.64it/s]Applying EMD to signals:  85%|████████▍ | 4049/4767 [00:17<00:05, 141.28it/s]Applying EMD to signals:  85%|████████▌ | 4071/4767 [00:17<00:04, 160.83it/s]Applying EMD to signals:  86%|████████▌ | 4091/4767 [00:17<00:03, 169.96it/s]Applying EMD to signals:  86%|████████▋ | 4116/4767 [00:17<00:03, 190.73it/s]Applying EMD to signals:  87%|████████▋ | 4142/4767 [00:17<00:02, 209.21it/s]Applying EMD to signals:  87%|████████▋ | 4166/4767 [00:17<00:02, 216.25it/s]Applying EMD to signals:  88%|████████▊ | 4189/4767 [00:17<00:02, 202.25it/s]Applying EMD to signals:  88%|████████▊ | 4210/4767 [00:18<00:03, 167.03it/s]Applying EMD to signals:  89%|████████▊ | 4228/4767 [00:18<00:03, 136.17it/s]Applying EMD to signals:  89%|████████▉ | 4244/4767 [00:18<00:03, 132.22it/s]Applying EMD to signals:  90%|████████▉ | 4270/4767 [00:18<00:03, 160.76it/s]Applying EMD to signals:  90%|█████████ | 4292/4767 [00:18<00:02, 174.62it/s]Applying EMD to signals:  91%|█████████ | 4316/4767 [00:18<00:02, 189.66it/s]Applying EMD to signals:  91%|█████████ | 4341/4767 [00:18<00:02, 204.09it/s]Applying EMD to signals:  92%|█████████▏| 4364/4767 [00:18<00:01, 210.94it/s]Applying EMD to signals:  92%|█████████▏| 4391/4767 [00:19<00:01, 227.54it/s]Applying EMD to signals:  93%|█████████▎| 4417/4767 [00:19<00:01, 235.36it/s]Applying EMD to signals:  93%|█████████▎| 4442/4767 [00:19<00:01, 233.33it/s]Applying EMD to signals:  94%|█████████▎| 4468/4767 [00:19<00:01, 240.43it/s]Applying EMD to signals:  94%|█████████▍| 4493/4767 [00:19<00:01, 240.35it/s]Applying EMD to signals:  95%|█████████▍| 4526/4767 [00:19<00:00, 265.05it/s]Applying EMD to signals:  96%|█████████▌| 4554/4767 [00:19<00:00, 267.16it/s]Applying EMD to signals:  96%|█████████▌| 4583/4767 [00:19<00:00, 273.06it/s]Applying EMD to signals:  97%|█████████▋| 4611/4767 [00:19<00:00, 273.08it/s]Applying EMD to signals:  97%|█████████▋| 4639/4767 [00:19<00:00, 262.24it/s]Applying EMD to signals:  98%|█████████▊| 4666/4767 [00:20<00:00, 253.46it/s]Applying EMD to signals:  98%|█████████▊| 4692/4767 [00:20<00:00, 244.86it/s]Applying EMD to signals:  99%|█████████▉| 4717/4767 [00:20<00:00, 236.04it/s]Applying EMD to signals:  99%|█████████▉| 4742/4767 [00:20<00:00, 238.28it/s]Applying EMD to signals: 100%|██████████| 4767/4767 [00:20<00:00, 232.48it/s]
+  EMD completed: 4767/4767 segments kept
+  IMF count range (residue excluded): 4 – 7 (median: 5)
+  Segments with fewer than 4 IMFs (skipped): 0
+  Using the first 4 IMFs of every segment
+
+  [Task 2] Generating IMF decomposition plots...
+  Saved 3 IMF decomposition plots.
+
+  [Tasks 3-5] Running experiment configurations...
+
+  ── Feature: variance ──
+    Extracting variance features...
+    Feature matrix shape: (4767, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [1/18] variance + pearson + classification
+      F1 Score: 0.5013
+      Accuracy: 0.5017
+      Balanced accuracy: 0.5015
+      Per-class F1: {'left_hand': 0.519217801753203, 'right_hand': 0.48295866569978246}
+
+    [2/18] variance + pearson + clustering
+      Silhouette Score: 0.3219
+      ARI / NMI vs. labels: 0.0000 / 0.0001
+    Computing euclidean distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [3/18] variance + euclidean + classification
+      F1 Score: 0.4995
+      Accuracy: 0.4997
+      Balanced accuracy: 0.4995
+      Per-class F1: {'left_hand': 0.5102599179206566, 'right_hand': 0.48857142857142855}
+
+    [4/18] variance + euclidean + clustering
+      Silhouette Score: 0.5699
+      ARI / NMI vs. labels: 0.0000 / 0.0001
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [5/18] variance + itakura_saito + classification
+      F1 Score: 0.5073
+      Accuracy: 0.5073
+      Balanced accuracy: 0.5074
+      Per-class F1: {'left_hand': 0.5038705137227305, 'right_hand': 0.5107564191533657}
+
+    [6/18] variance + itakura_saito + clustering
+      Silhouette Score: 0.6606
+      ARI / NMI vs. labels: 0.0000 / 0.0001
+
+  ── Feature: entropy ──
+    Extracting entropy features...
+    Feature matrix shape: (4767, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [7/18] entropy + pearson + classification
+      F1 Score: 0.5087
+      Accuracy: 0.5087
+      Balanced accuracy: 0.5087
+      Per-class F1: {'left_hand': 0.5148378191856453, 'right_hand': 0.502476999292286}
+
+    [8/18] entropy + pearson + clustering
+      Silhouette Score: 0.1429
+      ARI / NMI vs. labels: -0.0002 / 0.0001
+    Computing euclidean distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [9/18] entropy + euclidean + classification
+      F1 Score: 0.5100
+      Accuracy: 0.5101
+      Balanced accuracy: 0.5100
+      Per-class F1: {'left_hand': 0.5201916495550992, 'right_hand': 0.49964311206281226}
+
+    [10/18] entropy + euclidean + clustering
+      Silhouette Score: 0.2817
+      ARI / NMI vs. labels: -0.0002 / 0.0001
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [11/18] entropy + itakura_saito + classification
+      F1 Score: 0.5066
+      Accuracy: 0.5066
+      Balanced accuracy: 0.5065
+      Per-class F1: {'left_hand': 0.5151098901098901, 'right_hand': 0.49786628733997157}
+
+    [12/18] entropy + itakura_saito + clustering
+      Silhouette Score: 0.4667
+      ARI / NMI vs. labels: -0.0002 / 0.0001
+
+  ── Feature: inst_freq ──
+    Extracting inst_freq features...
+    Feature matrix shape: (4767, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [13/18] inst_freq + pearson + classification
+      F1 Score: 0.5045
+      Accuracy: 0.5045
+      Balanced accuracy: 0.5045
+      Per-class F1: {'left_hand': 0.5079805690492714, 'right_hand': 0.5010555946516537}
+
+    [14/18] inst_freq + pearson + clustering
+      Silhouette Score: 0.0943
+      ARI / NMI vs. labels: -0.0002 / 0.0000
+    Computing euclidean distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [15/18] inst_freq + euclidean + classification
+      F1 Score: 0.5032
+      Accuracy: 0.5038
+      Balanced accuracy: 0.5035
+      Per-class F1: {'left_hand': 0.5228494623655914, 'right_hand': 0.48326055312954874}
+
+    [16/18] inst_freq + euclidean + clustering
+      Silhouette Score: 0.5560
+      ARI / NMI vs. labels: -0.0002 / 0.0000
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (4767, 4767)
+
+    [17/18] inst_freq + itakura_saito + classification
+      F1 Score: 0.5094
+      Accuracy: 0.5101
+      Balanced accuracy: 0.5098
+      Per-class F1: {'left_hand': 0.5311036789297658, 'right_hand': 0.48719824433065106}
+
+    [18/18] inst_freq + itakura_saito + clustering
+      Silhouette Score: 0.3602
+      ARI / NMI vs. labels: -0.0002 / 0.0000
+
+  Dataset eeg_mmi completed in 42.1s
+
+======================================================================
+  DATASET 2/3: BCI Competition IV Dataset 2a
+  (bci_civ_2a)
+======================================================================
+
+  [Task 1] Loading and preprocessing data...
+  Loading preprocessed data from cache: bci_civ_2a_v2_w2.0_nall_ch35243.npz
+  Loaded: 2590 segments, 500 samples each, sfreq=250.0 Hz
+  Classes: {0: 'left_hand', 1: 'right_hand', 2: 'both_feet', 3: 'tongue'}
+  Distribution: {'left_hand': 648, 'right_hand': 648, 'both_feet': 646, 'tongue': 648}
+  Dropped while windowing: {"out_of_range": 0, "flat_windows": 2, "flat_windows_by_label": {"0": 0, "1": 0, "2": 2, "3": 0}}
+
+  [Stats] Computing dataset statistics...
+
+────────────────────────────────────────────────────────────
+  Dataset Statistics: BCI Competition IV Dataset 2a
+────────────────────────────────────────────────────────────
+
+  +---------------------+------------------------------------+
+| Property            | Value                              |
++=====================+====================================+
+| Dataset             | BCI Competition IV Dataset 2a      |
++---------------------+------------------------------------+
+| Source URL          | http://www.bbci.de/competition/iv/ |
++---------------------+------------------------------------+
+| Subjects Loaded     | 9                                  |
++---------------------+------------------------------------+
+| Channels            | 3                                  |
++---------------------+------------------------------------+
+| Sampling Frequency  | 250.0 Hz                           |
++---------------------+------------------------------------+
+| Total Segments      | 2590                               |
++---------------------+------------------------------------+
+| Samples per Segment | 500                                |
++---------------------+------------------------------------+
+| Window Duration     | 2.00 sec                           |
++---------------------+------------------------------------+
+
+  Signal Statistics:
+  +-------------+-----------+
+| Statistic   |     Value |
++=============+===========+
+| Mean        | -0        |
++-------------+-----------+
+| Std Dev     |  1        |
++-------------+-----------+
+| Min         | -6.74926  |
++-------------+-----------+
+| Max         |  6.6823   |
++-------------+-----------+
+| Median      | -0.012231 |
++-------------+-----------+
+
+  Class Distribution:
+  +------------+---------+--------------+
+| Class      |   Count | Percentage   |
++============+=========+==============+
+| left_hand  |     648 | 25.0%        |
++------------+---------+--------------+
+| right_hand |     648 | 25.0%        |
++------------+---------+--------------+
+| both_feet  |     646 | 24.9%        |
++------------+---------+--------------+
+| tongue     |     648 | 25.0%        |
++------------+---------+--------------+
+  Statistics saved to: dataset_stats/bci_civ_2a
+
+  [Task 1] Generating signal visualizations...
+  Saved representative signals plot.
+
+  [Task 2] Applying EMD to 2590 segments...
+Applying EMD to signals:   0%|          | 0/2590 [00:00<?, ?it/s]Applying EMD to signals:   1%|          | 20/2590 [00:00<00:13, 189.48it/s]Applying EMD to signals:   2%|▏         | 39/2590 [00:00<00:14, 181.65it/s]Applying EMD to signals:   2%|▏         | 58/2590 [00:00<00:13, 181.34it/s]Applying EMD to signals:   3%|▎         | 77/2590 [00:00<00:13, 182.57it/s]Applying EMD to signals:   4%|▎         | 97/2590 [00:00<00:13, 188.37it/s]Applying EMD to signals:   5%|▍         | 117/2590 [00:00<00:12, 191.88it/s]Applying EMD to signals:   5%|▌         | 138/2590 [00:00<00:12, 196.17it/s]Applying EMD to signals:   6%|▌         | 158/2590 [00:00<00:12, 190.71it/s]Applying EMD to signals:   7%|▋         | 178/2590 [00:00<00:12, 189.86it/s]Applying EMD to signals:   8%|▊         | 198/2590 [00:01<00:12, 192.53it/s]Applying EMD to signals:   8%|▊         | 218/2590 [00:01<00:12, 189.36it/s]Applying EMD to signals:   9%|▉         | 238/2590 [00:01<00:12, 190.70it/s]Applying EMD to signals:  10%|█         | 261/2590 [00:01<00:11, 199.82it/s]Applying EMD to signals:  11%|█         | 282/2590 [00:01<00:11, 200.46it/s]Applying EMD to signals:  12%|█▏        | 303/2590 [00:01<00:11, 193.52it/s]Applying EMD to signals:  12%|█▏        | 323/2590 [00:01<00:11, 194.46it/s]Applying EMD to signals:  13%|█▎        | 343/2590 [00:01<00:12, 184.71it/s]Applying EMD to signals:  14%|█▍        | 362/2590 [00:01<00:12, 178.33it/s]Applying EMD to signals:  15%|█▍        | 382/2590 [00:02<00:11, 184.16it/s]Applying EMD to signals:  16%|█▌        | 402/2590 [00:02<00:11, 186.66it/s]Applying EMD to signals:  16%|█▋        | 421/2590 [00:02<00:11, 185.90it/s]Applying EMD to signals:  17%|█▋        | 440/2590 [00:02<00:11, 186.10it/s]Applying EMD to signals:  18%|█▊        | 460/2590 [00:02<00:11, 183.40it/s]Applying EMD to signals:  19%|█▊        | 481/2590 [00:02<00:11, 188.71it/s]Applying EMD to signals:  19%|█▉        | 500/2590 [00:02<00:11, 183.45it/s]Applying EMD to signals:  20%|██        | 519/2590 [00:02<00:11, 183.36it/s]Applying EMD to signals:  21%|██        | 538/2590 [00:02<00:11, 178.11it/s]Applying EMD to signals:  22%|██▏       | 558/2590 [00:02<00:11, 182.69it/s]Applying EMD to signals:  22%|██▏       | 577/2590 [00:03<00:10, 184.40it/s]Applying EMD to signals:  23%|██▎       | 596/2590 [00:03<00:10, 185.54it/s]Applying EMD to signals:  24%|██▍       | 617/2590 [00:03<00:10, 190.28it/s]Applying EMD to signals:  25%|██▍       | 638/2590 [00:03<00:09, 195.74it/s]Applying EMD to signals:  25%|██▌       | 660/2590 [00:03<00:09, 202.76it/s]Applying EMD to signals:  26%|██▋       | 681/2590 [00:03<00:09, 192.87it/s]Applying EMD to signals:  27%|██▋       | 702/2590 [00:03<00:09, 195.09it/s]Applying EMD to signals:  28%|██▊       | 724/2590 [00:03<00:09, 201.74it/s]Applying EMD to signals:  29%|██▉       | 745/2590 [00:03<00:09, 201.91it/s]Applying EMD to signals:  30%|██▉       | 766/2590 [00:04<00:09, 198.55it/s]Applying EMD to signals:  30%|███       | 788/2590 [00:04<00:08, 202.37it/s]Applying EMD to signals:  31%|███       | 809/2590 [00:04<00:08, 203.33it/s]Applying EMD to signals:  32%|███▏      | 830/2590 [00:04<00:08, 199.72it/s]Applying EMD to signals:  33%|███▎      | 851/2590 [00:04<00:08, 200.76it/s]Applying EMD to signals:  34%|███▎      | 873/2590 [00:04<00:08, 203.50it/s]Applying EMD to signals:  35%|███▍      | 895/2590 [00:04<00:08, 205.40it/s]Applying EMD to signals:  35%|███▌      | 916/2590 [00:04<00:08, 204.25it/s]Applying EMD to signals:  36%|███▌      | 937/2590 [00:04<00:08, 193.60it/s]Applying EMD to signals:  37%|███▋      | 957/2590 [00:04<00:08, 193.04it/s]Applying EMD to signals:  38%|███▊      | 977/2590 [00:05<00:08, 192.80it/s]Applying EMD to signals:  38%|███▊      | 997/2590 [00:05<00:08, 189.51it/s]Applying EMD to signals:  39%|███▉      | 1016/2590 [00:05<00:08, 186.92it/s]Applying EMD to signals:  40%|███▉      | 1035/2590 [00:05<00:08, 184.90it/s]Applying EMD to signals:  41%|████      | 1054/2590 [00:05<00:08, 185.84it/s]Applying EMD to signals:  41%|████▏     | 1073/2590 [00:05<00:08, 182.45it/s]Applying EMD to signals:  42%|████▏     | 1092/2590 [00:05<00:08, 181.61it/s]Applying EMD to signals:  43%|████▎     | 1111/2590 [00:05<00:08, 183.91it/s]Applying EMD to signals:  44%|████▎     | 1130/2590 [00:05<00:07, 185.49it/s]Applying EMD to signals:  44%|████▍     | 1149/2590 [00:06<00:07, 184.19it/s]Applying EMD to signals:  45%|████▌     | 1171/2590 [00:06<00:07, 192.13it/s]Applying EMD to signals:  46%|████▌     | 1191/2590 [00:06<00:07, 183.92it/s]Applying EMD to signals:  47%|████▋     | 1210/2590 [00:06<00:07, 181.27it/s]Applying EMD to signals:  47%|████▋     | 1230/2590 [00:06<00:07, 184.64it/s]Applying EMD to signals:  48%|████▊     | 1250/2590 [00:06<00:07, 185.51it/s]Applying EMD to signals:  49%|████▉     | 1269/2590 [00:06<00:07, 183.43it/s]Applying EMD to signals:  50%|████▉     | 1288/2590 [00:06<00:07, 184.68it/s]Applying EMD to signals:  51%|█████     | 1308/2590 [00:06<00:06, 188.29it/s]Applying EMD to signals:  51%|█████     | 1327/2590 [00:06<00:06, 185.74it/s]Applying EMD to signals:  52%|█████▏    | 1346/2590 [00:07<00:06, 185.71it/s]Applying EMD to signals:  53%|█████▎    | 1365/2590 [00:07<00:06, 185.09it/s]Applying EMD to signals:  53%|█████▎    | 1384/2590 [00:07<00:06, 185.54it/s]Applying EMD to signals:  54%|█████▍    | 1405/2590 [00:07<00:06, 191.17it/s]Applying EMD to signals:  55%|█████▌    | 1426/2590 [00:07<00:06, 193.45it/s]Applying EMD to signals:  56%|█████▌    | 1446/2590 [00:07<00:05, 191.60it/s]Applying EMD to signals:  57%|█████▋    | 1466/2590 [00:07<00:06, 185.67it/s]Applying EMD to signals:  57%|█████▋    | 1485/2590 [00:07<00:05, 184.55it/s]Applying EMD to signals:  58%|█████▊    | 1505/2590 [00:07<00:05, 186.09it/s]Applying EMD to signals:  59%|█████▉    | 1524/2590 [00:08<00:05, 184.82it/s]Applying EMD to signals:  60%|█████▉    | 1545/2590 [00:08<00:05, 189.60it/s]Applying EMD to signals:  60%|██████    | 1566/2590 [00:08<00:05, 193.87it/s]Applying EMD to signals:  61%|██████    | 1586/2590 [00:08<00:05, 186.68it/s]Applying EMD to signals:  62%|██████▏   | 1605/2590 [00:08<00:05, 184.45it/s]Applying EMD to signals:  63%|██████▎   | 1626/2590 [00:08<00:05, 190.82it/s]Applying EMD to signals:  64%|██████▎   | 1646/2590 [00:08<00:05, 187.34it/s]Applying EMD to signals:  64%|██████▍   | 1665/2590 [00:08<00:04, 185.86it/s]Applying EMD to signals:  65%|██████▌   | 1684/2590 [00:08<00:04, 185.24it/s]Applying EMD to signals:  66%|██████▌   | 1704/2590 [00:08<00:04, 188.32it/s]Applying EMD to signals:  67%|██████▋   | 1724/2590 [00:09<00:04, 189.25it/s]Applying EMD to signals:  67%|██████▋   | 1743/2590 [00:09<00:04, 187.93it/s]Applying EMD to signals:  68%|██████▊   | 1762/2590 [00:09<00:04, 187.04it/s]Applying EMD to signals:  69%|██████▉   | 1781/2590 [00:09<00:04, 180.84it/s]Applying EMD to signals:  69%|██████▉   | 1800/2590 [00:09<00:04, 176.36it/s]Applying EMD to signals:  70%|███████   | 1820/2590 [00:09<00:04, 181.48it/s]Applying EMD to signals:  71%|███████   | 1841/2590 [00:09<00:04, 186.90it/s]Applying EMD to signals:  72%|███████▏  | 1860/2590 [00:09<00:03, 185.13it/s]Applying EMD to signals:  73%|███████▎  | 1880/2590 [00:09<00:03, 187.95it/s]Applying EMD to signals:  73%|███████▎  | 1899/2590 [00:10<00:03, 187.36it/s]Applying EMD to signals:  74%|███████▍  | 1918/2590 [00:10<00:03, 185.53it/s]Applying EMD to signals:  75%|███████▍  | 1938/2590 [00:10<00:03, 188.32it/s]Applying EMD to signals:  76%|███████▌  | 1957/2590 [00:10<00:03, 182.04it/s]Applying EMD to signals:  76%|███████▋  | 1976/2590 [00:10<00:03, 181.06it/s]Applying EMD to signals:  77%|███████▋  | 1995/2590 [00:10<00:03, 181.63it/s]Applying EMD to signals:  78%|███████▊  | 2014/2590 [00:10<00:03, 183.84it/s]Applying EMD to signals:  79%|███████▊  | 2034/2590 [00:10<00:03, 185.05it/s]Applying EMD to signals:  79%|███████▉  | 2053/2590 [00:10<00:02, 186.42it/s]Applying EMD to signals:  80%|████████  | 2074/2590 [00:10<00:02, 188.76it/s]Applying EMD to signals:  81%|████████  | 2093/2590 [00:11<00:02, 188.87it/s]Applying EMD to signals:  82%|████████▏ | 2114/2590 [00:11<00:02, 194.09it/s]Applying EMD to signals:  82%|████████▏ | 2134/2590 [00:11<00:02, 190.23it/s]Applying EMD to signals:  83%|████████▎ | 2154/2590 [00:11<00:02, 190.78it/s]Applying EMD to signals:  84%|████████▍ | 2175/2590 [00:11<00:02, 195.69it/s]Applying EMD to signals:  85%|████████▍ | 2195/2590 [00:11<00:02, 192.89it/s]Applying EMD to signals:  86%|████████▌ | 2216/2590 [00:11<00:01, 195.82it/s]Applying EMD to signals:  86%|████████▋ | 2237/2590 [00:11<00:01, 199.56it/s]Applying EMD to signals:  87%|████████▋ | 2257/2590 [00:11<00:01, 197.56it/s]Applying EMD to signals:  88%|████████▊ | 2277/2590 [00:12<00:01, 193.67it/s]Applying EMD to signals:  89%|████████▊ | 2297/2590 [00:12<00:01, 194.34it/s]Applying EMD to signals:  89%|████████▉ | 2317/2590 [00:12<00:01, 186.03it/s]Applying EMD to signals:  90%|█████████ | 2336/2590 [00:12<00:01, 182.79it/s]Applying EMD to signals:  91%|█████████ | 2355/2590 [00:12<00:01, 182.91it/s]Applying EMD to signals:  92%|█████████▏| 2374/2590 [00:12<00:01, 183.70it/s]Applying EMD to signals:  92%|█████████▏| 2393/2590 [00:12<00:01, 182.10it/s]Applying EMD to signals:  93%|█████████▎| 2412/2590 [00:12<00:00, 181.93it/s]Applying EMD to signals:  94%|█████████▍| 2431/2590 [00:12<00:00, 180.89it/s]Applying EMD to signals:  95%|█████████▍| 2450/2590 [00:12<00:00, 182.00it/s]Applying EMD to signals:  95%|█████████▌| 2469/2590 [00:13<00:00, 181.59it/s]Applying EMD to signals:  96%|█████████▌| 2488/2590 [00:13<00:00, 174.52it/s]Applying EMD to signals:  97%|█████████▋| 2506/2590 [00:13<00:00, 173.95it/s]Applying EMD to signals:  97%|█████████▋| 2524/2590 [00:13<00:00, 175.12it/s]Applying EMD to signals:  98%|█████████▊| 2542/2590 [00:13<00:00, 166.26it/s]Applying EMD to signals:  99%|█████████▉| 2559/2590 [00:13<00:00, 166.64it/s]Applying EMD to signals:  99%|█████████▉| 2577/2590 [00:13<00:00, 169.76it/s]Applying EMD to signals: 100%|██████████| 2590/2590 [00:13<00:00, 187.41it/s]
+  EMD completed: 2590/2590 segments kept
+  IMF count range (residue excluded): 5 – 7 (median: 6)
+  Segments with fewer than 4 IMFs (skipped): 0
+  Using the first 4 IMFs of every segment
+
+  [Task 2] Generating IMF decomposition plots...
+  Saved 3 IMF decomposition plots.
+
+  [Tasks 3-5] Running experiment configurations...
+
+  ── Feature: variance ──
+    Extracting variance features...
+    Feature matrix shape: (2590, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [1/18] variance + pearson + classification
+      F1 Score: 0.2335
+      Accuracy: 0.2355
+      Balanced accuracy: 0.2356
+      Per-class F1: {'left_hand': 0.24608501118568232, 'right_hand': 0.26433915211970077, 'both_feet': 0.21761658031088082, 'tongue': 0.20625}
+
+    [2/18] variance + pearson + clustering
+      Silhouette Score: 0.1864
+      ARI / NMI vs. labels: 0.0007 / 0.0021
+    Computing euclidean distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [3/18] variance + euclidean + classification
+      F1 Score: 0.2582
+      Accuracy: 0.2600
+      Balanced accuracy: 0.2601
+      Per-class F1: {'left_hand': 0.27510917030567683, 'right_hand': 0.25888324873096447, 'both_feet': 0.26525198938992045, 'tongue': 0.23384615384615384}
+
+    [4/18] variance + euclidean + clustering
+      Silhouette Score: 0.3049
+      ARI / NMI vs. labels: 0.0007 / 0.0021
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [5/18] variance + itakura_saito + classification
+      F1 Score: 0.2201
+      Accuracy: 0.2252
+      Balanced accuracy: 0.2254
+      Per-class F1: {'left_hand': 0.24411134903640258, 'right_hand': 0.24330900243309003, 'both_feet': 0.24258760107816713, 'tongue': 0.15081967213114755}
+
+    [6/18] variance + itakura_saito + clustering
+      Silhouette Score: 0.2515
+      ARI / NMI vs. labels: 0.0007 / 0.0021
+
+  ── Feature: entropy ──
+    Extracting entropy features...
+    Feature matrix shape: (2590, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [7/18] entropy + pearson + classification
+      F1 Score: 0.2336
+      Accuracy: 0.2368
+      Balanced accuracy: 0.2369
+      Per-class F1: {'left_hand': 0.2537634408602151, 'right_hand': 0.23376623376623376, 'both_feet': 0.27586206896551724, 'tongue': 0.1712538226299694}
+
+    [8/18] entropy + pearson + clustering
+      Silhouette Score: -0.0320
+      ARI / NMI vs. labels: -0.0001 / 0.0014
+    Computing euclidean distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [9/18] entropy + euclidean + classification
+      F1 Score: 0.2246
+      Accuracy: 0.2304
+      Balanced accuracy: 0.2305
+      Per-class F1: {'left_hand': 0.2936170212765957, 'right_hand': 0.23529411764705882, 'both_feet': 0.19791666666666666, 'tongue': 0.17177914110429449}
+
+    [10/18] entropy + euclidean + clustering
+      Silhouette Score: 0.2158
+      ARI / NMI vs. labels: -0.0001 / 0.0014
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [11/18] entropy + itakura_saito + classification
+      F1 Score: 0.2198
+      Accuracy: 0.2265
+      Balanced accuracy: 0.2266
+      Per-class F1: {'left_hand': 0.2959830866807611, 'right_hand': 0.224, 'both_feet': 0.1994750656167979, 'tongue': 0.16}
+
+    [12/18] entropy + itakura_saito + clustering
+      Silhouette Score: 0.3272
+      ARI / NMI vs. labels: -0.0001 / 0.0014
+
+  ── Feature: inst_freq ──
+    Extracting inst_freq features...
+    Feature matrix shape: (2590, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [13/18] inst_freq + pearson + classification
+      F1 Score: 0.2408
+      Accuracy: 0.2484
+      Balanced accuracy: 0.2485
+      Per-class F1: {'left_hand': 0.3227176220806794, 'right_hand': 0.21568627450980393, 'both_feet': 0.25753424657534246, 'tongue': 0.16774193548387098}
+
+    [14/18] inst_freq + pearson + clustering
+      Silhouette Score: -0.0239
+      ARI / NMI vs. labels: 0.0000 / 0.0014
+    Computing euclidean distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [15/18] inst_freq + euclidean + classification
+      F1 Score: 0.2613
+      Accuracy: 0.2638
+      Balanced accuracy: 0.2639
+      Per-class F1: {'left_hand': 0.28199566160520606, 'right_hand': 0.2757009345794392, 'both_feet': 0.24225352112676057, 'tongue': 0.24516129032258063}
+
+    [16/18] inst_freq + euclidean + clustering
+      Silhouette Score: 0.2863
+      ARI / NMI vs. labels: 0.0000 / 0.0014
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (2590, 2590)
+
+    [17/18] inst_freq + itakura_saito + classification
+      F1 Score: 0.2729
+      Accuracy: 0.2780
+      Balanced accuracy: 0.2781
+      Per-class F1: {'left_hand': 0.3036876355748373, 'right_hand': 0.3036144578313253, 'both_feet': 0.2680965147453083, 'tongue': 0.21639344262295082}
+
+    [18/18] inst_freq + itakura_saito + clustering
+      Silhouette Score: 0.0758
+      ARI / NMI vs. labels: 0.0000 / 0.0014
+
+  Dataset bci_civ_2a completed in 32.1s
+
+======================================================================
+  DATASET 3/3: EEG Mental Arithmetic Dataset
+  (eeg_ma)
+======================================================================
+
+  [Task 1] Loading and preprocessing data...
+  Loading preprocessed data from cache: eeg_ma_v2_w2.0_nall_ch93017.npz
+  Loaded: 4266 segments, 1000 samples each, sfreq=500.0 Hz
+  Classes: {0: 'resting', 1: 'mental_arithmetic'}
+  Distribution: {'resting': 3186, 'mental_arithmetic': 1080}
+  Dropped while windowing: {"flat_windows": 72, "flat_windows_by_label": {"0": 36, "1": 36}}
+
+  [Stats] Computing dataset statistics...
+
+────────────────────────────────────────────────────────────
+  Dataset Statistics: EEG Mental Arithmetic Dataset
+────────────────────────────────────────────────────────────
+
+  +---------------------+---------------------------------------------+
+| Property            | Value                                       |
++=====================+=============================================+
+| Dataset             | EEG Mental Arithmetic Dataset               |
++---------------------+---------------------------------------------+
+| Source URL          | https://physionet.org/content/eegmat/1.0.0/ |
++---------------------+---------------------------------------------+
+| Subjects Loaded     | 36                                          |
++---------------------+---------------------------------------------+
+| Channels            | 5                                           |
++---------------------+---------------------------------------------+
+| Sampling Frequency  | 500.0 Hz                                    |
++---------------------+---------------------------------------------+
+| Total Segments      | 4266                                        |
++---------------------+---------------------------------------------+
+| Samples per Segment | 1000                                        |
++---------------------+---------------------------------------------+
+| Window Duration     | 2.00 sec                                    |
++---------------------+---------------------------------------------+
+
+  Signal Statistics:
+  +-------------+-----------+
+| Statistic   |     Value |
++=============+===========+
+| Mean        |  0        |
++-------------+-----------+
+| Std Dev     |  1        |
++-------------+-----------+
+| Min         | -5.80398  |
++-------------+-----------+
+| Max         |  5.50299  |
++-------------+-----------+
+| Median      |  0.010382 |
++-------------+-----------+
+
+  Class Distribution:
+  +-------------------+---------+--------------+
+| Class             |   Count | Percentage   |
++===================+=========+==============+
+| resting           |    3186 | 74.7%        |
++-------------------+---------+--------------+
+| mental_arithmetic |    1080 | 25.3%        |
++-------------------+---------+--------------+
+  Statistics saved to: dataset_stats/eeg_ma
+
+  [Task 1] Generating signal visualizations...
+  Saved representative signals plot.
+
+  [Task 2] Applying EMD to 4266 segments...
+Applying EMD to signals:   0%|          | 0/4266 [00:00<?, ?it/s]Applying EMD to signals:   1%|          | 29/4266 [00:00<00:15, 278.50it/s]Applying EMD to signals:   1%|▏         | 59/4266 [00:00<00:14, 289.21it/s]Applying EMD to signals:   2%|▏         | 88/4266 [00:00<00:14, 288.71it/s]Applying EMD to signals:   3%|▎         | 117/4266 [00:00<00:14, 288.84it/s]Applying EMD to signals:   3%|▎         | 146/4266 [00:00<00:15, 271.24it/s]Applying EMD to signals:   4%|▍         | 174/4266 [00:00<00:15, 264.34it/s]Applying EMD to signals:   5%|▍         | 201/4266 [00:00<00:16, 245.09it/s]Applying EMD to signals:   5%|▌         | 226/4266 [00:00<00:17, 228.79it/s]Applying EMD to signals:   6%|▌         | 250/4266 [00:00<00:17, 229.72it/s]Applying EMD to signals:   6%|▋         | 274/4266 [00:01<00:17, 225.87it/s]Applying EMD to signals:   7%|▋         | 297/4266 [00:01<00:17, 223.10it/s]Applying EMD to signals:   8%|▊         | 322/4266 [00:01<00:17, 230.39it/s]Applying EMD to signals:   8%|▊         | 346/4266 [00:01<00:17, 221.01it/s]Applying EMD to signals:   9%|▊         | 369/4266 [00:01<00:17, 221.55it/s]Applying EMD to signals:   9%|▉         | 396/4266 [00:01<00:16, 235.05it/s]Applying EMD to signals:  10%|▉         | 425/4266 [00:01<00:15, 248.71it/s]Applying EMD to signals:  11%|█         | 453/4266 [00:01<00:14, 257.67it/s]Applying EMD to signals:  11%|█         | 479/4266 [00:01<00:15, 251.51it/s]Applying EMD to signals:  12%|█▏        | 505/4266 [00:02<00:14, 252.29it/s]Applying EMD to signals:  12%|█▏        | 533/4266 [00:02<00:14, 260.29it/s]Applying EMD to signals:  13%|█▎        | 560/4266 [00:02<00:14, 260.90it/s]Applying EMD to signals:  14%|█▍        | 587/4266 [00:02<00:14, 260.13it/s]Applying EMD to signals:  14%|█▍        | 614/4266 [00:02<00:14, 258.69it/s]Applying EMD to signals:  15%|█▌        | 640/4266 [00:02<00:14, 251.22it/s]Applying EMD to signals:  16%|█▌        | 666/4266 [00:02<00:14, 243.72it/s]Applying EMD to signals:  16%|█▌        | 691/4266 [00:02<00:15, 236.65it/s]Applying EMD to signals:  17%|█▋        | 715/4266 [00:02<00:15, 233.21it/s]Applying EMD to signals:  17%|█▋        | 739/4266 [00:03<00:15, 234.32it/s]Applying EMD to signals:  18%|█▊        | 765/4266 [00:03<00:14, 241.46it/s]Applying EMD to signals:  19%|█▊        | 792/4266 [00:03<00:13, 248.19it/s]Applying EMD to signals:  19%|█▉        | 819/4266 [00:03<00:13, 252.36it/s]Applying EMD to signals:  20%|█▉        | 845/4266 [00:03<00:13, 247.23it/s]Applying EMD to signals:  20%|██        | 870/4266 [00:03<00:13, 243.39it/s]Applying EMD to signals:  21%|██        | 895/4266 [00:03<00:13, 241.47it/s]Applying EMD to signals:  22%|██▏       | 920/4266 [00:03<00:13, 240.83it/s]Applying EMD to signals:  22%|██▏       | 945/4266 [00:03<00:13, 239.87it/s]Applying EMD to signals:  23%|██▎       | 969/4266 [00:03<00:13, 237.74it/s]Applying EMD to signals:  23%|██▎       | 993/4266 [00:04<00:13, 236.66it/s]Applying EMD to signals:  24%|██▍       | 1017/4266 [00:04<00:14, 231.62it/s]Applying EMD to signals:  24%|██▍       | 1042/4266 [00:04<00:13, 235.94it/s]Applying EMD to signals:  25%|██▌       | 1072/4266 [00:04<00:12, 252.88it/s]Applying EMD to signals:  26%|██▌       | 1098/4266 [00:04<00:12, 245.68it/s]Applying EMD to signals:  26%|██▋       | 1123/4266 [00:04<00:13, 236.94it/s]Applying EMD to signals:  27%|██▋       | 1147/4266 [00:04<00:13, 235.25it/s]Applying EMD to signals:  27%|██▋       | 1171/4266 [00:04<00:13, 231.10it/s]Applying EMD to signals:  28%|██▊       | 1195/4266 [00:04<00:13, 229.80it/s]Applying EMD to signals:  29%|██▊       | 1221/4266 [00:05<00:12, 237.58it/s]Applying EMD to signals:  29%|██▉       | 1247/4266 [00:05<00:12, 241.96it/s]Applying EMD to signals:  30%|██▉       | 1275/4266 [00:05<00:11, 251.56it/s]Applying EMD to signals:  31%|███       | 1302/4266 [00:05<00:11, 255.26it/s]Applying EMD to signals:  31%|███       | 1331/4266 [00:05<00:11, 264.34it/s]Applying EMD to signals:  32%|███▏      | 1359/4266 [00:05<00:10, 266.75it/s]Applying EMD to signals:  33%|███▎      | 1388/4266 [00:05<00:10, 273.08it/s]Applying EMD to signals:  33%|███▎      | 1416/4266 [00:05<00:10, 268.34it/s]Applying EMD to signals:  34%|███▍      | 1443/4266 [00:05<00:10, 260.98it/s]Applying EMD to signals:  34%|███▍      | 1470/4266 [00:05<00:11, 252.43it/s]Applying EMD to signals:  35%|███▌      | 1496/4266 [00:06<00:11, 248.15it/s]Applying EMD to signals:  36%|███▌      | 1522/4266 [00:06<00:11, 247.82it/s]Applying EMD to signals:  36%|███▋      | 1548/4266 [00:06<00:10, 249.06it/s]Applying EMD to signals:  37%|███▋      | 1575/4266 [00:06<00:10, 253.53it/s]Applying EMD to signals:  38%|███▊      | 1601/4266 [00:06<00:10, 251.14it/s]Applying EMD to signals:  38%|███▊      | 1627/4266 [00:06<00:10, 248.86it/s]Applying EMD to signals:  39%|███▉      | 1656/4266 [00:06<00:10, 257.50it/s]Applying EMD to signals:  39%|███▉      | 1683/4266 [00:06<00:10, 257.47it/s]Applying EMD to signals:  40%|████      | 1709/4266 [00:06<00:10, 245.02it/s]Applying EMD to signals:  41%|████      | 1734/4266 [00:07<00:10, 233.46it/s]Applying EMD to signals:  41%|████      | 1759/4266 [00:07<00:10, 237.20it/s]Applying EMD to signals:  42%|████▏     | 1783/4266 [00:07<00:10, 232.42it/s]Applying EMD to signals:  42%|████▏     | 1807/4266 [00:07<00:10, 233.56it/s]Applying EMD to signals:  43%|████▎     | 1834/4266 [00:07<00:10, 241.31it/s]Applying EMD to signals:  44%|████▎     | 1861/4266 [00:07<00:09, 249.38it/s]Applying EMD to signals:  44%|████▍     | 1888/4266 [00:07<00:09, 253.48it/s]Applying EMD to signals:  45%|████▍     | 1914/4266 [00:07<00:09, 253.82it/s]Applying EMD to signals:  45%|████▌     | 1940/4266 [00:07<00:09, 247.01it/s]Applying EMD to signals:  46%|████▌     | 1965/4266 [00:07<00:09, 245.04it/s]Applying EMD to signals:  47%|████▋     | 1990/4266 [00:08<00:09, 244.92it/s]Applying EMD to signals:  47%|████▋     | 2015/4266 [00:08<00:09, 239.97it/s]Applying EMD to signals:  48%|████▊     | 2040/4266 [00:08<00:09, 230.96it/s]Applying EMD to signals:  48%|████▊     | 2067/4266 [00:08<00:09, 240.20it/s]Applying EMD to signals:  49%|████▉     | 2092/4266 [00:08<00:09, 237.68it/s]Applying EMD to signals:  50%|████▉     | 2118/4266 [00:08<00:08, 243.35it/s]Applying EMD to signals:  50%|█████     | 2143/4266 [00:08<00:08, 242.23it/s]Applying EMD to signals:  51%|█████     | 2169/4266 [00:08<00:08, 247.06it/s]Applying EMD to signals:  51%|█████▏    | 2195/4266 [00:08<00:08, 247.59it/s]Applying EMD to signals:  52%|█████▏    | 2220/4266 [00:09<00:08, 246.05it/s]Applying EMD to signals:  53%|█████▎    | 2246/4266 [00:09<00:08, 249.14it/s]Applying EMD to signals:  53%|█████▎    | 2271/4266 [00:09<00:08, 247.58it/s]Applying EMD to signals:  54%|█████▍    | 2296/4266 [00:09<00:07, 248.29it/s]Applying EMD to signals:  55%|█████▍    | 2326/4266 [00:09<00:07, 261.05it/s]Applying EMD to signals:  55%|█████▌    | 2353/4266 [00:09<00:07, 262.85it/s]Applying EMD to signals:  56%|█████▌    | 2380/4266 [00:09<00:07, 255.29it/s]Applying EMD to signals:  56%|█████▋    | 2406/4266 [00:09<00:07, 253.91it/s]Applying EMD to signals:  57%|█████▋    | 2432/4266 [00:09<00:07, 253.53it/s]Applying EMD to signals:  58%|█████▊    | 2458/4266 [00:09<00:07, 248.27it/s]Applying EMD to signals:  58%|█████▊    | 2484/4266 [00:10<00:07, 250.53it/s]Applying EMD to signals:  59%|█████▉    | 2511/4266 [00:10<00:06, 252.93it/s]Applying EMD to signals:  60%|█████▉    | 2543/4266 [00:10<00:06, 267.41it/s]Applying EMD to signals:  60%|██████    | 2573/4266 [00:10<00:06, 275.75it/s]Applying EMD to signals:  61%|██████    | 2602/4266 [00:10<00:05, 279.62it/s]Applying EMD to signals:  62%|██████▏   | 2630/4266 [00:10<00:05, 279.26it/s]Applying EMD to signals:  62%|██████▏   | 2658/4266 [00:10<00:05, 269.07it/s]Applying EMD to signals:  63%|██████▎   | 2685/4266 [00:10<00:05, 266.78it/s]Applying EMD to signals:  64%|██████▎   | 2712/4266 [00:10<00:05, 264.38it/s]Applying EMD to signals:  64%|██████▍   | 2739/4266 [00:10<00:05, 265.57it/s]Applying EMD to signals:  65%|██████▍   | 2767/4266 [00:11<00:05, 266.62it/s]Applying EMD to signals:  65%|██████▌   | 2794/4266 [00:11<00:05, 265.54it/s]Applying EMD to signals:  66%|██████▌   | 2821/4266 [00:11<00:05, 262.73it/s]Applying EMD to signals:  67%|██████▋   | 2848/4266 [00:11<00:05, 258.24it/s]Applying EMD to signals:  67%|██████▋   | 2875/4266 [00:11<00:05, 260.88it/s]Applying EMD to signals:  68%|██████▊   | 2902/4266 [00:11<00:05, 259.72it/s]Applying EMD to signals:  69%|██████▊   | 2928/4266 [00:11<00:05, 251.46it/s]Applying EMD to signals:  69%|██████▉   | 2954/4266 [00:11<00:05, 249.05it/s]Applying EMD to signals:  70%|██████▉   | 2979/4266 [00:11<00:05, 244.99it/s]Applying EMD to signals:  70%|███████   | 3004/4266 [00:12<00:05, 235.97it/s]Applying EMD to signals:  71%|███████   | 3028/4266 [00:12<00:05, 232.88it/s]Applying EMD to signals:  72%|███████▏  | 3053/4266 [00:12<00:05, 234.83it/s]Applying EMD to signals:  72%|███████▏  | 3077/4266 [00:12<00:05, 228.91it/s]Applying EMD to signals:  73%|███████▎  | 3101/4266 [00:12<00:05, 230.52it/s]Applying EMD to signals:  73%|███████▎  | 3128/4266 [00:12<00:04, 239.51it/s]Applying EMD to signals:  74%|███████▍  | 3156/4266 [00:12<00:04, 249.66it/s]Applying EMD to signals:  75%|███████▍  | 3182/4266 [00:12<00:04, 250.38it/s]Applying EMD to signals:  75%|███████▌  | 3210/4266 [00:12<00:04, 258.31it/s]Applying EMD to signals:  76%|███████▌  | 3236/4266 [00:13<00:03, 257.86it/s]Applying EMD to signals:  76%|███████▋  | 3262/4266 [00:13<00:03, 256.36it/s]Applying EMD to signals:  77%|███████▋  | 3288/4266 [00:13<00:04, 244.24it/s]Applying EMD to signals:  78%|███████▊  | 3314/4266 [00:13<00:03, 246.33it/s]Applying EMD to signals:  78%|███████▊  | 3339/4266 [00:13<00:03, 246.78it/s]Applying EMD to signals:  79%|███████▉  | 3364/4266 [00:13<00:03, 242.59it/s]Applying EMD to signals:  79%|███████▉  | 3390/4266 [00:13<00:03, 247.50it/s]Applying EMD to signals:  80%|████████  | 3415/4266 [00:13<00:03, 244.70it/s]Applying EMD to signals:  81%|████████  | 3443/4266 [00:13<00:03, 254.37it/s]Applying EMD to signals:  81%|████████▏ | 3469/4266 [00:13<00:03, 241.13it/s]Applying EMD to signals:  82%|████████▏ | 3494/4266 [00:14<00:04, 183.05it/s]Applying EMD to signals:  83%|████████▎ | 3521/4266 [00:14<00:03, 202.08it/s]Applying EMD to signals:  83%|████████▎ | 3548/4266 [00:14<00:03, 218.38it/s]Applying EMD to signals:  84%|████████▍ | 3574/4266 [00:14<00:03, 227.82it/s]Applying EMD to signals:  84%|████████▍ | 3599/4266 [00:14<00:02, 230.33it/s]Applying EMD to signals:  85%|████████▍ | 3625/4266 [00:14<00:02, 236.38it/s]Applying EMD to signals:  86%|████████▌ | 3650/4266 [00:14<00:02, 233.07it/s]Applying EMD to signals:  86%|████████▌ | 3675/4266 [00:14<00:02, 237.74it/s]Applying EMD to signals:  87%|████████▋ | 3702/4266 [00:15<00:02, 243.42it/s]Applying EMD to signals:  87%|████████▋ | 3727/4266 [00:15<00:02, 242.49it/s]Applying EMD to signals:  88%|████████▊ | 3752/4266 [00:15<00:02, 235.21it/s]Applying EMD to signals:  89%|████████▊ | 3776/4266 [00:15<00:02, 232.73it/s]Applying EMD to signals:  89%|████████▉ | 3800/4266 [00:15<00:01, 234.61it/s]Applying EMD to signals:  90%|████████▉ | 3829/4266 [00:15<00:01, 248.30it/s]Applying EMD to signals:  90%|█████████ | 3859/4266 [00:15<00:01, 261.30it/s]Applying EMD to signals:  91%|█████████ | 3886/4266 [00:15<00:01, 261.11it/s]Applying EMD to signals:  92%|█████████▏| 3913/4266 [00:15<00:01, 252.86it/s]Applying EMD to signals:  92%|█████████▏| 3943/4266 [00:15<00:01, 264.37it/s]Applying EMD to signals:  93%|█████████▎| 3970/4266 [00:16<00:01, 264.91it/s]Applying EMD to signals:  94%|█████████▎| 3997/4266 [00:16<00:01, 263.56it/s]Applying EMD to signals:  94%|█████████▍| 4024/4266 [00:16<00:00, 258.80it/s]Applying EMD to signals:  95%|█████████▍| 4050/4266 [00:16<00:00, 257.35it/s]Applying EMD to signals:  96%|█████████▌| 4076/4266 [00:16<00:00, 240.85it/s]Applying EMD to signals:  96%|█████████▌| 4101/4266 [00:16<00:00, 242.84it/s]Applying EMD to signals:  97%|█████████▋| 4126/4266 [00:16<00:00, 242.94it/s]Applying EMD to signals:  97%|█████████▋| 4152/4266 [00:16<00:00, 247.00it/s]Applying EMD to signals:  98%|█████████▊| 4177/4266 [00:16<00:00, 247.34it/s]Applying EMD to signals:  99%|█████████▊| 4204/4266 [00:17<00:00, 253.21it/s]Applying EMD to signals:  99%|█████████▉| 4230/4266 [00:17<00:00, 250.28it/s]Applying EMD to signals: 100%|█████████▉| 4256/4266 [00:17<00:00, 168.54it/s]Applying EMD to signals: 100%|██████████| 4266/4266 [00:17<00:00, 243.92it/s]
+  EMD completed: 4260/4266 segments kept
+  IMF count range (residue excluded): 3 – 7 (median: 5)
+  Segments with fewer than 4 IMFs (skipped): 6
+  Using the first 4 IMFs of every segment
+
+  [Task 2] Generating IMF decomposition plots...
+  Saved 3 IMF decomposition plots.
+
+  [Tasks 3-5] Running experiment configurations...
+
+  ── Feature: variance ──
+    Extracting variance features...
+    Feature matrix shape: (4260, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [1/18] variance + pearson + classification
+      F1 Score: 0.6691
+      Accuracy: 0.7074
+      Balanced accuracy: 0.5286
+      Per-class F1: {'resting': 0.819672131147541, 'mental_arithmetic': 0.22406639004149378}
+
+    [2/18] variance + pearson + clustering
+      Silhouette Score: 0.5270
+      ARI / NMI vs. labels: 0.0354 / 0.0180
+    Computing euclidean distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [3/18] variance + euclidean + classification
+      F1 Score: 0.6859
+      Accuracy: 0.7199
+      Balanced accuracy: 0.5493
+      Per-class F1: {'resting': 0.8267182962245886, 'mental_arithmetic': 0.2693877551020408}
+
+    [4/18] variance + euclidean + clustering
+      Silhouette Score: 0.2666
+      ARI / NMI vs. labels: 0.0354 / 0.0180
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [5/18] variance + itakura_saito + classification
+      F1 Score: 0.6833
+      Accuracy: 0.7199
+      Balanced accuracy: 0.5452
+      Per-class F1: {'resting': 0.8273866923818708, 'mental_arithmetic': 0.2572614107883817}
+
+    [6/18] variance + itakura_saito + clustering
+      Silhouette Score: 0.4304
+      ARI / NMI vs. labels: 0.0354 / 0.0180
+
+  ── Feature: entropy ──
+    Extracting entropy features...
+    Feature matrix shape: (4260, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [7/18] entropy + pearson + classification
+      F1 Score: 0.6356
+      Accuracy: 0.6878
+      Balanced accuracy: 0.4879
+      Per-class F1: {'resting': 0.8102710413694721, 'mental_arithmetic': 0.11920529801324503}
+
+    [8/18] entropy + pearson + clustering
+      Silhouette Score: -0.0506
+      ARI / NMI vs. labels: -0.0230 / 0.0059
+    Computing euclidean distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [9/18] entropy + euclidean + classification
+      F1 Score: 0.6496
+      Accuracy: 0.6956
+      Balanced accuracy: 0.5044
+      Per-class F1: {'resting': 0.8139646102343376, 'mental_arithmetic': 0.16344086021505377}
+
+    [10/18] entropy + euclidean + clustering
+      Silhouette Score: 0.3009
+      ARI / NMI vs. labels: -0.0230 / 0.0059
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [11/18] entropy + itakura_saito + classification
+      F1 Score: 0.6472
+      Accuracy: 0.6909
+      Balanced accuracy: 0.5023
+      Per-class F1: {'resting': 0.8103696591454633, 'mental_arithmetic': 0.1649048625792812}
+
+    [12/18] entropy + itakura_saito + clustering
+      Silhouette Score: 0.5133
+      ARI / NMI vs. labels: -0.0230 / 0.0059
+
+  ── Feature: inst_freq ──
+    Extracting inst_freq features...
+    Feature matrix shape: (4260, 4)
+    Computing pearson distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [13/18] inst_freq + pearson + classification
+      F1 Score: 0.6426
+      Accuracy: 0.6909
+      Balanced accuracy: 0.4961
+      Per-class F1: {'resting': 0.8114558472553699, 'mental_arithmetic': 0.14316702819956617}
+
+    [14/18] inst_freq + pearson + clustering
+      Silhouette Score: 0.5299
+      ARI / NMI vs. labels: 0.0275 / 0.0321
+    Computing euclidean distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [15/18] inst_freq + euclidean + classification
+      F1 Score: 0.7028
+      Accuracy: 0.7300
+      Balanced accuracy: 0.5725
+      Per-class F1: {'resting': 0.8314606741573034, 'mental_arithmetic': 0.32220039292730845}
+
+    [16/18] inst_freq + euclidean + clustering
+      Silhouette Score: 0.9242
+      ARI / NMI vs. labels: 0.0275 / 0.0321
+    Computing itakura_saito distance matrix...
+    Distance matrix shape: (4260, 4260)
+
+    [17/18] inst_freq + itakura_saito + classification
+      F1 Score: 0.6821
+      Accuracy: 0.7230
+      Balanced accuracy: 0.5422
+      Per-class F1: {'resting': 0.8304597701149425, 'mental_arithmetic': 0.24358974358974358}
+
+    [18/18] inst_freq + itakura_saito + clustering
+      Silhouette Score: 0.9203
+      ARI / NMI vs. labels: 0.0275 / 0.0321
+
+  Dataset eeg_ma completed in 37.2s
+
+======================================================================
+  COMPARATIVE ANALYSIS
+======================================================================
+
+  Generated comparison table, summary, and figures.
+
+======================================================================
+  GENERATING FIGURES & REPORTS
+======================================================================
+
+  Copied 30 figures for report embedding.
+  Generated methodology report.
+  Generated similarity description.
+  Generated experiment summary.
+
+======================================================================
+  PIPELINE COMPLETE
+======================================================================
+  Total time:    112.3s
+  Results saved: results/run_2026-11-11_01-25-31
+  Printout log:  printouts/hw4_printout__2026-11-11_01-25-31.txt
+  Experiments:   54
+======================================================================
+
