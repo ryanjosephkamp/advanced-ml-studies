@@ -1,8 +1,8 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-26",
  "passed": 29610,
  "failed": 0,
- "line": "Checked November 19, 2026: 29,610 checks hold this plate's values and sentences in its 2,048 switch states to the study's result files (and to the paper, where it prints them), its channel and band definitions and the held-out folds of the subsets run's 14 cross-validation runs to the study's code, and its 19 sockets to the 10-20 places on an idealized head, and 0 failed.",
+ "line": "Checked November 26, 2026: 29,610 checks hold this plate's values and sentences in its 2,048 switch states to the study's result files (and to the paper, where it prints them), its channel and band definitions and the held-out folds of the subsets run's 14 cross-validation runs to the study's code, and its 19 sockets to the 10-20 places on an idealized head, and 0 failed.",
  "groups": [
   {
    "name": "every row of results/study/eegmat_subsets.csv is in the plate's data, value for value, as study/extra_checks.py defines them",

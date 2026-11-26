@@ -15,7 +15,7 @@ The assignment stores 18 character patterns in a Hopfield network with Hebbian w
 - Baseline: Hebbian weights on ±1 patterns with a zero diagonal, and the assignment's update on 0/1 states, one unit at a time in random order, until a full sweep changes nothing or 100 sweeps have run. A query counts as recalled only if it settles exactly on its own pattern.
 - Capacity study: random 144-bit patterns that share a prototype (expected overlap ρ from 0 to 0.9, density 0.5) or have independent bits at density 0.65 or 0.80; loads from 2 to 40 patterns; 50 pattern sets per condition; and queries with 14 or 29 bits flipped (10% and 20%). Every rule sees the same patterns and queries, and every rule that updates one neuron at a time sees the same update orders (seed 20260202).
 - Rules: Hebbian with the standard update, Hebbian with the assignment's 0/1 update, Storkey, pseudoinverse, covariance, a modern (softmax) network at β = 4, 16, and 64, and nearest-pattern lookup.
-- Capacity P50 is the load at which exact recall first falls below 50%, interpolated in log P between tested loads. Intervals are 95% percentile intervals from 2,000 cluster-bootstrap resamples.
+- Capacity P50 is the load at which exact recall first falls below 50%, interpolated in log P between tested loads. Intervals are 95% percentile intervals from 2,000 cluster-bootstrap resamples; for P50, they leave out the error of interpolating between loads.
 - The characters: every rule on the whole set of 18 over 200 draws of update order (for the rules that have one) and of noise (for fresh queries), and on random subsets of 2 to 18 characters, 200 per size.
 
 ## Results

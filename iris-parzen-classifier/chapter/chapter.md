@@ -94,9 +94,9 @@ This version repeats the procedure on 500 random splits per share, using seeds 0
 
 **The original split was a favorable draw.** On the original splits, the average over all 13 problem–kernel pairs ranged from 0.824 to 0.862 across shares, with no steady trend. The five test sets are nested, so the five values are not independent, and the spread reflects which flowers each set happened to hold. The original split beat the mean of its 500 random splits in 46 of 65 runs. For the Gaussian on Problems 2 to 4, it scored 0.968, against 0.931 over random splits.
 
-## What rescaling changes
+## What standardizing changes
 
-The dot-product and polynomial kernels depend on the units, and the measurements here are raw centimeters. As an added comparison, repeating the evaluation on standardized features (scaled with each problem's training rows), on the same splits, changes one result a lot, and makes Problem 1 perfect. On Problem 3, the degree-2 kernel rises from 0.574 to 0.853 and degree 3 from 0.546 to 0.771. On Problems 2 and 4, the polynomial and dot-product kernels move by at most 0.019. The Gaussian drops on Problems 2 and 3 (0.938 to 0.904 and 0.926 to 0.908) and still has the highest mean on Problems 2 to 4. On Problem 3, its lead over degree 2 shrinks from 0.35 to 0.06.
+The dot-product and polynomial kernels depend on the measurements' origin and units, and the measurements here are raw centimeters. As an added comparison, repeating the evaluation on standardized features (scaled with each problem's training rows), on the same splits, changes one result a lot, and makes Problem 1 perfect. On Problem 3, the degree-2 kernel rises from 0.574 to 0.853 and degree 3 from 0.546 to 0.771. On Problems 2 and 4, the polynomial and dot-product kernels move by at most 0.019. The Gaussian drops on Problems 2 and 3 (0.938 to 0.904 and 0.926 to 0.908) and still has the highest mean on Problems 2 to 4. On Problem 3, its lead over degree 2 shrinks from 0.35 to 0.06.
 
 <!-- [[table: Table II of the paper, raw against standardized test accuracy for all 13 problem–kernel pairs, with the share of splits on which standardizing helped or hurt.]] -->
 <!-- github -->
@@ -110,6 +110,7 @@ The dot-product and polynomial kernels depend on the units, and the measurements
 ## What this does not show
 
 - One Gaussian width, from the assignment. Nothing here shows it's a good width.
+- Standardizing centers and scales the measurements at once, and this study doesn't test the two separately.
 - The rule weights both classes equally, which ignores the 1:2 class ratio on the one-versus-rest problems.
 - The random splits reuse the same 150 flowers, so the intervals describe the choice of splits, not new data.
 - No significance tests were run, and the classifier gives labels, not probabilities, so calibration was not studied. Decision boundaries were not studied either.

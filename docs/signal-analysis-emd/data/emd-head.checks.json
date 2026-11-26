@@ -1,8 +1,8 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-26",
  "passed": 196736,
  "failed": 0,
- "line": "Checked November 19, 2026: 196,736 checks hold this plate's values and sentences to the study's spectra and the paper, its electrode positions to the 10-20 rules on an idealized head, and its colors to 3:1 contrast with the page for the two end inks and to a scale that, at 20 sampled levels a side, moves steadily away from the neutral ink with near-equal lightness on both sides, and 0 failed.",
+ "line": "Checked November 26, 2026: 196,736 checks hold this plate's values and sentences to the study's spectra and the paper, its electrode positions to the 10-20 rules on an idealized head, and its colors to 3:1 contrast with the page for the two end inks and to a scale that, at 20 sampled levels a side, moves steadily away from the neutral ink with near-equal lightness on both sides, and 0 failed.",
  "groups": [
   {
    "name": "every value in the plate's data equals its row in results/study/spectra.csv",

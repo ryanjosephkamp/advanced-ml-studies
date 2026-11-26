@@ -23,7 +23,7 @@ The study asks which kernel (dot product, polynomial of degree 2 or 3, or Gaussi
 - On Problems 2 to 4, the Gaussian kernel has the highest mean test accuracy: 0.931 averaged over the three problems, against 0.775 for the dot product, 0.757 for degree 2, and 0.747 for degree 3. On the same split, it is at least as accurate as the best other kernel in 95.2% to 99.7% of splits.
 - Problem 3 separates the kernels most. The dot-product, degree-2, and degree-3 kernels average 0.622, 0.574, and 0.546, all below the majority-class rate of 0.668; the Gaussian averages 0.926.
 - On average, the training share barely matters. Averaged over the 13 problem–kernel pairs, mean test accuracy is 0.817, 0.816, 0.817, 0.817, and 0.816 from 90/10 to 50/50. Single pairs move more, by up to 0.033 across the five shares.
-- With standardized features, the degree-2 kernel on Problem 3 rises from 0.574 to 0.853, and the Gaussian's lead over it shrinks from 0.35 to 0.06, so part of the kernel gap depends on the units.
+- With standardized features, the degree-2 kernel on Problem 3 rises from 0.574 to 0.853, and the Gaussian's lead over it shrinks from 0.35 to 0.06, so part of the kernel gap depends on how the features are centered and scaled.
 - The original submission's single split per share was a favorable draw. On those splits, the Gaussian averaged 0.968 on Problems 2 to 4 (0.931 over random splits), and the mean over the 13 pairs ranged from 0.824 to 0.862 across shares. The original split scored above the mean of its 500 random splits in 46 of the 65 runs.
 
 ![Four panels, one per problem, of test accuracy at 80/20 over 500 random splits for each kernel tested](repeated_splits/repeated_split_by_kernel.png)

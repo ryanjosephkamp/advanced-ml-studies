@@ -125,7 +125,7 @@ The pseudoinverse rule also shows how much one run can mislead. On the 20% file,
 - It does not split the characters' failure into shares for density, shared structure, and load. The characters have all three, and the study doesn't vary them separately.
 - It uses one network size, two noise levels, and exact recall, which counts one wrong pixel as a failure.
 - The capacity here is an empirical measure for this network size. It is not the capacity of the theory papers.
-- Capacities below 40 are interpolated between the loads the study tested.
+- Capacities below 40 are interpolated between the loads the study tested, and their intervals leave out the error of that interpolation.
 - The random pattern families are idealized. Real characters have richer structure.
 - Storkey's rule depends on the order the patterns are stored in: on the characters, it recalls 2 to 9 of 18 from 10% noise over 200 draws of storage order, noise, and update order.
 

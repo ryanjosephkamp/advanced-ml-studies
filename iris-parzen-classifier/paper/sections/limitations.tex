@@ -1,6 +1,6 @@
 \section{Limitations}
 
-\emph{Raw features.} The numbers are for measurements in centimeters. The polynomial kernels' result on Problem 3 depends on that choice, and the Gaussian's lead there shrinks when the features are standardized. A likely reason is that, on raw measurements, the polynomial kernel values span a wide range, so the class-mean rule mostly compares vector lengths; this was not tested.
+\emph{Raw features.} The numbers are for raw measurements in centimeters, neither centered nor scaled. The polynomial kernels' result on Problem 3 depends on that choice, and the Gaussian's lead there shrinks when the features are standardized, which centers and scales them at once; the two steps were not tested separately. A likely reason is that, on raw measurements, the polynomial kernel values span a wide range, so the class-mean rule mostly compares vector lengths; this was not tested.
 
 \emph{One width.} The Gaussian width was fixed by the assignment and not tuned. Nothing here shows that $\sigma = 1/\sqrt{2}$ is a good width.
 

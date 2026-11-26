@@ -1,6 +1,6 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-26",
  "passed": 33,
  "failed": 0,
- "line": "Checked November 19, 2026: 33 of 33 checks passed, holding the model's overlap values and stitched pairs, and the numbers in its pair, summary, density, and stitch readings, to data/characters.csv, recomputed as the paper defines the overlap, and to the paper's printed numbers."
+ "line": "Checked November 26, 2026: 33 of 33 checks passed, holding the model's overlap values and stitched pairs, and the numbers in its pair, summary, density, and stitch readings, to data/characters.csv, recomputed as the paper defines the overlap, and to the paper's printed numbers."
 }

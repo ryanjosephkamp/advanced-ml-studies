@@ -1,8 +1,8 @@
 {
- "date": "November 19, 2026",
+ "date": "November 26, 2026",
  "passed": 48,
  "failed": 0,
- "line": "Checked November 19, 2026: all 48 checks passed, against the committed draws (study/results/raw_replication.csv.gz), the February run’s results, the study’s own matrix code, and the paper’s printed numbers.",
+ "line": "Checked November 26, 2026: all 48 checks passed, against the committed draws (study/results/raw_replication.csv.gz), the February run’s results, the study’s own matrix code, and the paper’s printed numbers.",
  "checks": [
   {
    "name": "the tickets are the study's seeds 0 to 99, one each (study/results/raw_replication.csv.gz)",

@@ -1,8 +1,8 @@
 {
- "date": "November 19, 2026",
+ "date": "November 26, 2026",
  "passed": 52,
  "failed": 0,
- "line": "Checked November 19, 2026: all 52 checks passed, against the study's own code (study/common.py), its committed files, and the paper's printed numbers.",
+ "line": "Checked November 26, 2026: all 52 checks passed, against the study's own code (study/common.py), its committed files, and the paper's printed numbers.",
  "checks": [
   {
    "name": "the 150 flowers are the study's Iris file (data/iris/bezdekIris.data), value for value",
