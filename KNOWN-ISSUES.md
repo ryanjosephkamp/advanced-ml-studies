@@ -24,7 +24,9 @@ Line numbers refer to the files as of November 25, 2026.
 
 #### KI-01. The polynomial kernels' Problem 3 result is credited to the units; centering explains most of it
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
+- **Kind:** claim. **Status:** wording fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686);
+  the two extra arms are still open.
 - **Where:** `paper/sections/results.tex`, line 55 ("depend partly on the units") and line 27 ("reflect what the rule
   can express"); `paper/sections/limitations.tex`, line 3 ("Raw features"); `README.md`, line 26; `chapter/chapter.md`,
   line 99.
@@ -35,6 +37,10 @@ Line numbers refer to the files as of November 25, 2026.
   0.698 centered, 0.668 rescaled, 0.771 standardized. With centering alone, the Gaussian's lead over the degree-2 kernel
   on Problem 3 falls from 0.35 to 0.07. The limitations' suggested reason (the rule mostly compares vector lengths) was
   not tested.
+- **Fix:** the results, the limitations, the README, and the chapter no longer credit the result to the units. They say
+  these kernels depend on the features' origin as well as their units, that standardizing centers and scales the
+  features at once, and that the study does not test the two steps separately. "Reflect what the rule can express" now
+  reads "are consistent with underfitting on the raw measurements."
 - **Affects:** "depend partly on the units" should say that for the degree-2 kernel the uncentered origin, more than the
   units, is what breaks the rule; "reflect what the rule can express" holds for the rule on uncentered measurements,
   since the same rule reaches 0.85 once the features are centered. Table II has no centering-only or rescaling-only arm.
@@ -92,21 +98,31 @@ Line numbers refer to the files as of November 25, 2026.
 
 #### KI-06. The file and fresh-noise columns differ in how the noise is made, not only in its draws
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
+- **Kind:** claim. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/characters.tex`, line 4; Table III (`paper/table_characters.tex`).
 - **Observed:** the test file flips exactly 13 bits of each character; the 20% file flips 518 bits chosen over the whole
   18-character array, 21 to 39 per character; the study's fresh queries flip exactly 14 or 29 bits per character
   (`study/run_study.py`, lines 156 to 159). The text says only that the fresh columns draw new noise.
+- **Fix:** the text now says how each column's noise is made: the fresh columns flip exactly 14 or 29 bits of each
+  character, the test file 13, and the 20% file 21 to 39. It also says the file and fresh columns therefore differ in
+  how the noise is made as well as in the draws.
 - **Affects:** differences between the file and fresh columns of Table III mix the noise construction with repetition.
 
 #### KI-07. "Nothing more" than nearest-pattern lookup is slightly stronger than the data
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
+- **Kind:** claim. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/characters.tex`, line 26 ("the network retrieves the closest stored pattern and nothing
   more").
 - **Observed:** at β = 64 with fresh noise, the modern network's recall count differs from nearest-pattern lookup's in 1
-  of 200 draws at 10% noise and 4 of 200 at 20%, never by more than one pattern. The sentence before it gives the
+  of 200 draws at 10% noise and 4 of 200 at 20%, never by more than one pattern. A later replay of all 14,400 of Table
+  III's queries at β = 64 found that the network returned a closest stored pattern for every one. In the five that
+  differ from lookup, two or more stored patterns tie for closest, and the network returns a different one of them than
+  lookup, which takes the first. So the sentence overstated only where patterns tie. The sentence before it gives the
   agreement on average.
+- **Fix:** the sentence now reads "For every query in Table III, the network returns a closest stored pattern, and it
+  differs from nearest-pattern lookup only where stored patterns tie for closest."
 - **Affects:** that sentence ("behaves almost exactly as nearest-pattern lookup").
 
 ### Methods and results
@@ -135,13 +151,16 @@ Line numbers refer to the files as of November 25, 2026.
 
 #### KI-09. The P50 intervals leave out interpolation error
 
-- **Kind:** method. **Status:** open, November 25, 2026.
+- **Kind:** method. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `study/analyze.py` (P50 by log-linear interpolation); Table II; the capacities in the abstract, the text,
   and `README.md`.
 - **Observed:** P50 is interpolated between tested loads that step by 3 to 10 above 9 patterns. For example, the Hebbian
   rule's 21.4 at ρ = 0 lies between P = 18 (exact recall 0.753) and P = 24 (0.335). Its bootstrap interval, 21.0 to
   21.9, resamples the 50 pattern sets only. The limitations say values above 9 are interpolated across wide gaps, but
   not that the intervals leave this out.
+- **Fix:** the limitations, the README, and the chapter now say the intervals on interpolated capacities leave out the
+  error of the interpolation. The method is unchanged.
 - **Affects:** the intervals on interpolated capacities read as tighter than the measurement supports.
 
 ## random-projections-multiclass-svm
@@ -150,53 +169,68 @@ Line numbers refer to the files as of November 25, 2026.
 
 #### KI-10. "The variance order does not explain the accuracy order" is broader than the data
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
+- **Kind:** claim. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/discussion.tex`, line 7; `paper/sections/distortion.tex`, line 17; `README.md`, line 29.
 - **Observed:** the family with the highest variance, one nonzero per column, has the lowest mean accuracy in 30 of 30
   (data set, k) cells. Across the families run in each cell (five; four on Glass), the rank correlation of variance with
   accuracy is negative in 30 of 30 cells (mean −0.54); without one nonzero per column, it is negative in 14, positive in
   14, and zero in 2 (mean −0.01). Neighbor agreement after projection, which the text mentions as "not shown",
   correlates positively with accuracy in 30 of 30 cells (mean 0.85).
+- **Fix:** the abstract, the discussion, and the README now set one nonzero per column apart, since it has both the
+  highest variance and the lowest accuracy, and say that apart from it the variance order does not explain the accuracy
+  order. The distortion section's run-in head now reads "Lower variance does not mean higher accuracy."
 - **Affects:** the claim holds among the Gaussian, Eq. 3, Eq. 4, and very sparse matrices; one nonzero per column has
   both the highest variance and the lowest accuracy. `chapter/chapter.md` (line 93) already words it narrowly.
 
 #### KI-11. One comparison is counted both as equivalent and as a significant loss
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
-- **Where:** `paper/sections/classification.tex`, line 26; the abstract's equivalence count; Table IV
+- **Kind:** claim. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
+- **Where:** `paper/sections/classification.tex`, line 26; the abstract's equivalence count; Table V
   (`paper/table_comparisons.tex`); `README.md`, lines 25 to 26.
 - **Observed:** one nonzero per column against the Gaussian on Breast Cancer at k = 16 has a mean difference of −1.25
   points with a 95% interval of [−1.58, −0.91], inside the ±2-point margin, and a Holm-adjusted p below 0.001. So the
   equivalent comparisons and those that differ after Holm's correction overlap by one.
+- **Fix:** the classification section, the README, and the chapter now name this comparison and say it is in both
+  counts. The abstract gives only the equivalence count, so it is unchanged.
 - **Affects:** the counts read as separate groups; the two calls are compatible, but the text should say so or count
   that cell once.
 
 #### KI-12. The 100-draw repeat and the tuned study differ in more than repetition
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
+- **Kind:** claim. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/assignment.tex`, line 23; `study/replicate.py`; `study/run_svm.py`.
 - **Observed:** the repeat keeps the assignment's pipeline: the older Iris file, min-max scaling fit on all rows,
   default SVM settings, k = 2, one split, the original seeding, and the best kernel chosen on the test set. The tuned
   study scales on training rows only, sets `coef0 = 1` for the polynomial kernels, standardizes after projecting,
   selects by inner cross-validation, and draws a new split per draw. The text compares the repeat's Seeds difference
   with the tuned study's without listing these differences.
+- **Fix:** the assignment section now says the tuned study also changes the pipeline (it scales on the training rows
+  only, standardizes after projecting, tunes each kernel and picks one by inner cross-validation, and draws a new split
+  for each draw), and the chapter says so in brief.
 - **Affects:** that comparison shows how much the two pipelines differ, not the effect of repetition alone.
 
 #### KI-13. Related work on random projections for SVMs is not cited
 
-- **Kind:** citation. **Status:** open, November 25, 2026.
+- **Kind:** citation. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/introduction.tex`; `paper/sections/references.tex`.
 - **Observed:** none of the paper's 18 references is on classification after random projection. Paul, Boutsidis,
   Magdon-Ismail, and Drineas, "Random Projections for Support Vector Machines," AISTATS 2013 (PMLR 31:498–506), study
   margin preservation for linear SVMs under projection. The paper makes no novelty claim that the missing work would
   undercut.
+- **Fix:** the introduction now cites Paul et al. and says the question here is empirical, on multiclass data, and with
+  nonlinear kernels as well as linear ones.
 - **Affects:** the introduction should cite it and say this study is empirical, multiclass, and with nonlinear kernels.
 
 ### Methods and results
 
 #### KI-14. The pooled test and leaving out Iris were chosen after the per-cell results
 
-- **Kind:** method. **Status:** open, November 25, 2026.
+- **Kind:** method. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/design.tex`, line 10 ("A pooled test … is used for the overall deficit"); the abstract and
   conclusion ("the data sets other than Iris"); `README.md`.
 - **Observed:** the planned analysis was the 144 primary comparisons with Holm's correction and the ±2-point margin. The
@@ -205,6 +239,10 @@ Line numbers refer to the files as of November 25, 2026.
   Gaussian are 0.73 points for Eq. 3 (p = 0.005), 1.47 for Eq. 4 (p = 0.0006; 95% interval reaching 2.30), and 0.85 for
   very sparse (p = 0.040); without Iris they are 0.39 (p = 0.10), 0.16 (p = 0.61), and 0.61 (p = 0.08). The zero-column
   reason for leaving Iris out applies to Eq. 4 only.
+- **Fix:** the design section now says the pooled test and the pool without Iris were added after the per-cell results
+  were seen, and that the planned analysis was the primary comparisons. The abstract and the conclusion say the same and
+  give the result with Iris: Eq. 3 and very sparse matrices still trail by under a point, but with p < 0.05, and Eq. 4
+  by 1.47. The README and the chapter say the pooling came after the per-cell results.
 - **Affects:** the abstract's "within about a point … other than Iris": with Iris, Eq. 3 and very sparse matrices are
   still within a point but significantly behind, and only Eq. 4 needs the exclusion. The body reports the with-Iris
   numbers (`paper/sections/classification.tex`, line 44; `paper/sections/discussion.tex`, line 3).
@@ -237,11 +275,13 @@ Line numbers refer to the files as of November 25, 2026.
 
 #### KI-17. "Within about a point of band power" is a mean, not an equivalence result
 
-- **Kind:** claim. **Status:** open, November 25, 2026.
+- **Kind:** claim. **Status:** fixed, November 26, 2026, in
+  [`783314e`](https://github.com/ryanjosephkamp/advanced-ml-studies/commit/783314e6170f5b26230e9b4d98add743a9c8c686).
 - **Where:** `paper/sections/abstract.tex`, finding (1).
 - **Observed:** on held-out subjects with LDA, the per-channel Hilbert band power minus Welch band power is −0.61 points
   on EEG MMI standardized (95% interval −2.17 to 0.91) and −1.05 unstandardized (−2.62 to 0.62); every Holm-adjusted p
   is 1.0. No equivalence test was run. `paper/sections/emd.tex` and `README.md` say so; the abstract does not.
+- **Fix:** finding (1) in the abstract now says no equivalence test was run.
 - **Affects:** finding (1) in the abstract.
 
 ### Methods and results
