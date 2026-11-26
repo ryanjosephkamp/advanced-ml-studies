@@ -10,6 +10,9 @@ and figures.
 | [`random-projections-multiclass-svm`](random-projections-multiclass-svm/) | Random projections before multiclass SVMs |
 | [`signal-analysis-emd`](signal-analysis-emd/) | Empirical mode decomposition features for EEG |
 
+Known and potential problems in these studies, and the status of each, are listed in
+[`KNOWN-ISSUES.md`](KNOWN-ISSUES.md).
+
 The course book's copies of each study's figures, in its day and night inks, are in each project's `figures/site/`.
 Each project's `figures/site/render.py` draws them with the study's own plotting code (using
 [`tools/site_figures.py`](tools/site_figures.py)) and checks that they plot exactly what the study's figures plot.

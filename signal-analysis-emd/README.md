@@ -36,6 +36,8 @@ The extended study helps explain why the original pipeline sits at chance on mot
 
 Balanced accuracy on held-out subjects with LDA and features standardized within each subject, with 95% intervals over subjects. Filled markers keep the channels separate; open markers average them.
 
+Known and potential problems in this study, and the status of each, are listed in [`KNOWN-ISSUES.md`](../KNOWN-ISSUES.md#signal-analysis-emd).
+
 ## Data
 
 The raw recordings are not in the repository. `scripts/download_data.py` downloads the 408 files the code reads (about 1.3 GB) from PhysioNet and the BCI Competition IV site into a folder you choose and checks each one against the SHA-256 sums in `data/raw_files.sha256`. Sources and citations are in [data/README.md](data/README.md).

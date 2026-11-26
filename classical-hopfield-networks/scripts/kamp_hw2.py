@@ -15,6 +15,7 @@ GitHub: https://github.com/ryanjosephkamp
 Course: CS7063 Advanced Machine Learning
 Assignment: Assignment 2 – Hopfield Networks
 Date: February 2, 2026
+Revised: November 2026, for this repository
 
 Usage:
     python kamp_hw2.py [OPTIONS]

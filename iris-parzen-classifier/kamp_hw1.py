@@ -5,6 +5,7 @@
 # Due: 1/27/2026
 # Ryan Kamp
 # Date: 1/19/2026
+# Revised: November 2026, for this repository
 
 """
 Kernel classifiers on four binary Iris problems, evaluated at five train/test ratios.

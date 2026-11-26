@@ -32,6 +32,8 @@ The assignment projects each data set to k = 2 dimensions with Achlioptas's two 
 
 Paired difference from the Gaussian matrix in test accuracy (balanced accuracy for Glass), mean over 100 draws with 95% intervals, against target size k. The shaded band is ±2 points.
 
+Known and potential problems in this study, and the status of each, are listed in [`KNOWN-ISSUES.md`](../KNOWN-ISSUES.md#random-projections-multiclass-svm).
+
 ## Run it
 
 ```bash

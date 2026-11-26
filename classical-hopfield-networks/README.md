@@ -31,6 +31,8 @@ The assignment stores 18 character patterns in a Hopfield network with Hebbian w
 
 Capacity P50 against expected overlap ρ for patterns that share a prototype, at 10% (top) and 20% (bottom) noise, with 95% bands over 50 pattern sets. Capacities above 40 are drawn in the shaded band, offset by rule, and values between 2 and 3 are interpolated between those two tested loads.
 
+Known and potential problems in this study, and the status of each, are listed in [`KNOWN-ISSUES.md`](../KNOWN-ISSUES.md#classical-hopfield-networks).
+
 ## Run it
 
 ```bash

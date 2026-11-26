@@ -21,6 +21,7 @@ GitHub: https://github.com/ryanjosephkamp
 Course: CS7063 Advanced Machine Learning
 Assignment: Assignment 3 – Random Projections and Multiclass Classification
 Date: February 13, 2026
+Revised: November 2026, for this repository
 
 References:
     [1] Johnson, W. B. & Lindenstrauss, J. (1984). Extensions of Lipschitz

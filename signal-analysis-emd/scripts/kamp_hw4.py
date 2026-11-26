@@ -14,6 +14,7 @@ GitHub: https://github.com/ryanjosephkamp
 Course: CS7063 Advanced Machine Learning
 Assignment: Assignment 4 – ML for Signal Analysis using EMD
 Date: March 8, 2026
+Revised: November 2026, for this repository
 """
 
 import os

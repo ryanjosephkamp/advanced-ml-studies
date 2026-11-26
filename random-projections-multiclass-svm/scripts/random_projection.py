@@ -45,9 +45,9 @@ def scale_data(X: np.ndarray) -> tuple:
     """
     Scale features to [0, 1] using MinMaxScaler so all dimensions have the
     same range (as required by the assignment).
-    Scaling the features in this way ensures that the random projection is not biased 
-    by the scale of the original features, and it allows the Johnson–Lindenstrauss lemma 
-    to hold more effectively by ensuring that all dimensions contribute equally to the distance calculations.
+    Scaling keeps any one feature's units from dominating the distances that the random projection
+    approximately preserves. The Johnson–Lindenstrauss lemma holds for any fixed set of points, so
+    scaling changes which distances are preserved, not whether the lemma applies.
 
     Args:
         X: Data matrix of shape (n, d)

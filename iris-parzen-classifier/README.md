@@ -30,6 +30,8 @@ The study asks which kernel (dot product, polynomial of degree 2 or 3, or Gaussi
 
 Test accuracy at 80/20 over 500 random splits. Filled markers are means, bars span the 2.5th to 97.5th percentiles of single splits, open markers are the original split (seed 42), and the dashed line is the mean majority-class rate.
 
+Known and potential problems in this study, and the status of each, are listed in [`KNOWN-ISSUES.md`](../KNOWN-ISSUES.md#iris-parzen-classifier).
+
 ## Run it
 
 ```bash
